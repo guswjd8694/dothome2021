@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습5</title>
+    <style>
+         @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * { /* 전체선택 태그. 실제론 안쓰는데 연습이라 씀 */
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            font-family: 'TmonMonsori';
+            width: 100%;
+            background-color: #f3e5f5;
+            text-align: center;
+            color: #fff;
+            font-size: 60px;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #b39ddb;
+            line-height: 100px;
+        }
+        #banner {
+            width: 100%;
+            height: 300px;
+            background-color: #9675ce;
+            line-height: 300px;
+        }
+        #contents {
+            width: 100%;
+            height: 500px;
+            background-color: #7e57c2;
+            line-height: 500px;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #673bb7;
+            line-height: 100px;
+        }
+        .header-inner {
+            width: 1200px;
+            height: 100px;
+            background-color: #c5cae8;
+            margin: 0 auto;                                 /*m0-a*/
+            line-height: 100px;
+        }
+        .banner-inner {
+            width: 1200px;
+            height: 300px;
+            background-color: #9ea8db;
+            margin: 0 auto;
+            line-height: 300px;
+        }
+        .contents-inner {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: #7986cc;
+            line-height: 500px;
+        }
+        .footer-inner{
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #5c6bc0;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header-inner">header</div>
+        </div>
+        <div id="banner">
+            <div class="banner-inner">banner</div>
+        </div>
+        <div id="contents">
+            <div class="contents-inner">contents</div>
+        </div>
+        <div id="footer">
+            <div class="footer-inner">footer</div>
+        </div>
+    </div>
+</body>
+</html>
