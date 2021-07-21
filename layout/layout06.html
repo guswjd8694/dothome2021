@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습6</title>
+    <style>
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #wrap {
+            font-family: 'TmonMonsori';
+            width: 1920px;
+            margin: 0 auto;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+        #header{
+            width: 1920px;
+            height: 115px;
+            background-color: #ede7f6;
+            line-height: 115px;
+        }
+        #banner{
+            width: 1920px;
+            height: 750px;
+            background-color: #d1c4e9;
+            line-height: 750px;
+        }
+        #content1{
+            width: 1920px;
+            height: 2250px;
+            background-color: #b39ddb;
+            line-height: 2250px;
+        }
+        #content2{
+            width: 1920px;
+            height: 1550px;
+            background-color: #9575cd;
+            line-height: 1550px;
+        }
+        #content3{
+            width: 1920px;
+            height: 520px;
+            background-color: #7e57c2;
+            line-height: 520px;
+        }
+        #footer{
+            width: 1920px;
+            height: 270px;
+            background-color: #673ab7;
+            line-height: 270px;
+        }
+        .header-inner{
+            width: 1220px;
+            height: 115px;
+            background-color: #ede7f6;
+            margin: 0 auto;
+            line-height: 115px;
+        }
+        .banner-inner{
+            width: 1220px;
+            height: 750px;
+            background-color: #ffebee;
+            margin: 0 auto;
+            line-height: 750px;
+        }
+        .content1-inner{
+            width: 1220px;
+            height: 2250px;
+            background-color: #ffcdd2;
+            margin: 0 auto;
+            line-height: 2250px;
+        }
+        .content2-inner{
+            width: 1220px;
+            height: 1550px;
+            background-color: #ef9a9a;
+            margin: 0 auto;
+            line-height: 1550px;
+        }
+        .content3-inner{
+            width: 1220px;
+            height: 520px;
+            background-color: #e57373;
+            margin: 0 auto;
+            line-height: 520px;
+        }
+        .footer-inner{
+            width: 1220px;
+            height: 270px;
+            background-color: #ef5350;
+            margin: 0 auto;
+            line-height: 270px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header-inner">header(1220px * 115px)</div>
+        </div>
+        <div id="banner">
+            <div class="banner-inner">banner(1220px * 750px)</div>
+        </div>
+        <div id="content1">
+            <div class="content1-inner">content1(1220px * 2250px)</div>
+        </div>
+        <div id="content2">
+            <div class="content2-inner">content2(1200px * 1550px)</div>
+        </div>
+        <div id="content3">
+            <div class="content3-inner">content3(1200px*520px)</div>
+        </div>
+        <div id="footer">
+            <div class="footer-inner">footer(1200px * 270px)</div>
+        </div>
+</body>
+</html>
