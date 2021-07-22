@@ -969,6 +969,27 @@
 
             table += "</table>";    
 
+            document.write(table, "<br>");
+        }
+
+
+
+        //sample201 : 테이블 만들기 숙제
+        {
+            let num = 100;
+            let table = "<table>";
+
+            for( let i=1; i<=10; i++ ){
+                table += "<tr>";
+                for( let j=1; j<=10; j++ ){
+                    table += "<td>"+ num +"</td>";
+                    num -= 1;
+                }
+                table += "</tr>";
+            }
+
+            table += "</table>";    
+
             document.write(table);
         }
     </script>
