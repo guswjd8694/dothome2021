@@ -218,7 +218,6 @@
         <li><a href="javascript100.html">상수</a></li>
         <li><a href="javascript100.html">배열(Array)</a></li>
         <li><a href="javascript100.html">객체(Object)</a></li>
-        <li><a href="javascript100.html">함수(function)</a></li>
     </ol>
     <ol>
         <li><a href="javascript300.html">함수(function)</a></li>
@@ -974,7 +973,7 @@
 
 
 
-        //sample201 : 테이블 만들기 숙제
+        //sample200 : 테이블 만들기 숙제 1
         {
             let num = 100;
             let table = "<table>";
@@ -990,7 +989,27 @@
 
             table += "</table>";    
 
-            document.write(table);
+            document.write(table, "<br>");
+        }
+
+        //sample200 : 테이블 만들기 숙제 2
+        //짝수만 나오게 ~21.07.23
+        {
+            let num = 0;
+            let table = "<table>";
+
+            for( let i=1; i<=10; i++ ){
+                table += "<tr>";
+                for( let j=1; j<=10; j++ ){
+                    table += "<td>"+ num +"</td>";
+                    num += 2;
+                }
+                table += "</tr>";
+            }
+
+            table += "</table>";    
+
+            document.write(table, "<br>");
         }
     </script>
 </body>
