@@ -213,33 +213,43 @@
         }
 
         .ol2::before {
-            content: "데이터 실행하기 : "
+            content: "데이터 불러오기 : "
         }
 
         .ol3::before {
-            content: "데이터 제어하기 : "
+            content: "데이터 실행하기 : "
         }
 
+        .ol4::before {
+            content: "데이터 제어하기 : "
+        }
     </style>
 </head>
 
 <body>
 
     <h1>Javascript 문법 정리</h1>
-      <ol class="ol1">
+    <ol class="ol1">
         <li><a href="javascript100.html">변수</a></li>
         <li><a href="javascript100.html">상수</a></li>
         <li><a href="javascript100.html">배열(Array)</a></li>
         <li><a href="javascript100.html">객체(Object)</a></li>
     </ol>
+
     <ol class="ol2">
+        <li><a href="javascript500.html">데이터</a></li>
+    </ol>
+
+    <ol class="ol3">
         <li><a href="javascript300.html">함수(function)</a></li>
     </ol>
-    <ol class="ol3">
+
+    <ol class="ol4">
         <li><a href="javascript200.html">조건문</a></li>
         <li><a href="javascript200.html">반복문</a></li>
     </ol>
-    <ol class="ol4">
+
+    <ol class="ol5">
         <li><a href="javascript400.html">알고리즘 연습</a></li>
     </ol>
 
@@ -267,7 +277,7 @@
     document.write("*** 1부터 100까지 출력하기 ***")
 
     for(let i=1; i&lt;=100; i++){
-        document.write(i," &nbsp;");
+        document.write(i);
     }
 }
 </code></pre>
@@ -286,7 +296,7 @@
 
     for(let i=1; i&lt;=100; i++){
         if(i % 2 == 0) {
-            document.write(i," &nbsp;");
+            document.write(i);
         }
     }
 }
@@ -307,7 +317,7 @@
 
     for(let i=1; i&lt;=100; i++){
         if(i % 5 == 0) {
-            document.write(i," &nbsp;");
+            document.write(i);
         }
     }
 }
@@ -328,9 +338,9 @@
 
     for(let i=1; i&lt;=100; i++){
         if(i % 2 == 0) {
-            document.write("&lt;span style='color:red'&gt; " + i + "&lt;/span&gt;"," &nbsp;");
+            document.write("&lt;span style='color:red'&gt; " + i + "&lt;/span&gt;");
         }else{
-            document.write("&lt;span style='color:blue'&gt; " + i + "&lt;/span&gt;"," &nbsp;");
+            document.write("&lt;span style='color:blue'&gt; " + i + "&lt;/span&gt;");
         }
     }
 }
@@ -350,6 +360,7 @@
     document.write("*** 1부터 100까지 합 출력하기 ***")
 
     let sum = 0;
+
     for(let i = 1; i&lt;= 100; i++){
         sum += i;
     }
@@ -550,6 +561,7 @@
             document.write("*** 1부터 100까지 합 출력하기 ***<br>")
 
             let sum = 0;
+            
             for(let i = 1; i <= 100; i++){
                 sum += i;
             }

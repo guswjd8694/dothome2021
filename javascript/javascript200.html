@@ -213,33 +213,43 @@
         }
 
         .ol2::before {
-            content: "데이터 실행하기 : "
+            content: "데이터 불러오기 : "
         }
 
         .ol3::before {
-            content: "데이터 제어하기 : "
+            content: "데이터 실행하기 : "
         }
 
+        .ol4::before {
+            content: "데이터 제어하기 : "
+        }
     </style>
 </head>
 
 <body>
 
     <h1>Javascript 문법 정리</h1>
-      <ol class="ol1">
+    <ol class="ol1">
         <li><a href="javascript100.html">변수</a></li>
         <li><a href="javascript100.html">상수</a></li>
         <li><a href="javascript100.html">배열(Array)</a></li>
         <li><a href="javascript100.html">객체(Object)</a></li>
     </ol>
+
     <ol class="ol2">
+        <li><a href="javascript500.html">데이터</a></li>
+    </ol>
+
+    <ol class="ol3">
         <li><a href="javascript300.html">함수(function)</a></li>
     </ol>
-    <ol class="ol3">
+
+    <ol class="ol4">
         <li><a href="javascript200.html">조건문</a></li>
         <li><a href="javascript200.html">반복문</a></li>
     </ol>
-    <ol class="ol4">
+
+    <ol class="ol5">
         <li><a href="javascript400.html">알고리즘 연습</a></li>
     </ol>
     
@@ -293,21 +303,21 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
         let num = 100;
-        
+        document.write("*** 02. 다중 if문 ***");
+
         if( num == 90 ){
-            document.write("*** 02. 다중 if문 ***");
             document.write("조건문이 실행되었습니다.(num == 90)");
+
         } else if ( num == 100 ){
-            document.write("*** 02. 다중 if문 ***");
             document.write("조건문이 실행되었습니다.(num == 100)");
+
         } else if ( num == 200 ){
-            document.write("*** 02. 다중 if문 ***");
             document.write("조건문이 실행되었습니다.(num == 200)");
+
         } else if ( num == 300 ){
-            document.write("*** 02. 다중 if문 ***");
             document.write("조건문이 실행되었습니다.(num == 300)");
+
         } else {
-            document.write("*** 02. 다중 if문 ***");
             document.write("조건문이 실행되었습니다.(num == XX)");
         }
 }
@@ -707,23 +717,24 @@
         //다중 if문
         {
             let num = 100;
+            document.write("*** 02. 다중 if문 ***<br>");
 
-            if (num == 90) {
-                document.write("*** 02. 다중 if문 ***<br>");
-                document.write("조건문이 실행되었습니다.(num == 90)<br><br>");
-            } else if (num == 100) {
-                document.write("*** 02. 다중 if문 ***<br>");
-                document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
-            } else if (num == 200) {
-                document.write("*** 02. 다중 if문 ***<br>");
-                document.write("조건문이 실행되었습니다.(num == 200)<br><br>");
-            } else if (num == 300) {
-                document.write("*** 02. 다중 if문 ***<br>");
-                document.write("조건문이 실행되었습니다.(num == 300)<br><br>");
+            if( num == 90 ){
+                document.write("조건문이 실행되었습니다.(num == 90)<br>");
+
+            } else if ( num == 100 ){
+                document.write("조건문이 실행되었습니다.(num == 100)<br>");
+
+            } else if ( num == 200 ){
+                document.write("조건문이 실행되었습니다.(num == 200)<br>");
+
+            } else if ( num == 300 ){
+                document.write("조건문이 실행되었습니다.(num == 300)<br>");
+                
             } else {
-                document.write("*** 02. 다중 if문 ***<br>");
-                document.write("조건문이 실행되었습니다.(num == XX)<br><br>");
+                document.write("조건문이 실행되었습니다.(num == XX)<br>");
             }
+            document.write("<br>");
         }
 
 
