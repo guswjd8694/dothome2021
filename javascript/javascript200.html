@@ -302,24 +302,24 @@
         <h2>02. 다중 if문 <span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-        let num = 100;
-        document.write("*** 02. 다중 if문 ***");
+    let num = 100;
+    document.write("*** 02. 다중 if문 ***");
 
-        if( num == 90 ){
-            document.write("조건문이 실행되었습니다.(num == 90)");
+    if( num == 90 ){
+        document.write("조건문이 실행되었습니다.(num == 90)");
 
-        } else if ( num == 100 ){
-            document.write("조건문이 실행되었습니다.(num == 100)");
+    } else if ( num == 100 ){
+        document.write("조건문이 실행되었습니다.(num == 100)");
 
-        } else if ( num == 200 ){
-            document.write("조건문이 실행되었습니다.(num == 200)");
+    } else if ( num == 200 ){
+        document.write("조건문이 실행되었습니다.(num == 200)");
 
-        } else if ( num == 300 ){
-            document.write("조건문이 실행되었습니다.(num == 300)");
+    } else if ( num == 300 ){
+        document.write("조건문이 실행되었습니다.(num == 300)");
 
-        } else {
-            document.write("조건문이 실행되었습니다.(num == XX)");
-        }
+    } else {
+        document.write("조건문이 실행되었습니다.(num == XX)");
+    }
 }
     </code></pre>
         </div>
@@ -370,10 +370,12 @@
            document.write("*** 04. switch문 ***");
            document.write("조건문이 실행되었습니다.(num == 100)");
         break;
+
         case 200 : 
            document.write("*** 04. switch문 ***");
            document.write("조건문이 실행되었습니다.(num == 100)");
         break;
+
         case 300 : 
            document.write("*** 04. switch문 ***");
            document.write("조건문이 실행되었습니다.(num == 100)");
@@ -631,7 +633,7 @@
     let i = 0;
     while( i &lt; 20){
         i++;
-        document.write(i, "&nbsp");
+        document.write(i);
         if( i == 10 ){
             break;
         }
@@ -641,7 +643,7 @@
 {
     //for 문을 이용해서 1부터 20까지 출력을 해주세요!!
     for(i=1; i&lt;=20; i++){
-        document.write(i, "&nbsp");
+        document.write(i);
         if( i == 10){
             break;
         }
@@ -671,7 +673,7 @@
         if( num > 19 ){
             break;
         }
-        document.write(num, "&nbsp");
+        document.write(num);
     }
 }
 </code></pre>
@@ -760,10 +762,12 @@
                     document.write("*** 04. switch문 ***<br>");
                     document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
                     break;
+
                 case 200:
                     document.write("*** 04. switch문 ***<br>");
                     document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
                     break;
+
                 case 300:
                     document.write("*** 04. switch문 ***<br>");
                     document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
