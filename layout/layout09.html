@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 9</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+        body{
+            background-color: #e8eaf6;
+        }
+        #wrap {
+            margin: 0 auto;
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: #c5cae9;
+        }
+        main {
+            overflow: hidden;
+        }
+        #aside1 {
+            width: 15%;
+            height: 700px;
+            background-color: #9fa8da;
+            float: left;
+        }
+        #aside2 {
+            width: 15%;
+            height: 700px;
+            background-color: #7986cb;
+            float: right;
+        }
+        section {
+            width: 70%;
+            height: 700px;
+            background-color: #5c6bc0;
+        }
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: #3f51b5;
+        }
+        @media(max-width : 1200px){
+            #wrap {
+                width: 100%
+            }
+
+        @media(max-width : 1000px){
+            header {
+                width: 100%;
+                height: 200px;
+            }
+            #aside1 {
+                width: 30%;
+            }
+            #aside2 {
+                width: 100%;
+                height: 200px;
+                float: inline-end;
+            }
+            section {
+                width: 100%;
+            }
+        }
+
+
+        @media(max-width : 800px){
+            header {
+                width: 100%;
+                height: 300px;
+            }
+
+            #aside1 {
+                width: 100%;
+                height: 400px;
+                float: none;
+            }
+
+            #aside2 {
+                width: 100%;
+                height: 400px;
+                float: none;
+            }
+            section {
+                width: 100%;
+                height: 400px;
+                float: none;
+            }
+        }
+
+
+        @media(max-width : 600px){
+            header {
+                width: 100%;
+                height: 500px;
+            }
+
+            #aside1 {
+                width: 100%;
+                height: 500px;
+                float: none;
+            }
+
+            #aside2 {
+                width: 100%;
+                height: 500px;
+                float: none;
+            }
+            section {
+                width: 100%;
+                height: 500px;
+                float: none;
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <aside id="aside1"></aside>
+            <aside id="aside2"></aside>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
