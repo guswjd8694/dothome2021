@@ -276,15 +276,15 @@
     
     <h2 class="mt20">데이터 불러오기</h2>
     <ul>
-        <li><a href="#sample1">01. 변수 : 데이터 불러오기 : 기본</li></a>
-        <li><a href="#sample2">02. 상수 : 데이터 불러오기 : 기본</li></a>
-        <li><a href="#sample3">03. 배열 : 데이터 불러오기 : 기본</li></a>
-        <li><a href="#sample4">04. 배열 : 데이터 불러오기 : 2차 배열</li></a>
-        <li><a href="#sample5">05. 배열 : 데이터 불러오기 : 갯수 구하기</li></a>
-        <li><a href="#sample6">06. 배열 : 데이터 불러오기 : for문</li></a>
-        <li><a href="#sample7">07. 배열 : 데이터 불러오기 : forEach()</li></a>
-        <li><a href="#sample8">08. 배열 : 데이터 불러오기 : for of문</li></a>
-        <li><a href="#sample9">09. 배열 : 데이터 불러오기 : for in문</li></a>
+        <li><a href="#sample01">01. 변수 : 데이터 불러오기 : 기본</li></a>
+        <li><a href="#sample02">02. 상수 : 데이터 불러오기 : 기본</li></a>
+        <li><a href="#sample03">03. 배열 : 데이터 불러오기 : 기본</li></a>
+        <li><a href="#sample04">04. 배열 : 데이터 불러오기 : 2차 배열</li></a>
+        <li><a href="#sample05">05. 배열 : 데이터 불러오기 : 갯수 구하기</li></a>
+        <li><a href="#sample06">06. 배열 : 데이터 불러오기 : for문</li></a>
+        <li><a href="#sample07">07. 배열 : 데이터 불러오기 : forEach()</li></a>
+        <li><a href="#sample08">08. 배열 : 데이터 불러오기 : for of문</li></a>
+        <li><a href="#sample09">09. 배열 : 데이터 불러오기 : for in문</li></a>
         <li><a href="#sample10">10. 배열 : 데이터 불러오기 : map()</li></a>
         <li><a href="#sample11">11. 배열 : 데이터 불러오기 : 펼침 연산자</li></a>
         <li><a href="#sample12">12. 객체 : 데이터 불러오기 : 기본</li></a>
@@ -328,7 +328,7 @@
         <h2>02. 상수 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    let x = 100, y = 200, z = "javascript";
+    const x = 100, y = 200, z = "javascript";
 
     document.write("*** 02. 상수 : 데이터 불러오기 ***");
     document.write(x);
@@ -535,7 +535,7 @@
         document.write(element);
         document.write(index);
         document.write(array);
-    })
+    });
 }
 </code></pre>
         </div>
@@ -641,9 +641,13 @@
         c: "javascript",              
     }
 
-    document.write(Object.keys(obj));
-    document.write(Object.values(obj));
-    document.write(Object.entires(obj));
+    const name1 = obj.a;
+    const name2 = obj.b;
+    const name3 = obj.c;
+
+    document.write(name1);
+    document.write(name2);
+    document.write(name3);
 }
 </code></pre>
         </div>
@@ -666,9 +670,9 @@
         c: "javascript",              
     }
 
-    document.write(Object.keys(obj));
-    document.write(Object.values(obj));
-    document.write(Object.entires(obj));
+    for( let key in obj ){
+        document.write(obj[key]);
+    }
 }
 </code></pre>
         </div>
@@ -896,7 +900,7 @@
         //sample2
         //02. 상수 : 데이터 불러오기
         {
-            let x = 100, y = 200, z = "javascript";
+            const x = 100, y = 200, z = "javascript";
 
             document.write("*** 02. 상수 : 데이터 불러오기 ***<br>");
             document.write(x, "<br>");
@@ -1063,7 +1067,7 @@
                 document.write(element, "<br>");
                 document.write(index, "<br>");
                 document.write(array, "<br>");
-            })
+            });
             document.write("<br>");
         }
 
@@ -1166,7 +1170,7 @@
         //sample15
         //15. 객체 : 데이터 불러오기 : for in문
         {
-            document.write("*** 15. 객체 : 데이터 불러오기 : 변수 ***<br>");
+            document.write("*** 15. 객체 : 데이터 불러오기 : for in문 ***<br>");
 
             const obj = {
                 a: 100,
