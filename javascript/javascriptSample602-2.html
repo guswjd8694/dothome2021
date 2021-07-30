@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 속성 검색하기</title>
+    <title>find()를 이용한 CSS 속성 검색하기</title>
     <style>
         @font-face {
             font-family: 'GyeonggiBatang';
@@ -132,7 +132,7 @@
 <body>
     <div id="wrap">
         <div class="board">
-            <span>속성 중에 첫 글자만 넣어주세요!</span>
+            <span>CSS 속성을 넣어주세용가리</span>
             <h1>CSS 속성 검색하기</h1>
             <div class="search">
                 <label for="search-box">검색하기</label>
@@ -322,23 +322,23 @@
                     <li data-name="text-transform" data-topic="텍스트">text-transform</li>
                     <li data-name="top" data-topic="위">top</li>
                     <li data-name="transform" data-topic="트랜스폼">transform</li>
-                    <li>transform-origin</li>
-                    <li>transform-style</li>
-                    <li>transition</li>
-                    <li>transition-delay</li>
-                    <li>transition-duration</li>
-                    <li>transition-property</li>
-                    <li>transition-timing-function</li>
-                    <li>unicode-bidi</li>
-                    <li>user-select</li>
-                    <li>vertical-align</li>
-                    <li>visibility</li>
-                    <li>white-space</li>
-                    <li>width</li>
-                    <li>word-break</li>
-                    <li>word-spacing</li>
-                    <li>word-wrap</li>
-                    <li>z-index</li>
+                    <li data-name="transform" data-topic="트랜스폼">transform-origin</li>
+                    <li data-name="transform" data-topic="트랜스폼">transform-style</li>
+                    <li data-name="transform" data-topic="트랜스폼">transition</li>
+                    <li data-name="transform" data-topic="트랜스폼">transition-delay</li>
+                    <li data-name="transform" data-topic="트랜스폼">transition-duration</li>
+                    <li data-name="transform" data-topic="트랜스폼">transition-property</li>
+                    <li data-name="transform" data-topic="트랜스폼">transition-timing-function</li>
+                    <li data-name="unicode-bidi" data-topic="유니코드">unicode-bidi</li>
+                    <li data-name="unicode-bidi" data-topic="셀렉트">user-select</li>
+                    <li data-name="unicode-bidi" data-topic="얼라인">vertical-align</li>
+                    <li data-name="unicode-bidi" data-topic="시각화">visibility</li>
+                    <li data-name="unicode-bidi" data-topic="화이트">white-space</li>
+                    <li data-name="unicode-bidi" data-topic="가로">width</li>
+                    <li data-name="word-break" data-topic="워드">word-break</li>
+                    <li data-name="word-spacing" data-topic="워드">word-spacing</li>
+                    <li data-name="word-wrap" data-topic="워드">word-wrap</li>
+                    <li data-name="z-index" data-topic="인덱스">z-index</li>
                 </ul>
                 <!-- <ul>
                     <li>[align-content] 속성은 콘텐츠의 상하관계 정렬 상태를 정의합니다.</li>
@@ -481,38 +481,44 @@
     </div>
 
     <script>
-        const searchBox = document.querySelector("#search-box");
-        const cssList = document.querySelectorAll(".list ul li");
-
-        //searchBox.addEventListener("keyup", function(){});
-            searchBox.addEventListener("keyup", () => {     //키보드 이벤트
-                const searchWord = searchBox.value;                     //사용자가 입력한 정보
-
-                console.log(searchWord);
-
-                cssList.forEach((el) => {                               //리스트 갯수
-                //console.log(el);
-
-                const cssName = el.dataset.name;                        //리스트에 name 속성 값을 가져옴
-                const cssTopic = el.dataset.topic;                      //리스트에 topic 속성 값을 가져옴
-
-                console.log(cssName);
-                //console.log(cssTopic);
-
-
-                if( searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic.charAt(0)) {
-                    el.classList.remove("hide");
-                } else {
-                    el.classList.add("hide");
-                }
-                
-                // if( searchWord.charAt(0) === cssTopic.charAt(0) ) {
-                //     el.classList.remove("hide");
-                // } else {
-                //     el.classList.add("hide");
-                // }
-            })
-        });
+        const cssProp = [
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-item", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-self", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+            { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
+        ]
     </script>
 </body>
 </html>
