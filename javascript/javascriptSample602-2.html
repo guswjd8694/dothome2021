@@ -481,6 +481,39 @@
     </div>
 
     <script>
+        const searchBox = document.querySelector("#search-box");
+        const cssList = document.querySelectorAll(".list ul li");
+
+        //searchBox.addEventListener("keyup", function(){});
+            searchBox.addEventListener("keyup", () => {     //키보드 이벤트
+                const searchWord = searchBox.value;                     //사용자가 입력한 정보
+
+                console.log(searchWord);
+
+                cssList.forEach((el) => {                               //리스트 갯수
+                //console.log(el);
+
+                const cssName = el.dataset.name;                        //리스트에 name 속성 값을 가져옴
+                const cssTopic = el.dataset.topic;                      //리스트에 topic 속성 값을 가져옴
+
+                console.log(cssName);
+                //console.log(cssTopic);
+
+
+                if( searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic.charAt(0)) {
+                    el.classList.remove("hide");
+                } else {
+                    el.classList.add("hide");
+                }
+                
+                // if( searchWord.charAt(0) === cssTopic.charAt(0) ) {
+                //     el.classList.remove("hide");
+                // } else {
+                //     el.classList.add("hide");
+                // }
+            })
+        });
+
         const cssProp = [
             { name: "align-content", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
             { name: "align-item", desc: "백그라운드 속성을 일괄적으로 설정합니다."},
@@ -522,3 +555,12 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

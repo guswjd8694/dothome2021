@@ -22,7 +22,6 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: 'NEXON Lv1 Gothic OTF';
             line-height: 1.6;
         }
 
@@ -785,14 +784,16 @@
 
                 case 200:
                     document.write("*** 04. switch문 ***<br>");
-                    document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
+                    document.write("조건문이 실행되었습니다.(num == 200)<br><br>");
                     break;
 
                 case 300:
                     document.write("*** 04. switch문 ***<br>");
-                    document.write("조건문이 실행되었습니다.(num == 100)<br><br>");
+                    document.write("조건문이 실행되었습니다.(num == 300)<br><br>");
                     break;
             }
+
+            
         }
 
 
@@ -893,6 +894,23 @@
 
             }
         }
+
+        //sample10
+        //for문으로 별찍기
+        {
+            document.write("*** sample. for문으로 별찍기 ***<br>")
+
+            for(var i=0;i<3;i++){
+            	for (var x=0;x<4;x++) {
+            		document.write("*");
+            	}
+            	document.write("<br>");
+            }
+        }
+
+        //****
+        //****
+        //****
 
 
 
