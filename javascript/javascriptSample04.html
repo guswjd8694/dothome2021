@@ -171,6 +171,14 @@
             transform: translateX(-50%);
             font-size: 20px;
         }
+        .week {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-40%);
+            font-size: 20px;
+            background-color: red;
+        }
         .dday {
             position: absolute;
             top: 10px;
@@ -202,6 +210,7 @@
             <div class="clock-hour"></div>
             <div class="clock-minute"></div>
             <div class="clock-second"></div>
+            <div class="clock-week"></div>
             <div class="clock-center"></div>
         </div>
     </div>
@@ -224,16 +233,27 @@
             const eleM = document.querySelector(".clock-minute");
             const eleS = document.querySelector(".clock-second");
 
+
             eleH.style.transform = `rotate(${degH}deg)`;
             eleM.style.transform = `rotate(${degM}deg)`;
             eleS.style.transform = `rotate(${degS}deg)`;
 
+
+            // const week = new Array ["일", "월", "화", "수", "목", "금", "토"];
+            // const nowW = today.getDay();
+            // const weekname = week[date.getDay()];
+            // document.querySelector.innerHTML = `${weekname}`;
+
+            
             //시간 표시
             const nowTime = today.toLocaleString();
 
             const time = document.querySelector(".time");
             time.innerHTML = nowTime;
 
+            
+            const nowWeek = today.getDay();
+            
             //디데이
             const Dday = new Date("December 20, 2021");
 
@@ -243,6 +263,15 @@
             document.querySelector(".dday-time").innerHTML = interval;
 
         }, 1000);
+
+
+            //요일
+            const week = new Date();
+
+
+            document.querySelector(".week"+ "요일");
+            week.innerHTML = week;
+
     </script>
 </body>
 </html>
