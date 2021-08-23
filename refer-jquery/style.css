@@ -207,52 +207,66 @@ background-color: #fff8f8;
     }
 
     @media (max-width: 800px){
+        body {
+            padding: 5%;
+            font-size: 13px;
+        }
+        #wrap {
+            margin: 0;
+            border-width: 6px;
+            border-radius: 18px;
+        }
+        #contents {
+            border-width: 6px;
+        }
+        .title {
+            border-top-width: 2px; 
+        }
+        .title h1 {
+            text-align: center;
+        }
+        .title h1 a {
+            font-size: 40px;
+        }
+        .menu {
+            text-align: center;
+        }
+        .menu li a {
+            font-size: 13px;
+            padding: 5px 20px;
+        }
+        .list li a {
+            font-size: 13px;
+        }
+        .sample h2 {
+            font-size: 13px;
+            padding: 12px 10px 10px;
+        }
+        .sample h2 .dot {
+            display: none;
+        }
+        .sample pre {
+            line-height: 1.2 !important;
+        }
+        .sample code {
+            font-size: 13px;
+        }
         .view {
-            padding: 10px 10px 0 10px;
-        }
-        .view li{
-            padding: 10px;
-            margin: 0 8px 8px 0;
-        }
-        .btn {
-            padding: 10px;
-        }
-        .table{
+            border-right: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
             overflow: auto;
         }
-        .table table th{
-            font-weight: normal;
-            white-space: nowrap;
+        .view table {
+            border-left: 0px;
+            border-right: 0px;
         }
-        .table table td{
+        .view table th,
+        .view table td {
             white-space: nowrap;
+            font-size: 13px;
         }
-    }
-    .view2 > div,
-    .view2 p {
-        display: inline-block;
-        border: 1px solid #f5dbdb;
-        padding: 20px;
-        margin: 10px;
-        color: #222;
-        border-radius: 5px;
-        white-space: nowrap;
-    }
-    
-    .view2 > div span {
-        display: inline-block;
-        border: 1px solid #f5dbdb;
-        padding: 20px;
-        margin: 5px 5px 10px 5px;
-        color: #222;
-        border-radius: 5px;
-        white-space: nowrap;
-    }
-    .view2 > div em {
-        background: #e57373;
-        color: #fff;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 7px;
-        font-style: normal;
+        .view table td.result {
+            color: #bdbdbd;
+            background: #f1f1f1;
+        }
     }

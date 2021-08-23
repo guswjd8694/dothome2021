@@ -120,10 +120,6 @@
     right: 0; top: 180px;
 }
 
-.cardType03 .card-wrap {}
-.cardType03 .card-wrap ul {}
-.cardType03 .card-wrap .card {}
-
 .cardType03 .card-wrap .card .card-img{
     width: 285px;
     height: 185px;
@@ -173,3 +169,4 @@
     text-decoration: underline;
     margin-top: 10px;
 }
+

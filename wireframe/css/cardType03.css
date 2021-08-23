@@ -1,0 +1,31 @@
+
+body {
+    background-color: #f3f3f3;
+}
+.cardType {
+    margin: 100px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+/* cardType04 */
+.cardType04 {
+    padding: 95px 0 0 0;
+    font-family: 'GmarketSans';
+}
+.cardType04 h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 95px 0 40px 0;
+}
+.cardType04 h2 span{
+    color: #4f433b;
+}
+.cardType04 img{
+    width: 590px;
+    height: 423px;
+    margin-bottom: 100px;
+}
+.cardType04 .card-wrap .card .card-txt{
+    background-color: #000;
+}
