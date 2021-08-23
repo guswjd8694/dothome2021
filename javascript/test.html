@@ -717,7 +717,7 @@
         document.write(Object.keys(obj), "<br>");
     }
     */
-
+    /*
     {
         const obj = [1000, 2000, 3000, "a", "b", "c"]
 
@@ -730,7 +730,16 @@
         document.write(obj[2] / obj[0], "<br><br>");
         document.write(obj[3], obj[4], obj[5], "<br>");
     }
-
+    */
+    {
+        function func(){
+            setTimeout(() => { document.write("funC가 실행되었습니다.")}, 1000);
+        }
+        function fund(){document.write("fund가 실행되었습니다.");
+    }
+    func();
+    fund();
+    }
 
 
 
