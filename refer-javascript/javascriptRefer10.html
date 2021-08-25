@@ -8,6 +8,93 @@
     <title>Javascript Reference</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css" >
     <link rel="stylesheet" href="style.css">
+    <style>
+        .ex1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ex1 > div {
+            border: 3px dashed transparent;
+            width: 18%
+        }
+        .ex1 > div.active {
+            border: 3px dashed #e57373;
+            background-color: #e57373;
+            border-radius: 5px;
+        }
+        .ex1 > div.active img {
+            opacity: 0.8;
+        }
+        .ex1 > div img {
+            width: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+        .ex2 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ex2 > div {
+            border: 3px dashed transparent;
+            width: 18%
+        }
+        .ex2 > div.active {
+            border: 3px dashed #e57373;
+            background-color: #e57373;
+            border-radius: 5px;
+        }
+        .ex2 > div.active img {
+            opacity: 0.8;
+        }
+        .ex2 > div img {
+            width: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+        .ex3 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ex3 > div {
+            border: 3px dashed transparent;
+            width: 18%
+        }
+        .ex3 > div.active {
+            border: 3px dashed #e57373;
+            background-color: #e57373;
+            border-radius: 5px;
+        }
+        .ex3 > div.active img {
+            opacity: 0.8;
+        }
+        .ex3 > div img {
+            width: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+        .ex4 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ex4 > div {
+            border: 3px dashed transparent;
+            width: 18%
+        }
+        .ex4 > div.active {
+            border: 3px dashed #e57373;
+            background-color: #e57373;
+            border-radius: 5px;
+        }
+        .ex4 > div.active img {
+            opacity: 0.8;
+        }
+        .ex4 > div img {
+            width: 100%;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+    </style>
+
 </head>
 <body>
     <div id="wrap">
@@ -42,26 +129,183 @@
 <hr>
 <div class="list">
     <ul>
-        <li><a href="#sample1">01. 요소 객체 : 선택자 : querySelector()</li></a>
-        <li><a href="#sample1">01. 요소 객체 : 선택자 : querySelectorAll()</li></a>
-        <li><a href="#sample1">01. 요소 객체 : 선택자 : getElementById() : 아이디 선택자</li></a>
+        <li><a href="#sample1">01. 요소 객체 : 클래스 메서드 : .classList.add()</li></a>
+        <li><a href="#sample1">02. 요소 객체 : 클래스 메서드 : .classList.remove()</li></a>
+        <li><a href="#sample1">03. 요소 객체 : 클래스 메서드 : .classList.toggle()</li></a>
+        <li><a href="#sample1">04. 요소 객체 : 클래스 메서드 : .classList.contains()</li></a>
     </ul>
 
 
     
     <hr>
-    <!-- sample1 -->
+    <!-- sample01 -->
     <div id="sample01" class="sample">
-        <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
+        <h2>01. 요소 객체 : 클래스 메서드 : .classList.add()<span class="dot"></span></h2>
+        <div class="view ex1">
+            <div><img src="img/image01.jpg" alt="이미지01"></div>
+            <div><img src="img/image03.jpg" alt="이미지03"></div>
+            <div><img src="img/image04.jpg" alt="이미지04"></div>
+            <div><img src="img/image05.jpg" alt="이미지05"></div>
+            <div><img src="img/image09.jpg" alt="이미지09"></div>
+        </div>
+        <div class="btn">
+            <a href="#c" class="btn1-1">클릭하면 모든 이미지에 클래스(.active)를 추가합니다.</a>
+            <a href="#c" class="btn1-2">클릭하면 모든 이미지에 클래스(.active)를 삭제합니다.</a>
+        </div>
         <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
+    //추가
+    document.querySelector(".btn1-1").addEventListener("click", function(){
+        document.querySelectorAll(".ex1 div").forEach((el) => {
+            el.classList.add("active");
+        })
+    })
 
+    //삭제
+    document.querySelector(".btn1-2").addEventListener("click", function(){
+        document.querySelectorAll(".ex1 div").forEach(el => {
+            el.classList.remove("active");
+        })
+    })
 }
 </code></pre>
         </div>
     </div>
-    <!-- sample1 -->
-    
+
+<script>
+    //추가
+    document.querySelector(".btn1-1").addEventListener("click", function(){
+        document.querySelectorAll(".ex1 div").forEach((el) => {
+            el.classList.add("active");
+        })
+    })
+
+    //삭제
+    document.querySelector(".btn1-2").addEventListener("click", function(){
+        document.querySelectorAll(".ex1 div").forEach(el => {
+            el.classList.remove("active");
+        })
+    })
+</script>
+<!-- //sample01 -->
+
+
+
+<hr>
+<!-- sample02 -->
+<div id="sample02" class="sample">
+    <h2>02. 요소 객체 : 클래스 메서드 : .classList.toggle()<span class="dot"></span></h2>
+    <div class="view ex2">
+        <div><img src="img/image08.jpg" alt="이미지08"></div>
+        <div><img src="img/image02.jpg" alt="이미지02"></div>
+        <div><img src="img/image07.jpg" alt="이미지07"></div>
+        <div><img src="img/image06.jpg" alt="이미지06"></div>
+        <div><img src="img/image10.jpg" alt="이미지10"></div>
+    </div>
+    <div class="btn">
+        <a href="#c" class="btn2-1">이미지를 클릭하면 클래스(.active)를 추가 / 삭제합니다.</a>
+    </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    //모든 이미지 선택
+    document.querySelectorAll(".ex2 div").forEach((el) => { //다중 선택이라 All이 들어감
+        el.addEventListener("click", () => {
+            document.querySelectorAll(".ex2 div").forEach((el) => {
+                el.classList.toggle("active")
+            })
+        })
+    })
+
+    //클릭한 이미지만 선택
+    document.querySelectorAll(".ex2 div").forEach((el) => {
+        el.addEventListener("click", function(){    //화살표 함수는 this를 인식 못해서 function 써야함
+            this.classList.toggle("active")
+        })
+    })
+}
+</code></pre>
+    </div>
+</div>
+
+<script>
+    //모든 이미지 선택
+    /* document.querySelectorAll(".ex2 div").forEach((el) => { //다중 선택이라 All이 들어감
+        el.addEventListener("click", () => {
+            document.querySelectorAll(".ex2 div").forEach((el) => {
+                el.classList.toggle("active")
+            })
+        })
+    }) */
+
+    //클릭한 이미지만 선택
+    document.querySelectorAll(".ex2 div").forEach((el) => {
+        el.addEventListener("click", function(){    //화살표 함수는 this를 인식 못해서 function 써야함
+            this.classList.toggle("active")
+        })
+    })
+</script>
+<!-- //sample02 -->
+
+
+
+<hr>
+<!-- sample03 -->
+<div id="sample03" class="sample">
+    <h2>03. 요소 객체 : 클래스 메서드 : .classList.contains()<span class="dot"></span></h2>
+    <div class="view ex3">
+        <div class="active"><img src="img/image11.jpg" alt="이미지11"></div>
+        <div><img src="img/image15.jpg" alt="이미지15"></div>
+        <div><img src="img/image13.jpg" alt="이미지13"></div>
+        <div><img src="img/image14.jpg" alt="이미지14"></div>
+        <div class="active"><img src="img/image12.jpg" alt="이미지12"></div>
+    </div>
+    <div class="btn">
+        <a href="#c" class="btn3-0">리셋</a>
+        <a href="#c" class="btn3-1">클릭하면 클래스(.active)를 찾은 후 제거합니다.</a>
+    </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    //다시 추가(리셋)
+    document.querySelector(".btn3-0").addEventListener("click", () => {
+        document.querySelectorAll(".ex3 > div:nth-child(1), div:nth-child(5)").forEach((el) => {
+            el.classList.add("active")
+        })
+    })
+
+    //제거
+    document.querySelector(".btn3-1").addEventListener("click", () => {
+        document.querySelectorAll(".ex3 > div").forEach(el => {
+            if( el.classList.contains("active") ){
+                el.classList.remove("active");
+            }
+        })
+    })
+}
+</code></pre>
+    </div>
+</div>
+
+<script>
+    //다시 추가(리셋)
+    document.querySelector(".btn3-0").addEventListener("click", () => {
+        document.querySelectorAll(".ex3 > div:nth-child(1), div:nth-child(5)").forEach((el) => {
+            el.classList.add("active")
+        })
+    })
+
+    //제거
+    document.querySelector(".btn3-1").addEventListener("click", () => {
+        document.querySelectorAll(".ex3 > div").forEach(el => {
+            if( el.classList.contains("active") ){
+                el.classList.remove("active");
+            }
+        })
+    })
+</script>
+<!-- //sample03 -->
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
 </body>
 </html>

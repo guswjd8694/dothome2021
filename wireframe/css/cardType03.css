@@ -21,11 +21,75 @@ body {
 .cardType04 h2 span{
     color: #4f433b;
 }
-.cardType04 img{
+.cardType04 .card-img4{
     width: 590px;
-    height: 423px;
+    height: 590px;
     margin-bottom: 100px;
+    float: left;
+    margin-right: 10px;
 }
-.cardType04 .card-wrap .card .card-txt{
-    background-color: #000;
+.cardType04 .card-img4-1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 405px;
+    float: left;
+}
+.cardType04 .card-img4-2{
+    margin-bottom: 405px;
+    margin-left: 10px;
+}
+.card-wrap .card{
+    position: relative;
+}
+.card-wrap .card-title{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    bottom: 246px;
+    left: 30px;
+}
+.card-wrap .card-desc{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    line-height: 140%;
+    width: 389px;
+    height: 59px;
+    bottom: 176px;
+    left: 30px;
+
+}
+.card-wrap .more{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    width: 86px;
+    height: 26px;
+    bottom: 130px;
+    left: 30px;
+    background-color: rgba(26, 11, 17, 0.6);
+    text-align: center;
+    line-height: 26px;
+    border-radius: 20px;
+}
+.card-wrap .card .mini-title{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    width: 183px;
+    height: 24px;
+    bottom: 537px;
+    left: 650px;
+    background-color: rgba(119, 107, 120, 0.4);
+    text-align: center;
+    line-height: 24px;
+
 }
