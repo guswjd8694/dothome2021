@@ -15,6 +15,9 @@
     font-weight: 700;
     margin-bottom: 36px;
 }
+.imageType01 span{
+    color: #4f433b;
+}
 .imageType01 .image-wrap{
     overflow: hidden;
 }
