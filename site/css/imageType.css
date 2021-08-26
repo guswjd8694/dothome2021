@@ -99,10 +99,6 @@
     transform: rotateX(90deg);
     transition: all 0.4s ease-in-out;
 }
-.imageType02 .image:hover::after {
-    opacity: 0.7;
-    transform: rotateX(0deg);
-}
 .imageType02 .image .image-img {}
 .imageType02 .image .image-cont {
     position: absolute; /*글 위치*/
@@ -115,24 +111,11 @@
     z-index: 1000;
     transition: all 0.4s ease-out;
 }
-.imageType02 .image:hover .image-cont {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-}
+
 .imageType02 .image .image-cont::after {
 }
 .imageType02 .image .image-title {
     font-size: 30px;
     font-weight: 500;
     color: #000;
-}
-
-.imageType02 .image .image-btn {
-    color: #fff;
-    padding: 9px 24px;
-    background: #000;
-    border-radius: 40px;
-    font-weight: 300;
-    margin-top: 15px;
-    display: inline-block;
 }
