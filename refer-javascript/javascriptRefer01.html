@@ -100,6 +100,8 @@
 }
 </code></pre>
         </div>
+
+
         <div class="result">
             <h3>결과보기</h3>
             <div>
@@ -130,6 +132,17 @@
     document.write(z);
 }
 </code></pre>
+        </div>
+    </div>
+
+
+        <div class="result">
+            <h3>결과보기</h3>
+            <div>
+                <span class="result2-1"></span>
+                <span class="result2-2"></span>
+                <span class="result2-3"></span>
+            </div>
         </div>
     </div>
 
@@ -560,8 +573,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
 
-        document.querySelector(".result h3").addEventListener("click", function(){
-            document.querySelector(".result div").classList.toggle("show")
+        // document.querySelectorAll(".result h3").addEventListener("click", function(){
+        //     document.querySelector(".result div").classList.toggle("show")
+        // })
+
+        document.querySelectorAll(".result h3").forEach(el => {
+            el.addEventListener("click", function(e){
+                e.preventDefault();
+                this.parentNode.classList.toggle("show");
+            })
         })
 
         //sample01
@@ -595,6 +615,11 @@
             document.write(x, "<br>");
             document.write(y, "<br>");
             document.write(z, "<br><br>");
+
+            document.querySelector(".result2-1").innerHTML = x 
+            document.querySelector(".result2-2").innerHTML = y
+            document.querySelector(".result2-3").innerHTML = z 
+
         }
 
         //sample03
