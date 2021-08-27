@@ -98,6 +98,11 @@ hr {
     border-radius: 5px 5px 0 0;
     font-weight: normal;
 }
+.sample .jrbtn1-1{
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+}
 .sample h2 .dot {
     width: 10px;
     height: 10px;
