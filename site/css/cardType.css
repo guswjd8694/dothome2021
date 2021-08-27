@@ -238,3 +238,43 @@ body {
     line-height: 1.4;
     text-decoration: underline;
 }
+
+/* cardType04 */
+.cardType04 {
+    padding: 100px 0;
+    font-family: 'S-CoreDream';
+
+}
+.cardType04 h2 {
+    font-size: 57px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.cardType04 .card-wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardType04 .card-wrap .card img {
+    width: 387px;
+    height: 610px;
+    float: left;
+}
+.cardType04 .card-wrap .card .card-cate {
+    position: absolute;
+    padding: 90px 0 0 42px;
+}
+.cardType04 .card-wrap .card .card-word {
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 13px;
+    color: rgb(174, 174, 174);
+}
+.cardType04 .card-wrap .card .card-desc {
+    font-size: 27px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 420px;
+}

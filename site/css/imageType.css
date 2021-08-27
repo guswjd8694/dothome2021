@@ -35,6 +35,8 @@
     left: 20px;
     bottom: 20px;
     color: #fff;
+    background-color: rgba(38, 33, 30, 0.6);
+    padding: 8px;
 }
 .imageType01  .image .image-title{
     font-size: 30px;
