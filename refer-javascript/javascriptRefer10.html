@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css" >
     <link rel="stylesheet" href="style.css">
     <style>
+        .result div {display: none;}
+        .result div.show {
+            display: block;
+            background-color: #272822;
+            color: #fff;
+            padding: 12px 10px 10px;
+        }
+        .result h3 {
+            margin-top: 10px;
+            background-color: #fbf1ff;
+            font-size: 13px;
+            padding: 12px 10px 10px;
+            width: 80px;
+            text-align: center;
+            cursor:pointer;
+            border-radius: 5px 5px 0 0;
+        }
+    </style>
+
+    <style>
         .ex1 {
             display: flex;
             justify-content: space-between;
@@ -155,6 +175,7 @@
         <h2>01. 요소 객체 : 클래스 메서드 : .classList.add()<span class="dot"></span></h2>
         <div class="view ex1">
             <div><img src="img/image01.jpg" alt="이미지01"></div>
+            <div><img src="img/card09.jpg" alt="이미지01"></div>
             <div><img src="img/image03.jpg" alt="이미지03"></div>
             <div><img src="img/image04.jpg" alt="이미지04"></div>
             <div><img src="img/image05.jpg" alt="이미지05"></div>
@@ -184,6 +205,16 @@
         </div>
     </div>
 
+    <div class="result">
+        <h3>결과보기</h3>
+        <div>
+            <span class="result1-1"></span>
+            <span class="result1-2"></span>
+            <span class="result1-3"></span>
+        </div>
+    </div>
+
+
 <script>
     //추가
     document.querySelector(".btn1-1").addEventListener("click", function(){
@@ -211,6 +242,7 @@
         <div><img src="img/image08.jpg" alt="이미지08"></div>
         <div><img src="img/image02.jpg" alt="이미지02"></div>
         <div><img src="img/image07.jpg" alt="이미지07"></div>
+        <div><img src="img/card08.jpg" alt="이미지13"></div>
         <div><img src="img/image06.jpg" alt="이미지06"></div>
         <div><img src="img/image10.jpg" alt="이미지10"></div>
     </div>
@@ -238,6 +270,16 @@
 </code></pre>
     </div>
 </div>
+
+        <div class="result">
+            <h3>결과보기</h3>
+            <div>
+                <span class="result1-1"></span>
+                <span class="result1-2"></span>
+                <span class="result1-3"></span>
+            </div>
+        </div>
+
 
 <script>
     //모든 이미지 선택
@@ -267,8 +309,9 @@
     <div class="view ex3">
         <div class="active"><img src="img/image11.jpg" alt="이미지11"></div>
         <div><img src="img/image15.jpg" alt="이미지15"></div>
-        <div><img src="img/image13.jpg" alt="이미지13"></div>
-        <div><img src="img/image14.jpg" alt="이미지14"></div>
+        <div><img src="img/image19.jpg" alt="이미지13"></div>
+        <div><img src="img/image20.jpg" alt="이미지13"></div>
+        <div><img src="img/image17.jpg" alt="이미지14"></div>
         <div class="active"><img src="img/image12.jpg" alt="이미지12"></div>
     </div>
     <div class="btn">
@@ -296,6 +339,16 @@
 </code></pre>
     </div>
 </div>
+
+        <div class="result">
+            <h3>결과보기</h3>
+            <div>
+                <span class="result1-1"></span>
+                <span class="result1-2"></span>
+                <span class="result1-3"></span>
+            </div>
+        </div>
+
 
 <script>
     //다시 추가(리셋)
@@ -398,6 +451,16 @@
 </code></pre>
     </div>
 </div>
+
+        <div class="result">
+            <h3>결과보기</h3>
+            <div>
+                <span class="result1-1"></span>
+                <span class="result1-2"></span>
+                <span class="result1-3"></span>
+            </div>
+        </div>
+
 
 <script>
     const cw = document.querySelector(".circle4").clientWidth;
