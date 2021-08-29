@@ -105,7 +105,7 @@
         </div>
     <!-- sample1 -->
             
-                    <div id="sample01" class="result">
+            <div id="sample01" class="result">
             <h3>결과보기</h3>
             <div>
                 <span class="result1-1"></span>
@@ -140,7 +140,7 @@
         </div>
     <!-- sample2 -->
 
-                    <div id="sample02" class="result">
+            <div id="sample02" class="result">
             <h3>결과보기</h3>
             <div>
                 <span class="result1-1"></span>
@@ -415,7 +415,7 @@
         </div>
     <!-- sample9 -->
     
-                    <div id="sample09" class="result">
+            <div id="sample09" class="result">
             <h3>결과보기</h3>
             <div>
                 <span class="result1-1"></span>
@@ -1439,9 +1439,9 @@
             }
             const spread = {...obj}
 
-            document.querySelector("#sample18 .result1-5").innerHTML = spread.a + "<br>"
-            document.querySelector("#sample18 .result1-6").innerHTML = spread.b + "<br>"
-            document.querySelector("#sample18 .result1-7").innerHTML = spread.c + "<br>"
+            document.querySelector("#sample18 .result1-1").innerHTML = spread.a + "<br>"
+            document.querySelector("#sample18 .result1-2").innerHTML = spread.b + "<br>"
+            document.querySelector("#sample18 .result1-3").innerHTML = spread.c + "<br>"
 
             document.querySelector("#sample18 .result h3").addEventListener("click", function(){
             document.querySelector("#sample18 .result div").classList.toggle("show");
@@ -1463,12 +1463,14 @@
             }   
             const spread = {...obj, d: "jquery"}
 
-            document.write(spread.a, "<br>");
-            document.write(spread.b, "<br>");
-            document.write(spread.c, "<br>");  
-            document.write(spread.d, "<br>");  
+            document.querySelector("#sample19 .result1-1").innerHTML = spread.a + "<br>"
+            document.querySelector("#sample19 .result1-2").innerHTML = spread.b + "<br>"
+            document.querySelector("#sample19 .result1-3").innerHTML = spread.c + "<br>"
+            document.querySelector("#sample19 .result1-4").innerHTML = spread.d + "<br>"
 
-            document.write("<br>");
+            document.querySelector("#sample19 .result h3").addEventListener("click", function(){
+            document.querySelector("#sample19 .result div").classList.toggle("show");
+            })
         }
         
 
@@ -1489,12 +1491,14 @@
             }  
             const spread = {...objA, ...objB}
 
-            document.write(spread.a, "<br>");
-            document.write(spread.b, "<br>");
-            document.write(spread.c, "<br>");
-            document.write(spread.d, "<br>");
+            document.querySelector("#sample20 .result1-1").innerHTML = spread.a + "<br>"
+            document.querySelector("#sample20 .result1-2").innerHTML = spread.b + "<br>"
+            document.querySelector("#sample20 .result1-3").innerHTML = spread.c + "<br>"
+            document.querySelector("#sample20 .result1-4").innerHTML = spread.d + "<br>"
 
-            document.write("<br>");
+            document.querySelector("#sample20 .result h3").addEventListener("click", function(){
+            document.querySelector("#sample20 .result div").classList.toggle("show");
+            })
         }
 
 
@@ -1511,11 +1515,13 @@
             }
             const { a, b, c } = obj;
             
-            document.write(a, "<br>");
-            document.write(b, "<br>");
-            document.write(c, "<br>");
+            document.querySelector("#sample21 .result1-1").innerHTML = a + "<br>"
+            document.querySelector("#sample21 .result1-2").innerHTML = b + "<br>"
+            document.querySelector("#sample21 .result1-3").innerHTML = c + "<br>"
 
-            document.write("<br>");
+            document.querySelector("#sample21 .result h3").addEventListener("click", function(){
+            document.querySelector("#sample21 .result div").classList.toggle("show");
+            })
         }
 
 
@@ -1532,11 +1538,13 @@
             }
             const { a:name1, b:name2, c:name3 } = obj;
 
-            document.write(name1, "<br>");
-            document.write(name2, "<br>");
-            document.write(name3, "<br>");
+            document.querySelector("#sample22 .result1-1").innerHTML = name1 + "<br>"
+            document.querySelector("#sample22 .result1-2").innerHTML = name2 + "<br>"
+            document.querySelector("#sample22 .result1-3").innerHTML = name3 + "<br>"
 
-            document.write("<br>");
+            document.querySelector("#sample22 .result h3").addEventListener("click", function(){
+            document.querySelector("#sample22 .result div").classList.toggle("show");
+            })
         }
     </script>
 
