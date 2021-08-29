@@ -291,6 +291,13 @@
                 </div>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    $(".btn1-1").click(function(){
+        $(".ex1 div").addClass("active");
+    });
+    $(".btn1-2").click(function(){
+        $(".ex1 div").removeClass("active");
+    });
+}
 </code></pre>
                 </div>
             </div>
@@ -577,6 +584,18 @@
 
             <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    $(".btn5-0").click(function(){
+        $(".circle5").width("70").height("70")
+    })
+    $(".btn5-1").click(function(){
+        $(".circle5").width("300")
+    })
+    $(".btn5-2").click(function(){
+        $(".circle5").height("300")
+    })
+    $(".btn5-3").click(function(){
+        $(".circle5").width("200").height("200")
+    })
 }
 </code></pre>
             </div>
