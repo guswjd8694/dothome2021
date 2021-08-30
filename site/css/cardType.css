@@ -282,14 +282,14 @@ body {
 /* cardType05 */
 .cardType05 {
     padding: 100px 0;
-    font-family: 'S-CoreDream';
+    font-family: 'NanumSquare';
 
 }
 .cardType05 h2 {
     font-size: 44px;
     text-align: center;
     margin-bottom: 8px;
-    font-weight: 700;
+    font-weight: 900;
 }
 .cardType05 p {
     font-size: 16px;
@@ -298,30 +298,27 @@ body {
     font-weight: 400;
 }
 .cardType05 .card-wrap {
+    display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
-    gap: 30px;
+    gap: 20px;
 }
 .cardType05 .card-wrap .card{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 380px; 
     border: 1px solid #eee;
     border-radius: 5px;
     float: left;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .cardType05 .card-wrap .card .card-cont{
     padding: 40px;
+    text-align: left;
 }
 .cardType05 .card-wrap .card img {
     width: 380px; height: 367px;
-    top: 50%;
 }
 .cardType05 .card-wrap .card em {
     width: 42px;
-    font-weight: 700;
+    font-weight: 900;
     background-color: #fa615b;
     color: #fff;
     font-size: 11px;
@@ -333,33 +330,31 @@ body {
 }
 .cardType05 .card-wrap .card .card-title {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 10px;
-    float: left;
+    display: inline-block;
 }
 .cardType05 .card-wrap .card .card-desc {
     font-size: 16px;
     margin-bottom: 30px;
     font-weight: 400;
     color: #4a4a4a;
-    display: inline-block;
+    display: block;
 }
 .cardType05 .card-wrap .card .card-buy {
-    display: block;
     width: 87px; height: 32px;
     font-size: 14px;
-    line-height: 16;
     margin-right: 6px;
-    font-weight: 700;
+    font-weight: 900;
     color: #fff;
+    padding: 8px 17px;
+    border-radius: 2px;
     background-color: #05d686;
     box-sizing: border-box;
 }
 .cardType05 .card-wrap .card .card-more {
-    display: block;
     width: 87px; height: 32px;
     font-size: 14px;
-    line-height: 16;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
     padding: 8px 17px;
