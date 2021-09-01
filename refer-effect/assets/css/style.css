@@ -1,20 +1,19 @@
-@charset "UTF-8";
 @font-face {
-  font-family: 'NEXONLv1Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
   font-weight: 300;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXONLv1Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
   font-weight: 400;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXONLv1Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
   font-weight: 700;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff") format("woff");
   font-style: normal;
@@ -82,7 +81,6 @@ figcaption {
   background-repeat: no-repeat;
 }
 
-​
 .bg::before {
   content: '';
   position: absolute;
@@ -92,47 +90,6 @@ figcaption {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
-}
-
-​
-#main {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: #11e8bb;
-  background: -webkit-gradient(linear, left top, left bottom, from(#11e8bb), to(#8200c9));
-  background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
-}
-
-​
-​
-#main.game {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffecd2), to(#fcb69f));
-  background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
-}
-
-​
-#main.menu {
-  background: -webkit-gradient(linear, left top, left bottom, from(#cfd9df), to(#e2ebf0));
-  background: linear-gradient(to bottom, #cfd9df 0%, #e2ebf0 100%);
-}
-
-​
-#main.mouse {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4facfe), to(#00f2fe));
-  background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
-}
-
-​
-#main.parallax {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a8edea), to(#fed6e3));
-  background: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
-}
-
-​
-#main.slider {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a8edea), to(#fed6e3));
-  background: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
 }
 
 .bg0 {
@@ -219,6 +176,40 @@ figcaption {
   background-image: url(../img/bg20@2x.jpg);
 }
 
+#main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #11e8bb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#11e8bb), to(#8200c9));
+  background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
+}
+
+#main.game {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6cd664), to(#089a4c));
+  background: linear-gradient(to bottom, #6cd664 0%, #089a4c 100%);
+}
+
+#main.menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(#96D7D1), to(#5DCAAF));
+  background: linear-gradient(to bottom, #96D7D1 0%, #5DCAAF 100%);
+}
+
+#main.mouse {
+  background: -webkit-gradient(linear, left top, left bottom, from(#64D6BD), to(#7028C0));
+  background: linear-gradient(to bottom, #64D6BD 0%, #7028C0 100%);
+}
+
+#main.parallax {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E36475), to(#E394E9));
+  background: linear-gradient(to bottom, #E36475 0%, #E394E9 100%);
+}
+
+#main.slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0CF77), to(#F0A688));
+  background: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
+}
+
 #contents h1 {
   position: absolute;
   left: 50%;
@@ -227,14 +218,14 @@ figcaption {
           transform: translate(-50%, -50%);
   font-size: 10vw;
   white-space: nowrap;
-  font-family: "Six Caps";
+  font-family: "Six Caps", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c75fff), to(#650097));
-  background-image: linear-gradient(to bottom, #c75fff, #650097);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8200c9), to(#240038));
+  background-image: linear-gradient(to bottom, #8200c9, #240038);
 }
 
 #nav {
@@ -256,8 +247,8 @@ figcaption {
   color: #fff;
   text-decoration: none;
   width: 100px;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   border: 1px solid #fff;
   display: inline-block;
   border-radius: 50px;
@@ -274,24 +265,29 @@ figcaption {
 #nav li a:hover {
   -webkit-box-shadow: inset 0 -100px 0 #fff;
           box-shadow: inset 0 -100px 0 #fff;
+  color: #6c4a70;
 }
 
 .info {
   color: #fff;
   font-family: "NEXONLv1Gothic";
   padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .info.right {
-  position: absolute;
+  left: auto;
   right: 0px;
   top: 0px;
 }
 
 .info.bottom {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
 }
 
 .info h1 {
@@ -301,6 +297,11 @@ figcaption {
   border-bottom: 1px dashed #fff;
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.info h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .info p {
@@ -324,7 +325,7 @@ figcaption {
   line-height: 20px;
   text-align: center;
   font-size: 12px;
-  margin-bottom: 3px 0;
+  margin-bottom: 5px;
 }
 
 .info li.active a {
@@ -338,13 +339,26 @@ figcaption {
   padding: 5px 20px;
   color: #fff;
   border-radius: 50px;
-  -webkit-box-sizing: 0 0 0 #fff inset;
-          box-sizing: 0 0 0 #fff inset;
+  -webkit-box-shadow: 0 0 0 #fff inset;
+          box-shadow: 0 0 0 #fff inset;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .info button:hover {
-  -webkit-box-sizing: 0 -50px 0 #fff inset;
-          box-sizing: 0 -50px 0 #fff inset;
+  -webkit-box-shadow: 0 -50px 0 #fff inset;
+          box-shadow: 0 -50px 0 #fff inset;
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  #nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #nav ul li a {
+    font-size: 12px;
+    width: 80px;
+  }
 }
