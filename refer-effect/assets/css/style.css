@@ -616,7 +616,7 @@ figcaption {
     font-size: 8px;
     line-height: 16px;
   }
-  .info bottom {
+  .info.bottom {
     padding-bottom: 60px;
   }
   #nav ul {
