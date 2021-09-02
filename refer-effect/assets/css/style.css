@@ -622,9 +622,6 @@ figcaption {
     font-size: 12px;
     width: 70px;
   }
-  #tab-menu {
-    overflow: hidden;
-  }
   .code-view {
     width: 90vw;
     font-size: 12px;
@@ -635,5 +632,8 @@ figcaption {
   .code-view .view-header .dot span {
     width: 10px;
     height: 10px;
+  }
+  .code-view .view-cont {
+    height: 55vh;
   }
 }
