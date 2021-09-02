@@ -602,7 +602,7 @@ figcaption {
 
 @media (max-width: 800px) {
   .bg {
-    height: 95vh;
+    overflow-y: hidden;
   }
   .info h1 {
     font-size: 14px;
@@ -615,6 +615,9 @@ figcaption {
     height: 16px;
     font-size: 8px;
     line-height: 16px;
+  }
+  .info bottom {
+    padding-bottom: 60px;
   }
   #nav ul {
     display: -webkit-box;
