@@ -417,6 +417,9 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 }
   
 @media(max-width : 800px){
+    .bg {
+        height: 95vh;
+    }
     .info h1 {
         font-size: 14px;
     }
