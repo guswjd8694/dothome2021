@@ -417,14 +417,36 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 }
   
 @media(max-width : 800px){
+    .info h1 {
+        font-size: 14px;
+    }
+    .info p {
+        font-size: 10px;
+    };
+    .info li a {
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
+        line-height: 16px;
+      }
     #nav ul {
         display: flex;
       }
     #nav ul li a {
         font-size: 12px;
-        width: 80px;
+        width: 70px;
     }
     #tab-menu {
         overflow: hidden;
+    }
+    .code-view {
+        width: 90vw;
+        font-size: 12px;
+        overflow: hidden;
+        padding-bottom: 10px;
+        background: #f8f8f8;
+    }
+    .code-view .view-header .dot span {
+        width: 10px; height: 10px;
     }
 }
