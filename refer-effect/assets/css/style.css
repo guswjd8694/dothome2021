@@ -588,7 +588,8 @@ figcaption {
 }
 
 .code-view .view-cont {
-  height: 500px;
+  height: auto;
+  max-height: 70vh;
   overflow-y: scroll;
 }
 
@@ -613,9 +614,6 @@ figcaption {
     font-size: 8px;
     line-height: 16px;
   }
-  .info.bottom {
-    padding-bottom: 60px;
-  }
   #nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -637,6 +635,7 @@ figcaption {
     height: 10px;
   }
   .code-view .view-cont {
-    height: 55vh;
+    font-size: 12px;
+    max-height: 50vh;
   }
 }
