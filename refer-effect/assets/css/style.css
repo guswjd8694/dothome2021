@@ -600,17 +600,7 @@ figcaption {
   display: block;
 }
 
-html, body {
-  max-width: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 @media (max-width: 800px) {
-  .bg {
-    overflow-y: hidden;
-  }
   .info h1 {
     font-size: 14px;
   }
