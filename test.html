@@ -8,32 +8,89 @@
 </head>
 <body>
     <script>
+        // {
+        //     const codeView = $(".code-view .view-title li")
+        //     const viewCont = $(".view-cont > div")
+
+        //     codeView.click(function(){
+        //         let target = $(this)
+        //         target.addClass("active")
+        //         codeView.removeClass("active")
+
+        //         let index = target.index()
+        //         viewCont.css("display", "none")
+        //         viewCont.eq(index).css("dispaly", "block")
+        //     })
+        // }
+        // {
+        //     const tabView = $("code-view .view-title li")
+        //     const viewCont = $(".view-cont > div")
+
+        //     tabView.click(function(){
+        //         let target = $(this)
+        //         tabView.removeClass("active")
+        //         target.addClass("active")
+
+        //         let index = target.index()
+        //         viewCont.css("display", "none")
+        //         viewCont.eq(index).css("display", "none")
+        //     })
+        // }
+        // {
+        //     const tabBtn = document.querySelectorAll(".tab-btn ul li")
+        //     const tabCont = document.querySelectorAll(".tab-cont > div")
+
+        //     tabBtn.forEach((element, index) => {
+        //         element.addEventListener("click", function(){
+
+        //             tabBtn.forEach(el => {
+        //                 el.classList.remove("active")
+        //             })
+        //             element.classList.add("active")
+
+        //             tabCont.forEach(el => {
+        //                 el.style.display = "none"
+        //             })
+        //             tabCont[index].style.display = "block"
+        //         })
+        //     })
+        // }
+        // {
+        //     const tabBtn = document.querySelectorAll(".tab-btn ul li")
+        //     const tabCont = document.querySelectorAll(".tab-cont > div")
+
+        //     tabBtn.forEach((element, index) => {
+        //         element.addEventListener("click", function(){
+
+        //             tabBtn.forEach(el => {
+        //                 el.classList.remove("active")
+        //             })
+        //             element.classList.add("active")
+
+        //             tabCont.forEach(el => {
+        //                 el.style.display = "none"
+        //             })
+        //             tabCont[index].style.display = "block"
+        //         })
+        //     })
+        // }
         {
-            const codeView = $(".code-view .view-title li")
-            const viewCont = $(".view-cont > div")
+            const tabBtn = document.querySelectorAll(".tab-btn ul li")
+            const tabCont = document.querySelectorAll(".tab-cont > div")
 
-            codeView.click(function(){
-                let target = $(this)
-                target.addClass("active")
-                codeView.removeClass("active")
+            tabBtn.forEach((element, index) => {
+                element.addEventListener("click", function(){
 
-                let index = target.index()
-                viewCont.css("display", "none")
-                viewCont.eq(index).css("dispaly", "block")
-            })
-        }
-        {
-            const tabView = $("code-view .view-title li")
-            const viewCont = $(".view-cont > div")
+                    tabBtn.forEach(el => {
+                        el.classList.remove("active")
+                    })
+                    element.classList.add("active")
 
-            tabView.click(function(){
-                let target = $(this)
-                tabView.removeClass("active")
-                target.addClass("active")
-
-                let index = target.index()
-                viewCont.css("display", "none")
-                viewCont.eq(index).css("display", "none")
+                    tabCont.forEach(el => {
+                        el.style.display = "none"
+                    })
+                    tabCont[index].style.display = "block"
+                })
             })
         }
         {
@@ -54,6 +111,12 @@
                     tabCont[index].style.display = "block"
                 })
             })
+        }
+        {
+            const tabBtn = document.querySelectorAll(".tab-btn ul li")
+            const tabCont = document.querySelectorAll(".tab-cont > div")
+
+            tabBtn.forEach((element, index))
         }
 
     </script>
