@@ -16,7 +16,7 @@ body{
     background-color: #1c1c1c;
 }
 #header {
-    /* background: rgba(20,20,20,.9); */
+    background: rgba(20,20,20,.9);
     position: fixed;
     width: 100%;
 }
