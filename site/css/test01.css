@@ -254,7 +254,7 @@ body{
     text-align: center;
 }
 #content .sub_content2 .green{
-    background-image: url(/site/img/content_slide_04_bg.png);
+    background-image: url(../img/slide04.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 496px;
@@ -268,7 +268,7 @@ body{
 }
 #content .sub_content2 .purple{
     background-color: #6452c7;
-    background-image: url(/site/img/content_slide_05_bg.png);
+    background-image: url(../img/slide05.png);
     background-repeat: no-repeat;
     background-size : 961px 328px;
     width: 1024px;
@@ -323,7 +323,7 @@ body{
 }
 .main_bg3 {
     padding: 135px 0;
-    background-image: url(/site/img/slide-bg2.png);
+    background-image: url(../img/slide-bg2.png);
     background-position: 50% 50%;
     background-size: auto 100%;
     background-repeat: repeat-x;
