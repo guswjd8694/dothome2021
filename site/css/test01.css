@@ -19,6 +19,7 @@ body{
     background: rgba(20,20,20,.9);
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 .header_wrap {
     position: relative;
