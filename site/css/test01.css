@@ -20,6 +20,7 @@ body{
     position: fixed;
     width: 100%;
     z-index: 99;
+    animation: down 0.5s ease;
 }
 .header_wrap {
     position: relative;

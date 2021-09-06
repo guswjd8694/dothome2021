@@ -1,124 +1,164 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        // {
-        //     const codeView = $(".code-view .view-title li")
-        //     const viewCont = $(".view-cont > div")
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Parallax Effect&lt;/title&gt;
+    &lt;link rel="stylesheet" href="../assets/css/style.css"&gt;
+    &lt;link rel="stylesheet" href="../assets/css/highlight.css"&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body class="parallax"&gt;
 
-        //     codeView.click(function(){
-        //         let target = $(this)
-        //         target.addClass("active")
-        //         codeView.removeClass("active")
 
-        //         let index = target.index()
-        //         viewCont.css("display", "none")
-        //         viewCont.eq(index).css("dispaly", "block")
-        //     })
-        // }
-        // {
-        //     const tabView = $("code-view .view-title li")
-        //     const viewCont = $(".view-cont > div")
 
-        //     tabView.click(function(){
-        //         let target = $(this)
-        //         tabView.removeClass("active")
-        //         target.addClass("active")
+    &lt;!-- header --&gt;
+    &lt;header class="paraInfo"&gt;
+        &lt;h1&gt;&lt;a href="index.html"&gt;Parallax Effect01 - JQuery&lt;/a&gt;&lt;/h1&gt;
+        &lt;p&gt;패랠랙스 스크로링 효과 - 메뉴 이동&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;!-- //header --&gt;
 
-        //         let index = target.index()
-        //         viewCont.css("display", "none")
-        //         viewCont.eq(index).css("display", "none")
-        //     })
-        // }
-        // {
-        //     const tabBtn = document.querySelectorAll(".tab-btn ul li")
-        //     const tabCont = document.querySelectorAll(".tab-cont > div")
 
-        //     tabBtn.forEach((element, index) => {
-        //         element.addEventListener("click", function(){
 
-        //             tabBtn.forEach(el => {
-        //                 el.classList.remove("active")
-        //             })
-        //             element.classList.add("active")
+    &lt;!-- main --&gt;
+    &lt;main&gt;
+        &lt;div class="paraScroll"&gt;scrollTop() : &lt;span&gt;0&lt;/span&gt;&lt;/div&gt;&lt;!-- //scroll --&gt;
+        &lt;div class="paraInfo2"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;section1 offset() &lt;span class="offset1"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section2 offset() &lt;span class="offset2"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section3 offset() &lt;span class="offset3"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section4 offset() &lt;span class="offset4"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section5 offset() &lt;span class="offset5"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section6 offset() &lt;span class="offset6"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section7 offset() &lt;span class="offset7"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section8 offset() &lt;span class="offset8"&gt;0&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;section9 offset() &lt;span class="offset9"&gt;0&lt;/span&gt;&lt;/li&gt;    
+            &lt;/ul&gt;
+            
+        &lt;/div&gt;
 
-        //             tabCont.forEach(el => {
-        //                 el.style.display = "none"
-        //             })
-        //             tabCont[index].style.display = "block"
-        //         })
-        //     })
-        // }
-        // {
-        //     const tabBtn = document.querySelectorAll(".tab-btn ul li")
-        //     const tabCont = document.querySelectorAll(".tab-cont > div")
+        &lt;nav class="paraNav"&gt;
+            &lt;ul&gt;
+                &lt;li class="active"&gt;&lt;a href="#section1"&gt;s1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section2"&gt;s2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section3"&gt;s3&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section4"&gt;s4&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section5"&gt;s5&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section6"&gt;s6&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section7"&gt;s7&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section8"&gt;s8&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#section9"&gt;s9&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
 
-        //     tabBtn.forEach((element, index) => {
-        //         element.addEventListener("click", function(){
 
-        //             tabBtn.forEach(el => {
-        //                 el.classList.remove("active")
-        //             })
-        //             element.classList.add("active")
 
-        //             tabCont.forEach(el => {
-        //                 el.style.display = "none"
-        //             })
-        //             tabCont[index].style.display = "block"
-        //         })
-        //     })
-        // }
-        {
-            const tabBtn = document.querySelectorAll(".tab-btn ul li")
-            const tabCont = document.querySelectorAll(".tab-cont > div")
+        &lt;!-- //nav --&gt;
+        &lt;div class="paraCont"&gt;
+            &lt;section id="section1" class="content-item"&gt;
+                &lt;span class="num"&gt;01&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section1&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;높은 목표를 세우고, 스스로 채찍질 한다.&lt;/p&gt;
+            &lt;/section&gt;
 
-            tabBtn.forEach((element, index) => {
-                element.addEventListener("click", function(){
 
-                    tabBtn.forEach(el => {
-                        el.classList.remove("active")
-                    })
-                    element.classList.add("active")
+            &lt;!-- //section1 --&gt;
+            &lt;section id="section2" class="content-item"&gt;
+                &lt;span class="num"&gt;02&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section2&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;결과도 중요하지만, 과정을 더 중요하게 생각한다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section2 --&gt;
+            &lt;section id="section3" class="content-item"&gt;
+                &lt;span class="num"&gt;03&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section3&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;매 순간에 최선을 다하고, 끊임없이 변화한다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section3 --&gt;
+            &lt;section id="section4" class="content-item"&gt;
+                &lt;span class="num"&gt;04&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section4&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;모든지 기본을 중요하게 생각한다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section4 --&gt;
+            &lt;section id="section5" class="content-item"&gt;
+                &lt;span class="num"&gt;05&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section5&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;천 마디 말보단 하나의 행동이 더 값지다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section5 --&gt;
+            &lt;section id="section6" class="content-item"&gt;
+                &lt;span class="num"&gt;06&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section6&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;조그만 성공에 만족하지 않으며, 방심을 경계한다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section6 --&gt;
+            &lt;section id="section7" class="content-item"&gt;
+                &lt;span class="num"&gt;07&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section7&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;나는 내가 더 노력할수록 운이 더 좋아진다는 걸 발견했다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section7 --&gt;
+            &lt;section id="section8" class="content-item"&gt;
+                &lt;span class="num"&gt;08&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section8&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;꿈이 있다면, 그 꿈을 잡고 절대 놓아주지마라.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section8 --&gt;
+            &lt;section id="section9" class="content-item"&gt;
+                &lt;span class="num"&gt;09&lt;/span&gt;
+                &lt;h2 class="title"&gt;Section9&lt;/h2&gt;
+                &lt;figure class="img-Wrap"&gt;
+                    &lt;div class="img"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+                &lt;p class="desc"&gt;열정을 잃지 않고 실패에서 실패로 걸어가는 것이 성공이다.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;!-- //section9 --&gt;
 
-                    tabCont.forEach(el => {
-                        el.style.display = "none"
-                    })
-                    tabCont[index].style.display = "block"
-                })
-            })
-        }
-        {
-            const tabBtn = document.querySelectorAll(".tab-btn ul li")
-            const tabCont = document.querySelectorAll(".tab-cont > div")
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
 
-            tabBtn.forEach((element, index) => {
-                element.addEventListener("click", function(){
+    &lt;/main&gt;
+    &lt;!-- //main --&gt;
 
-                    tabBtn.forEach(el => {
-                        el.classList.remove("active")
-                    })
-                    element.classList.add("active")
 
-                    tabCont.forEach(el => {
-                        el.style.display = "none"
-                    })
-                    tabCont[index].style.display = "block"
-                })
-            })
-        }
-        {
-            const tabBtn = document.querySelectorAll(".tab-btn ul li")
-            const tabCont = document.querySelectorAll(".tab-cont > div")
 
-            tabBtn.forEach((element, index))
-        }
+    &lt;!-- footer --&gt;
+    &lt;footer class="paraFooter"&gt;
+    &lt;/footer&gt;
+    &lt;!-- //footer --&gt;
 
-    </script>
-</body>
-</html>
+
+
+    &lt;!-- source --&gt;
+    &lt;div class="source"&gt;
+        &lt;button&gt;소스 보기&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!-- //source --&gt;
