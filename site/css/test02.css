@@ -139,7 +139,11 @@ body {
     letter-spacing: -.5px;
     color: rgba(38,38,46,.5);
 }
-#content .sub_content1 .card_text a{
+#content .sub_content1 .card_text .button {
+    
+display: flex;
+}
+#content .sub_content1 .card_text .button a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +157,15 @@ body {
     font-weight: 700;
     letter-spacing: -.27px;
     color: #fff;
+    width: 222px;
+}
+#content .sub_content1 .card_text .button .blue{
+
+box-shadow: rgb(88 181 243 / 30%) 0px 10px 30px 0px;
+
+background: rgb(75, 130, 247);
+
+margin-left: 15px;
 }
 #content .sub_content1 .card_img{}
 #content .sub_content1 .card_img img{
