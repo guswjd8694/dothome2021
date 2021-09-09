@@ -54,6 +54,10 @@ body {
     white-space: nowrap;
 }
 #header .header_wrap .menu ul a{}
+#header .header_wrap .menu ul a:hover{
+    font-weight: 800;
+    color: #19cf60;
+}
 #header .header_wrap .login{
     position: absolute;
     top: 31px;
@@ -140,8 +144,7 @@ body {
     color: rgba(38,38,46,.5);
 }
 #content .sub_content1 .card_text .button {
-    
-display: flex;
+    display: flex;
 }
 #content .sub_content1 .card_text .button a{
     display: flex;
