@@ -55,7 +55,7 @@ body {
 }
 #header .header_wrap .menu ul a{}
 #header .header_wrap .menu ul a:hover{
-    font-weight: 800;
+    font-weight: 900;
     color: #19cf60;
 }
 #header .header_wrap .login{
