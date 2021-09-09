@@ -100,6 +100,10 @@ figcaption {
   z-index: -1;
 }
 
+.bg.blue::before {
+  background: rgba(43, 45, 82, 0.7);
+}
+
 .bg0 {
   background-image: url(../img/bg0@2x.jpg);
 }
@@ -297,6 +301,12 @@ figcaption {
   right: 0;
 }
 
+.info.left {
+  top: auto;
+  left: 0;
+  bottom: 0;
+}
+
 .info h1 {
   font-weight: 300;
   font-size: 20px;
@@ -338,6 +348,20 @@ figcaption {
 .info li.active a {
   background: #fff;
   color: #000;
+}
+
+.info.list {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.info.list li {
+  display: block;
 }
 
 .info button {

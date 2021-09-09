@@ -1,5 +1,5 @@
 @charset "utf-8";
-  
+
 // webfonts
 @font-face {
     font-family: 'NEXONLv1Gothic';
@@ -7,30 +7,35 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NEXONLv1Gothic';
     font-weight: 400;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NEXONLv1Gothic';
     font-weight: 700;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NEXONLv2Gothic';
     font-weight: 300;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NEXONLv2Gothic';
     font-weight: 400;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NEXONLv2Gothic';
     font-weight: 700;
@@ -78,12 +83,12 @@ $font-Six: 'Six Caps';
 $font-Nexon1: 'NEXONLv1Gothic';
 $font-Nexon2: 'NEXONLv2Gothic';
 
-$gradient1: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%); 
+$gradient1: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
 $gradient2: linear-gradient(to bottom, #6cd664 0%, #089a4c 100%);
 $gradient3: linear-gradient(to bottom, #96D7D1 0%, #5DCAAF 100%);
 $gradient4: linear-gradient(to bottom, #64D6BD 0%, #7028C0 100%);
 $gradient5: linear-gradient(to bottom, #E36475 0%, #E394E9 100%);
-$gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%); 
+$gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 
 // mixin
 @mixin positionCenter {
@@ -92,11 +97,13 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 @mixin content {
     content: '';
     position: absolute;
@@ -108,7 +115,8 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 .iphone main {
     padding: 10px;
 }
-.android main{
+
+.android main {
     padding: 10px;
 }
 
@@ -124,15 +132,21 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         @include content;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: -1;
+    }
+
+    &.blue {
+        &::before {
+            background: rgba(43, 45, 82, 0.7);
+        }
     }
 }
 
 @for $i from 0 through 20 {
     .bg#{$i} {
         background-image: url(../img/bg#{$i}@2x.jpg);
-    } 
+    }
 }
 
 
@@ -141,33 +155,37 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: #11e8bb; 
-    background: $gradient1; 
+    background: #11e8bb;
+    background: $gradient1;
 
     &.game {
-        background: $gradient2; 
+        background: $gradient2;
     }
+
     &.menu {
-        background: $gradient3; 
+        background: $gradient3;
     }
+
     &.mouse {
-        background: $gradient4; 
+        background: $gradient4;
     }
+
     &.parallax {
-        background: $gradient5; 
+        background: $gradient5;
     }
+
     &.slider {
-        background: $gradient6; 
+        background: $gradient6;
     }
 }
 
 
 #contents {
     h1 {
-        @include positionCenter; 
+        @include positionCenter;
         font-size: 10vw;
         white-space: nowrap;
-        font-family: $font-Six, sans-serif; 
+        font-family: $font-Six, sans-serif;
         font-weight: normal;
         text-transform: uppercase;
         letter-spacing: 1vw;
@@ -208,7 +226,7 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
             }
         }
     }
-} 
+}
 
 
 // info
@@ -219,7 +237,6 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     position: absolute;
     left: 0;
     top: 0;
-
     &.right {
         left: auto;
         right: 0px;
@@ -230,6 +247,11 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         bottom: 0; 
         right: 0;
     }
+    &.left {
+        top: auto;
+        left: 0;
+        bottom: 0;
+    }
     h1 {
         font-weight: 300;
         font-size: 20px;
@@ -237,7 +259,6 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         border-bottom: 1px dashed #fff;
         display: inline-block;
         margin-bottom: 10px;
-
         a {
             color: #fff;
             text-decoration: none;
@@ -250,7 +271,6 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     li {
         list-style: none;
         display: inline;
-
         a {
             display: inline-block;
             text-decoration: none;
@@ -271,6 +291,18 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
             }
         }
     }
+    &.list {
+        background: rgba(0,0,0,.4);
+        color: #fff;
+        padding: 20px;
+        font-size: 12px;
+        line-height: 1.8;
+        border-radius: 10px;
+        margin: 20px;
+        li {
+            display: block;
+        }
+    }
     button {
         background: transparent;
         border: 1px solid #fff;
@@ -280,7 +312,6 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         box-shadow: 0 0 0 #fff inset;
         transition: all 0.4s;
         cursor: pointer;
-
         &:hover {
             box-shadow: 0 -50px 0 #fff inset;
             color: #000;
@@ -291,75 +322,114 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 // modal
 #modal {
     position: fixed;
-    left:0; top: 0;
-    width: 100%; height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
     z-index: 1000;
     transform: scale(0);
-    
-    .modal-bg {
-      background: rgba(0, 0, 0, 0.3);
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      .modal-cont {
 
-        h2{
-          font-weight: 400;
-          font-size: 30px;
-          margin-bottom: 10px;
+    .modal-bg {
+        background: rgba(0, 0, 0, 0.3);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .modal-cont {
+
+            h2 {
+                font-weight: 400;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: 300;
+                line-height: 1.6;
+            }
+
+            button {
+                float: right;
+                border: 1px solid #000;
+                background: #000;
+                border-radius: 20px;
+                color: #fff;
+                padding: 5px 10px;
+                cursor: pointer;
+                font-family: 'NEXONLv2Gothic';
+                margin-top: 10px;
+            }
         }
-        p {
-          font-weight: 300;
-          line-height: 1.6;
-        }
-        button {
-          float: right;
-          border: 1px solid #000;
-          background: #000;
-          border-radius: 20px;
-          color: #fff;
-          padding: 5px 10px;
-          cursor: pointer;
-          font-family: 'NEXONLv2Gothic';
-          margin-top: 10px;
-        }
-      }
     }
-  }
-  #modal.show {
+}
+
+#modal.show {
     animation: unfoldIn 1s ease forwards;
 }
+
 @keyframes unfoldIn {
-    0% {transform:scaley(0.005) scalex(0);}
-    50% {transform:scaley(0.005) scalex(1);}
-    100% {transform:scaley(1) scalex(1);}
+    0% {
+        transform: scaley(0.005) scalex(0);
+    }
+
+    50% {
+        transform: scaley(0.005) scalex(1);
+    }
+
+    100% {
+        transform: scaley(1) scalex(1);
+    }
 }
+
 #modal.show.hide {
     animation: unfoldOut 1s ease forwards;
 }
+
 @keyframes unfoldOut {
-    0% {transform:scaley(1) scalex(1);}
-    50% {transform:scaley(0.005) scalex(1);}
-    100% {transform:scaley(0.005) scalex(0);}
+    0% {
+        transform: scaley(1) scalex(1);
+    }
+
+    50% {
+        transform: scaley(0.005) scalex(1);
+    }
+
+    100% {
+        transform: scaley(0.005) scalex(0);
+    }
 }
+
 #modal.show .modal-bg .modal-cont {
     transform: scale(0);
     animation: zoomIn 0.5s 0.8s ease forwards;
 }
+
 #modal.show.hide .modal-bg .modal-cont {
     transform: scale(0);
     animation: zoomOut 0.5s ease forwards;
 }
+
 @keyframes zoomIn {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
+
 @keyframes zoomOut {
-    0% {transform: scale(1);}
-    100% {transform: scale(0);}
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
 }
+
 //code-view
 .code-view {
     background: #fff;
@@ -371,30 +441,36 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     .view-header {
         border-bottom: 1px solid #f2f2f2;
 
-        .dot{
+        .dot {
             padding: 10px 10px 10px 15px;
 
             span {
-                width: 12px; height: 12px;
+                width: 12px;
+                height: 12px;
                 display: inline-block;
                 border-radius: 50%;
                 margin: 0 2px;
             }
-            span:nth-child(1){
+
+            span:nth-child(1) {
                 background-color: #f56565;
             }
-            span:nth-child(2){
+
+            span:nth-child(2) {
                 background-color: #f6e05e;
             }
-            span:nth-child(3){
+
+            span:nth-child(3) {
                 background-color: #48bb78;
             }
         }
     }
+
     .view-title {
         border-bottom: 1px solid #f2f2f2;
         padding: 0 11px;
         font-family: 'NEXONLv2Gothic';
+
         li {
             display: inline;
             list-style: none;
@@ -406,47 +482,57 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
                 margin: 0 5px;
                 display: inline-block;
             }
+
             &.active a {
                 border-top: 2px solid #667eea;
                 color: #4a5568;
-            }    
+            }
         }
     }
+
     .view-cont {
         height: auto;
         max-height: 70vh;
         overflow-y: scroll;
 
-        > div {
+        >div {
             display: none;
         }
-        > div:nth-child(1){
+
+        >div:nth-child(1) {
             display: block;
         }
     }
 }
-  
 
-@media(max-width : 800px){
+
+@media(max-width : 800px) {
     .info h1 {
         font-size: 14px;
     }
+
     .info p {
         font-size: 10px;
-    };
+    }
+
+    ;
+
     .info li a {
         width: 16px;
         height: 16px;
         font-size: 8px;
         line-height: 16px;
-      }
+    }
+
     #nav ul {
         display: flex;
-      }
+    }
+
     #nav ul li a {
         font-size: 12px;
         width: 70px;
     }
+
     .code-view {
         width: 90vw;
         font-size: 12px;
@@ -454,13 +540,16 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         padding-bottom: 10px;
         background: #f8f8f8;
     }
+
     .code-view .view-header .dot span {
-        width: 10px; height: 10px;
+        width: 10px;
+        height: 10px;
     }
+
     .code-view .view-cont {
         font-size: 12px;
         max-height: 50vh;
-      }
+    }
 }
 
 
@@ -470,12 +559,13 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     color: #fff;
     font-family: 'NEXONLv1Gothic';
 }
+
 .paraScroll {
     position: fixed;
     left: 20px;
     bottom: 20px;
     z-index: 1000;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     color: #fff;
     height: 40px;
     line-height: 40px;
@@ -489,7 +579,7 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     position: fixed;
     left: 20px;
     bottom: 70px;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     z-index: 1000;
     color: #fff;
     padding: 20px;
@@ -504,12 +594,13 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 
 .paraNav {
     position: fixed;
-    right: 20px; top: 20px;
+    right: 20px;
+    top: 20px;
     z-index: 1000;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     padding: 15px 20px;
     border-radius: 50px;
-    
+
     li {
         display: inline-block;
         list-style: none;
@@ -519,7 +610,8 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
             text-decoration: none;
             display: inline-block;
             padding: 5px;
-            width: 30px; height: 30px;
+            width: 30px;
+            height: 30px;
             text-align: center;
             line-height: 30px;
         }
@@ -531,6 +623,7 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
         }
     }
 }
+
 .paraInfo {
     padding: 20px;
 
@@ -572,7 +665,8 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
             font-size: 25vw;
             opacity: 0.07;
             position: absolute;
-            right: -5vw; top: -10vw;
+            right: -5vw;
+            top: -10vw;
         }
 
         .title {
@@ -588,7 +682,8 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 
             .img {
                 position: absolute;
-                left: 0; top: 0;
+                left: 0;
+                top: 0;
                 width: 100%;
                 height: 100%;
                 background-size: cover;
@@ -596,11 +691,11 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
                 filter: saturate(0%);
                 transition: all 1s;
 
-                &:hover{
+                &:hover {
                     filter: saturate(100%);
                 }
             }
-            
+
         }
 
         .desc {
@@ -613,12 +708,12 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
             word-break: keep-all;
         }
 
-        &:nth-child(even){
+        &:nth-child(even) {
             margin-left: auto;
             text-align: left;
 
             .num {
-                right: auto; 
+                right: auto;
                 left: -5vw;
             }
 
@@ -632,7 +727,7 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
 
 @for $i from 1 through 9 {
     .content-item {
-        &:nth-child(#{$i}){
+        &:nth-child(#{$i}) {
             .img {
                 background-image: url(../img/bg#{$i}.jpg);
             }
@@ -645,7 +740,8 @@ $gradient6: linear-gradient(to bottom, #F0CF77 0%, #F0A688 100%);
     right: 20px;
     bottom: 20px;
 }
-.source  button {
+
+.source button {
     background: transparent;
     border: 1px solid #fff;
     padding: 5px 20px;
