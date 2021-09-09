@@ -146,7 +146,10 @@ body {
 #content .sub_content1 .card_text .button {
     display: flex;
 }
-#content .sub_content1 .card_text .button a{
+#content .sub_content1 .card_text .button a {
+    width: 222px;
+}
+#content .sub_content1 .card_text a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,9 +163,8 @@ body {
     font-weight: 700;
     letter-spacing: -.27px;
     color: #fff;
-    width: 222px;
 }
-#content .sub_content1 .card_text .button .blue{
+#content .sub_content1 .card_text .blue{
 
 box-shadow: rgb(88 181 243 / 30%) 0px 10px 30px 0px;
 
