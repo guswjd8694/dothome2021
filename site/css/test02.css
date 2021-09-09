@@ -74,7 +74,7 @@ body {
     padding-top: 100px;
 }
 #content .main_bg{
-    background: url(/site/img/main1.jpg) no-repeat;
+    background-image: url(../img/main1.jpg);
     padding: 134px 0 114px;
     background-size: cover;
     text-align: center;
