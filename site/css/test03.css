@@ -1,0 +1,223 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+body {
+    font-family: 'NanumSquare';
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-width: 1240px;
+    height: 86px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 100;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+#header .header_wrap{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+#header .header_wrap .logo{
+    float: left;
+    margin-top: 32px;
+}
+#header .header_wrap .logo img{
+    background-position: -4px -62px;
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 22px;
+    display: block;
+}
+#header .header_wrap .menu{
+    float: left;
+    margin-left: 123px;
+}
+#header .header_wrap .menu ul {font-size: 0;text-align: center;}
+#header .header_wrap .menu li{
+    display: inline-block;
+    height: 86px;
+    padding: 34px 36px;
+    color: rgba(0, 0, 0, .6);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -.25px;
+    box-sizing: border-box;
+}
+#header .header_wrap .menu li:hover{
+    color: #000;
+}
+#header .header_wrap .menu li a:hover {
+    border-color: #000;
+    text-decoration-line: underline;
+}
+#header .header_wrap .login{
+    float: right;
+    margin-top: 27px;
+    font-size: 0;
+}
+#header .header_wrap .login a{
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    transition: all .3s ease;
+}
+#header .header_wrap .login a:hover {
+    border-color: #05d685;
+    background-color: #05d685;
+    color: #fff;
+}
+#header .header_wrap .login .margin{
+    margin-left: 8px;
+}
+
+#content {
+    min-height: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 86px 0 0;
+}
+#content .card_img img {
+    width: 374px;
+    height: 361px;
+    vertical-align: top;
+}
+#content .sub_content1 {
+    position: relative;
+    width: 100%;
+    height: 390px;
+}
+#content .sub_content2 {
+    margin-top: 149px;
+}
+#content h2 {
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+}
+#content p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -.42px;
+}
+#content .card_list {
+    width: 1203px;
+    margin: 44px auto 0;
+    padding-left: 27px;
+}
+#content .card_list .card {
+    position: relative;
+    float: left;
+    margin: 36px 27px 0 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+}
+#content.card_list .card::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+#content .sub_content2 .card_list .card .card_img {}
+#content .card_list .card .card_text {
+    position: relative;
+    padding: 40px;
+    text-align: left;
+}
+#content .card_list .card .card_text .name {
+    height: 22px;
+}
+#content .card_list .card .card_text .name span {
+    width: 143px;
+    height: 22px;
+    font-size: 22px;
+    font-weight: 900;
+}
+#content .sub_content2 .card_list .card .card_text .name .tag {
+    display: inline-block;
+    width: 42px;
+    margin-left: 4px;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    color: #fff;
+    text-align: center;
+    border-radius: 9px;
+    background-color: #fa615b;
+    vertical-align: top;
+    height: 18px;
+}
+#content .sub_content2 .card_list .card .card_desc{
+}
+#content .sub_content2 .card_list .card .card_desc p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -.5px;
+    color: #4a4a4a;
+}
+#content .sub_content2 .card_list .card a {
+    display: inline-block;
+    width: 87px;
+    height: 32px;
+    margin-top: 15px;
+    padding: 8px 17px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -.19px;
+    border-radius: 2px;
+    vertical-align: top;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .6);
+    border: 1px solid #e3e3e3;
+}
+#content .sub_content2 .card_list .card .green {
+    margin-right: 6px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #05d686;
+}
+#content .sub_content3 {}
+#content .sub_content3 h2 {}
+#content .sub_content3 p {}
+#content .sub_content3 .card {}
+#content .sub_content3 .card .card_img {}
+#content .sub_content3 .card .card_img img {}
+#content .sub_content3 .card .card_text {}
+#content .sub_content3 .card .card_text span {}
+#content .sub_content3 .card .card_text .tag {}
+#content .sub_content3 .card .card_text .card_desc {}
+#content .sub_content3 .card a {}
+
+#content .sub_content4 {}
+#content .sub_content4 h2 {}
+#content .sub_content4 p {}
+#content .sub_content4 .guide_btn {}
