@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+body {
+    font-family: 'NanumSquare';
+    background: #000;
+}
+
+#header {
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 90px;
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
+}
+#header .header_wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .header_wrap .logo {}
+#header .header_wrap .logo a {}
+#header .header_wrap .inner {}
+#header .header_wrap .inner .menu {}
+#header .header_wrap .inner .menu li {}
+#header .header_wrap .inner .menu li a {}
+#header .header_wrap .download {}
+#header .header_wrap .download a {}

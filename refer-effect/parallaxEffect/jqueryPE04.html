@@ -263,7 +263,7 @@
                 setInterval(() => {
                     if(nowScrollTop){   //true가 들어가서 실행이 되고
                         nowScrollTop = false   //nowScrollTop 값에 false를 넣어줌
-                        hasScroll()
+                        hasScroll() //스크롤 값이 움직이는 것을 감지해서 그 때만 실행시켜줌
                     }
                 }, 1000)    //1초에 한 번씩 감지해서 true면 hasScroll을 실행
             })
@@ -276,7 +276,21 @@
                 }else{
                     $(".paraNav").removeClass("hide")   //아니면 hide 제거
                 }
+
                 lastScrollTop = scrollTop
+
+                console.log("scrollTop : " + scrollTop)
+                console.log("lastScrollTop : " + lastScrollTop)            
+            
+                //출력용
+                $("paraScroll span").text(scrollTop)
+
+                //메뉴
+                $(".content-item").each(function(i){
+                    if(scrollTop > $(".content-item").eq(i).offset().top -2){
+                        $(".paraNav ul li").eq(i).addClass("active").siblings().removeClass("active")
+                    }
+                })
             }
     </script>
 
