@@ -1,12 +1,22 @@
 @charset "utf-8";
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, canvas, embed, figcaption, hgroup, menu, nav, output, ruby, summary, time, mark {
+    box-sizing: inherit;
+    line-height: 1.2em;
+}
 
 body {
     font-family: 'NanumSquare';
-    background: #000;
 }
-
+.inner {
+    
+max-width: 1280px;
+    
+margin: 0 auto;
+    
+width: 100%;
+}
 #header {
     position: fixed;
     z-index: 90;
@@ -21,11 +31,107 @@ body {
     margin: 0 auto;
     position: relative;
 }
-#header .header_wrap .logo {}
-#header .header_wrap .logo a {}
-#header .header_wrap .inner {}
-#header .header_wrap .inner .menu {}
-#header .header_wrap .inner .menu li {}
-#header .header_wrap .inner .menu li a {}
-#header .header_wrap .download {}
-#header .header_wrap .download a {}
+#header .header_wrap .logo {
+    position: absolute;
+    top: 23px;
+    left: 6%;
+    width: 200px;
+    height: 40px;
+    z-index: 5;
+}
+#header .header_wrap .logo a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-indent: -9999em;
+    background: url(../img/logo_whale.svg) no-repeat center;
+}
+#header .header_wrap .inner .menu {text-align: center;overflow: hidden;}
+#header .header_wrap .inner .menu li {
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#header .header_wrap .inner .menu li a:hover {
+    color: #05c3a7;
+}
+#header .header_wrap .inner .menu li a {
+    color: #2d1d1d;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 90px;
+}
+#header .header_wrap .download {
+
+}
+#header .header_wrap .download a:hover {
+    background: #15c5aa;
+    color: #fff;
+}
+#header .header_wrap .download a {
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    width: 125px;
+    height: 50px;
+    color: #15c5aa;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #15c5aa;
+    border-radius: 5px;
+}
+
+.tab_wrap {
+    width: 100%;
+    margin-top: 90px;
+}
+.tab_wrap .fnTab {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.tab_wrap .fnTab li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    max-width: 330px;
+    height: 70px;
+    line-height: 70px;
+}
+.tab_wrap .fnTab li:nth-child(1).current .tab_contents {
+    color: #05d6b4;
+}
+.tab_wrap .fnTab li.current .tab_contents {
+    background-position: top 23px left;
+    background-size: 20px auto;
+}
+.tab_wrap .fnTab li:nth-child(2) {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+}
+.tab_wrap .fnTab li:nth-child(1) .tab_contents {
+    background-image: url(../img/top_check.png);
+}
+.tab_wrap .fnTab li:nth-child(2) .tab_contents {
+    background-image: url(../img/top_check_2.png);
+}
+.tab_wrap .fnTab li:nth-child(3) .tab_contents {
+    background-image: url(../img/top_check_3.png);
+}
+
+.current {}
+.tab_wrap .fnTab li .tab_contents {
+    display: inline-block;
+    color: #838383;
+    font-size: 18px;
+    padding: 20px 30px;
+    cursor: pointer;
+    background-position: bottom 24px left;
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+}
