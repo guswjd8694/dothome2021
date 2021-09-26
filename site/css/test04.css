@@ -305,6 +305,7 @@ article[class*='whywhale_']:nth-child(even){
 }
 #contents .whywhale_sidebar {
     width: 100%;
+    background: #fff;
 }
 #contents .whywhale_sidebar h3::before {
     background: url(../img/icon_why_tab1_01.png) no-repeat top center;
@@ -335,6 +336,9 @@ article[class*='whywhale_']:nth-child(even){
     height: 20px;
     background: url(../img/icon_function_detailgo.png) no-repeat top center;
     background-size: 100%;
+}
+#contents .whywhale_dual {
+    background: #fff;
 }
 #contents .whywhale_dual h3::before {
     background: url(../img/icon_why_tab1_03.png) no-repeat top center;
@@ -538,7 +542,6 @@ article[class*='whywhale_']:nth-child(even){
         display: block;
         padding: 0 5%;
         height: 100%;
-        background: url(../img/top_tasking_bg.jpg);
     }
     #contents h3 {
         padding-top: 50px;
@@ -546,6 +549,9 @@ article[class*='whywhale_']:nth-child(even){
     }
     .mb_only {
         display: block;
+    }
+    #contents .whywhale_top {
+        padding-top: 0;
     }
     #contents .whywhale_top .inner .toptxt p {
         padding: 20px 0 30px;
