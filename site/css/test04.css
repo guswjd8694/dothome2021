@@ -5,17 +5,32 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     box-sizing: inherit;
     line-height: 1.2em;
 }
-
+html, body, article, aside, details, figcaption, figure, header, hgroup, menu, div, nav, section, header, table, tbody, tfoot, thead, tr, th, td, article, aside, audio, video, textarea{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    color: #0e141c;
+    vertical-align: middle;
+    background: transparent;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    word-break: keep-all;
+    line-height: 1.2em;
+    font-family: 'NanumSquare' , 'NanumGothic' , arial;
+    letter-spacing: -0.8px;
+}
 body {
     font-family: 'NanumSquare';
 }
 .inner {
-    
-max-width: 1280px;
-    
-margin: 0 auto;
-    
-width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 #header {
     position: fixed;
@@ -85,17 +100,17 @@ width: 100%;
     border-radius: 5px;
 }
 
-.tab_wrap {
+#tab_wrap {
     width: 100%;
     margin-top: 90px;
 }
-.tab_wrap .fnTab {
+#tab_wrap .fnTab {
     background-color: #333;
     color: #fff;
     width: 100%;
     text-align: center;
 }
-.tab_wrap .fnTab li {
+#tab_wrap .fnTab li {
     display: inline-block;
     width: 32%;
     text-align: center;
@@ -103,29 +118,29 @@ width: 100%;
     height: 70px;
     line-height: 70px;
 }
-.tab_wrap .fnTab li:nth-child(1).current .tab_contents {
+#tab_wrap .fnTab li:nth-child(1).current .tab_contents {
     color: #05d6b4;
 }
-.tab_wrap .fnTab li.current .tab_contents {
+#tab_wrap .fnTab li.current .tab_contents {
     background-position: top 23px left;
     background-size: 20px auto;
 }
-.tab_wrap .fnTab li:nth-child(2) {
+#tab_wrap .fnTab li:nth-child(2) {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
 }
-.tab_wrap .fnTab li:nth-child(1) .tab_contents {
+#tab_wrap .fnTab li:nth-child(1) .tab_contents {
     background-image: url(../img/top_check.png);
 }
-.tab_wrap .fnTab li:nth-child(2) .tab_contents {
+#tab_wrap .fnTab li:nth-child(2) .tab_contents {
     background-image: url(../img/top_check_2.png);
 }
-.tab_wrap .fnTab li:nth-child(3) .tab_contents {
+#tab_wrap .fnTab li:nth-child(3) .tab_contents {
     background-image: url(../img/top_check_3.png);
 }
 
 .current {}
-.tab_wrap .fnTab li .tab_contents {
+#tab_wrap .fnTab li .tab_contents {
     display: inline-block;
     color: #838383;
     font-size: 18px;
@@ -135,3 +150,170 @@ width: 100%;
     background-size: 20px auto;
     background-repeat: no-repeat;
 }
+#contents {
+    display: block;
+}
+#contents [class*='whywhale_'] .inner {
+    display: table;
+    height: 670px;
+    width: 100%;
+}
+#contents [class*='whywhale_'] .text {
+    display: table-cell;
+}
+#contents h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+#contents [class*='whywhale_'] .text h3 {
+    color: #000;
+    position: relative;
+    padding-left: 80px;
+}
+#contents [class*='whywhale_'] .text h3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    clear: both;
+    width: 70px;
+    height: 70px;
+    background-size: 100%;
+}
+#contents [class*='whywhale_'] .text h4 {
+    color: #333130;
+    font-size: 26px;
+}
+#contents [class*='whywhale_'] .detail {
+}
+#contents [class*='whywhale_'] .detail li {
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#contents [class*='whywhale_'] .detail li a {
+    display: inline-block;
+    color: #2d68d2;
+    line-height: 20px;
+    font-size: 18px;
+}
+#contents [class*='whywhale_'] .device_type {
+}
+#contents [class*='whywhale_'] .device_type .pc {
+}
+#contents [class*='whywhale_'] .device_type .m {
+}
+#contents [class*='whywhale_'] .image {
+    display: table-cell;
+    width: 50%;
+}
+#contents [class*='whywhale_'] .image img {
+    display: block;
+    width: 100%;
+}
+
+article[class*='whywhale_']:nth-child(even){
+    background-color: #ecedf1;
+}
+#contents .whywhale_top {
+    background: url(../img/top_tasking_bg.jpg) no-repeat top center/ cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+#contents .whywhale_top .inner .toptxt {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+#contents .whywhale_top .inner .toptxt h3 {
+}
+#contents .whywhale_top .inner .toptxt p {
+    font-size: 30px;
+    color: #fff;
+    padding: 30px 0 50px;
+}
+#contents .whywhale_top .inner .toptxt .btn_down {
+    display: block;
+    width: 100%;
+}
+#contents .whywhale_top .inner .toptxt .btn_down a {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    height: 77px;
+    line-height: 77px;
+    position: relative;
+    background: #05d6b4;
+    border-radius: 45px;
+}
+.btn_down > a::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 77px;
+    background: url(../img/icon_btn_arrow.png) 50% 50% no-repeat;
+    background-size: 100%;
+    margin-left: 18px;
+    vertical-align: top;
+}
+#contents .whywhale_on {
+    width: 100%;
+}
+#contents .whywhale_on h3::before {
+    background: url(../img/icon_why_tab1_05.png) no-repeat top center;
+}
+#contents .text h3 {
+    height: 70px;
+    line-height: 70px;
+    padding-left: 80px;
+}
+#contents .text h4 {
+    margin: 30px 0 50px;
+}
+#contents .inner .detail {
+    width: 100%;
+    display: block;
+}
+#contents .whywhale_on .detail li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    clear: both;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_function_detailgo.png) no-repeat top center;
+    background-size: 100%;
+}
+#contents .whywhale_on .detail li a {}
+#contents .device_type {
+    width: 100%;
+    margin-top: 30px;
+}
+#contents .device_type .pc {
+    background: url(../img/icon_pc.png) no-repeat bottom center;
+    background-size: 100%;
+    width: 118px;
+    height: 76px;
+}
+#contents .device_type .m {
+    background: url(../img/icon_m.png) no-repeat bottom center;
+    background-size: 100%;
+    width: 118px;
+    height: 76px;
+}
+.device_type > span {
+    display: inline-block;
+    width: 118px;
+    height: 70px;
+    background-size: 100%;
+}
+
+#contents .whywhale_on .image {}
