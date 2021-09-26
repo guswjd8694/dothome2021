@@ -498,14 +498,230 @@ article[class*='whywhale_']:nth-child(even){
     background: url(../img/beta.svg) no-repeat;
 }
 
-@media(max-width:980px) {
+@media(max-width:560px) {
+    #contents [class*='whywhale_'] .inner {
+        height: 480px;
+        width: 90%;
+        margin: 0 auto;
+    }
     #header {
         height: 60px;
     }
-    .logo_whale a {
-        
+    #header .header_wrap .logo a {
+        top: 10px;
+        left: 4%;
+        width: 140px;
     }
-    #header .header_wrap .download a:hover{
+    #header .header_wrap .inner .menu {
         display: none;
+    }
+    #header .header_wrap .download a{
+        display: none;
+    }
+    #tab_wrap .fnTab {
+    }
+    #footer ul li { margin: 10px 0 0; text-align: left; }
+	#footer ul li::after { display: none; }
+    #header .header_wrap .inner .menu li a {
+        display: none;
+    }
+    #tab_wrap .fnTab li.current .tab_contents {
+        background-size: 14px auto;
+        background-position: top 17px left;
+    }
+    #tab_wrap .fnTab li .tab_contents {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+    #contents .whywhale_top .inner .toptxt {
+        background-size: contain;
+        display: block;
+        padding: 0 5%;
+        height: 100%;
+        background: url(../img/top_tasking_bg.jpg);
+    }
+    #contents h3 {
+        padding-top: 50px;
+        font-size: 32px;
+    }
+    .mb_only {
+        display: block;
+    }
+    #contents .whywhale_top .inner .toptxt p {
+        padding: 20px 0 30px;
+        font-size: 16px;
+    }
+    #contents .whywhale_top .inner .toptxt .btn_down a {
+        width: 154px;
+        font-size: 17px;
+        border-radius: 26.5px;
+        height: 52px;
+        line-height: 52px;
+    }
+    #contents .whywhale_top .inner .toptxt .btn_down a::after {
+        width: 20px;
+        height: 52px;
+        margin: 0 0 0 12px;
+    }
+    #contents [class*='whywhale_'] .text {
+        padding-top: 50px;
+        display: block;
+        width: 100%;
+    }
+    #contents [class*='whywhale_'] .text:nth-child(even) {
+    }
+    #contents [class*='whywhale_'] .text h3 {
+        padding-left: 54px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 28px;
+    }
+    #contents [class*='whywhale_'] .text h3::before {
+        width: 44px;
+        height: 44px;
+    }
+    #contents [class*='whywhale_'] .text h4 {
+        font-size : 16px;
+        margin: 20px 0 30px;
+    }
+    #contents [class*='whywhale_'] .detail li a {
+        line-height: 16px;
+        font-size: 14px;
+        display: inline-block;
+        color: #2d68d2;
+    }
+    #contents .device_type .pc {
+        width: 90px;
+        height: 40px;
+    }
+    #contents .device_type .m {
+        width: 90px;
+        height: 40px;
+    }
+    #contents [class*='whywhale_']:nth-child(odd) {
+        position: relative;
+        padding-top: 80px;
+        height: auto;
+    }
+    #contents [class*='whywhale_'] .image {
+        padding-bottom: 50px;
+        display: block;
+        width: 100%;
+        display: block;
+        width: 82.8%;
+        text-align: center;
+        margin: 10% auto 0;
+    }
+    #contents [class*='whywhale_'] .image img {
+        display: block;
+        width: 100%;
+    }
+    #contents [class*='whywhale_']:nth-child(odd) .image {
+        top: 53%;
+        width: 74%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        text-align: center;
+        margin: 10% auto 0;
+    }
+    #contents article[class*='whywhale_']:nth-child(odd) .text {
+        margin-top: -30px;
+        padding-left: 0;
+        display: block;
+        width: 100%;
+        padding-top: 0;
+    }
+    #contents [class*='whywhale_'] .detail li {
+        margin-bottom: 12px;
+        padding-left: 22px;
+    }
+    #contents .whywhale_on {
+        height: auto;
+    }
+    #contents .whywhale_on .detail li::before {
+
+        top: calc(50% - 7px);
+        width: 14px;
+        height: 14px;
+        background-size: 100%;
+    }
+    #contents .whywhale_sidebar .detail li::before {
+        top: calc(50% - 7px);
+        width: 14px;
+        height: 14px;
+        background-size: 100%;
+    }
+
+    #contents .whywhale_quick .detail li::before {
+        top: calc(50% - 7px);
+        width: 14px;
+        height: 14px;
+        background-size: 100%;
+    }
+    #contents .whywhale_dual .detail li::before {
+        top: calc(50% - 7px);
+        width: 14px;
+        height: 14px;
+        background-size: 100%;
+    }
+    #contents .whywhale_capture .detail li::before {
+        top: calc(50% - 7px);
+        width: 14px;
+        height: 14px;
+        background-size: 100%;
+    }
+    #contents .whywhale_dual .device_type.dual > p {
+        display: inline-block;
+        padding-top: 20px;
+        position: relative;
+        width: 90px;
+        height: 56px;
+    }
+    #contents .whywhale_dual .device_type.dual > p .txt {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    #whale_down {
+        padding: 15% 0;
+    }
+    #whale_down .down_gif {
+        min-width: 300px;
+    }
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #whale_down .btn_whale_down > a {
+        width: 154px;
+        font-size: 17px;
+        border-radius: 26.5px;
+        height: 52px;
+        line-height: 52px;
+    }
+    #whale_down .btn_whale_down > a::after {
+        width: 20px;
+        height: 52px;
+        margin: 0 0 0 12px;
+    }
+    #footer {
+        padding: 40px 0;
+    }
+    #footer ul li a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    #footer .beta {
+        position: relative;
+        top: inherit;
+        right: inherit;
+        margin: 30px 0 0;
+    }
+    #footer .beta a {
+        padding: 0 15px 0 35px;
+        height: 38px;
+        font-size: 14px;
+        line-height: 38px;
     }
 }
