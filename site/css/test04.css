@@ -76,11 +76,8 @@ body {
 #header .header_wrap .inner .menu li a {
     color: #2d1d1d;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 90px;
-}
-#header .header_wrap .download {
-
 }
 #header .header_wrap .download a:hover {
     background: #15c5aa;
@@ -98,6 +95,7 @@ body {
     line-height: 50px;
     border: 1px solid #15c5aa;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 #tab_wrap {
@@ -139,7 +137,6 @@ body {
     background-image: url(../img/top_check_3.png);
 }
 
-.current {}
 #tab_wrap .fnTab li .tab_contents {
     display: inline-block;
     color: #838383;
@@ -186,8 +183,6 @@ body {
     color: #333130;
     font-size: 26px;
 }
-#contents [class*='whywhale_'] .detail {
-}
 #contents [class*='whywhale_'] .detail li {
     width: 100%;
     padding-left: 30px;
@@ -200,12 +195,6 @@ body {
     line-height: 20px;
     font-size: 18px;
 }
-#contents [class*='whywhale_'] .device_type {
-}
-#contents [class*='whywhale_'] .device_type .pc {
-}
-#contents [class*='whywhale_'] .device_type .m {
-}
 #contents [class*='whywhale_'] .image {
     display: table-cell;
     width: 50%;
@@ -214,9 +203,60 @@ body {
     display: block;
     width: 100%;
 }
-
 article[class*='whywhale_']:nth-child(even){
     background-color: #ecedf1;
+}
+#contents .text h3 {
+    height: 70px;
+    line-height: 70px;
+    padding-left: 80px;
+}
+#contents .text h4 {
+    margin: 30px 0 50px;
+}
+#contents .inner .detail {
+    width: 100%;
+    display: block;
+}
+#contents .device_type {
+    width: 100%;
+    margin-top: 30px;
+}
+#contents .device_type .pc {
+    background: url(../img/icon_pc.png) no-repeat bottom center;
+    background-size: 100%;
+    width: 118px;
+    height: 76px;
+}
+#contents .device_type .m {
+    background: url(../img/icon_m.png) no-repeat bottom center;
+    background-size: 100%;
+    width: 118px;
+    height: 76px;
+}
+.device_type > span {
+    display: inline-block;
+    width: 118px;
+    height: 70px;
+    background-size: 100%;
+}
+#contents .whywhale_on h3::before {
+    background: url(../img/icon_why_tab1_05.png) no-repeat top center;
+}
+#contents .whywhale_on .detail li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    clear: both;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_function_detailgo.png) no-repeat top center;
+    background-size: 100%;
+}
+#contents article[class*='whywhale_']:nth-child(odd) .text {
+    padding-left: 5%;
 }
 #contents .whywhale_top {
     background: url(../img/top_tasking_bg.jpg) no-repeat top center/ cover;
@@ -228,8 +268,6 @@ article[class*='whywhale_']:nth-child(even){
     display: table-cell;
     width: 100%;
     vertical-align: middle;
-}
-#contents .whywhale_top .inner .toptxt h3 {
 }
 #contents .whywhale_top .inner .toptxt p {
     font-size: 30px;
@@ -265,22 +303,13 @@ article[class*='whywhale_']:nth-child(even){
 #contents .whywhale_on {
     width: 100%;
 }
-#contents .whywhale_on h3::before {
-    background: url(../img/icon_why_tab1_05.png) no-repeat top center;
-}
-#contents .text h3 {
-    height: 70px;
-    line-height: 70px;
-    padding-left: 80px;
-}
-#contents .text h4 {
-    margin: 30px 0 50px;
-}
-#contents .inner .detail {
+#contents .whywhale_sidebar {
     width: 100%;
-    display: block;
 }
-#contents .whywhale_on .detail li::before {
+#contents .whywhale_sidebar h3::before {
+    background: url(../img/icon_why_tab1_01.png) no-repeat top center;
+}
+#contents .whywhale_sidebar .detail li::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -292,28 +321,191 @@ article[class*='whywhale_']:nth-child(even){
     background: url(../img/icon_function_detailgo.png) no-repeat top center;
     background-size: 100%;
 }
-#contents .whywhale_on .detail li a {}
-#contents .device_type {
-    width: 100%;
-    margin-top: 30px;
+#contents .whywhale_quick h3::before {
+    background: url(../img/icon_why_tab1_02.png) no-repeat top center;
 }
-#contents .device_type .pc {
-    background: url(../img/icon_pc.png) no-repeat bottom center;
-    background-size: 100%;
-    width: 118px;
-    height: 76px;
-}
-#contents .device_type .m {
-    background: url(../img/icon_m.png) no-repeat bottom center;
-    background-size: 100%;
-    width: 118px;
-    height: 76px;
-}
-.device_type > span {
+#contents .whywhale_quick .detail li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: inline-block;
+    content: "";
+    clear: both;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_function_detailgo.png) no-repeat top center;
+    background-size: 100%;
+}
+#contents .whywhale_dual h3::before {
+    background: url(../img/icon_why_tab1_03.png) no-repeat top center;
+}
+#contents .whywhale_dual .detail li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    clear: both;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_function_detailgo.png) no-repeat top center;
+    background-size: 100%;
+}
+#contents .whywhale_dual .device_type.dual > p {
+    display: inline-block;
+    padding-top: 20px;
+    position: relative;
     width: 118px;
-    height: 70px;
+    height: 76px;
+}
+#contents .whywhale_dual .device_type.dual > p .txt {
+    position: absolute;
+    line-height: 1em;
+    font-size: 16px;
+    color: #919191;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+}
+#contents .whywhale_dual .device_type.dual .pc{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#contents .whywhale_capture h3::before {
+    background: url(../img/icon_why_tab1_04.png) no-repeat top center;
+}
+#contents .whywhale_capture .detail li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    clear: both;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_function_detailgo.png) no-repeat top center;
     background-size: 100%;
 }
 
-#contents .whywhale_on .image {}
+#whale_down {
+    width: 100%;
+    background-color: #fff;
+    padding: 10% 0;
+    text-align: center;
+}
+#whale_down .down_gif {
+    display: inline-block;
+    margin-bottom: 3%;
+    max-width: 560px;
+}
+#whale_down .btn_whale_down {
+    text-align: center;
+}
+#whale_down .btn_whale_down > a {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 45px;
+    height: 77px;
+    line-height: 77px;
+    position: relative;
+    background: #05d6b4;
+}
+#whale_down .btn_whale_down > a::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 77px;
+    background: url(../img/icon_btn_arrow.png) 50% 50% no-repeat;
+    background-size: 100%;
+    margin-left: 18px;
+    vertical-align: top;
+}
+#footer {
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#footer h2 {
+    display: inline-block;
+    margin: 0 0 20px;
+    max-width: 141px;
+}
+#footer h2 a .block {
+    display: block;
+    width: 100%;
+}
+#footer ul li {
+    display: inline-block;
+    position: relative;
+    margin: 10px 20px 0;
+    text-align: center;
+}
+#footer ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -21px;
+    width: 1px;
+    height: 18px;
+    background: #dadada;
+}
+
+#footer ul li a {
+    font-size: 16px;
+    color: #c0c0c0;
+    font-weight: 700;
+}
+#footer .pc_only {
+    display: inline-block;
+}
+#footer .mb_only {
+    display: none;
+}
+#footer .beta {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#footer .beta a {
+    position: relative;
+    padding: 0 15px 0 45px;
+    height: 43px;
+    color: #c0c0c0;
+    font-size: 16px;
+    line-height: 43px;
+}
+#footer .beta a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 55px);
+    width: 20px;
+    height: 20px;
+    background: url(../img/beta.svg) no-repeat;
+}
+
+@media(max-width:980px) {
+    #header {
+        height: 60px;
+    }
+    .logo_whale a {
+        
+    }
+    #header .header_wrap .download a:hover{
+        display: none;
+    }
+}
