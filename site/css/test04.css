@@ -57,7 +57,6 @@ body {
 #header .header_wrap .logo a {
     display: block;
     text-align: center;
-    line-height: 40px;
     text-indent: -9999em;
     background: url(../img/logo_whale.svg) no-repeat center;
 }
@@ -503,6 +502,14 @@ article[class*='whywhale_']:nth-child(even){
 }
 
 @media(max-width:560px) {
+    #tab_wrap {
+        margin-top: 50px;
+        width: 100%;
+        /* height: 50px; */
+    }
+    #tab_wrap .fnTab li {
+    height: 60px;
+    }
     #contents [class*='whywhale_'] .inner {
         height: 480px;
         width: 90%;
@@ -536,6 +543,8 @@ article[class*='whywhale_']:nth-child(even){
     #tab_wrap .fnTab li .tab_contents {
         font-size: 12px;
         padding: 15px 20px;
+        background-size: 14px auto;
+        background-position: top 17px left;
     }
     #contents .whywhale_top .inner .toptxt {
         background-size: contain;
@@ -544,7 +553,7 @@ article[class*='whywhale_']:nth-child(even){
         height: 100%;
     }
     #contents h3 {
-        padding-top: 50px;
+        /* padding-top: 50px; */
         font-size: 32px;
     }
     .mb_only {
