@@ -1,0 +1,55 @@
+#wrap {
+
+}
+#header {
+    background: #2431539e;
+    position: fixed;
+    width: 100%;
+}
+.container {
+}
+.header_wrap {
+    position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.header_wrap .logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+.header_wrap .logo img {
+    width: 40px;
+    height: 40px;
+}
+.header_wrap .logo h1 {
+    color: #fff;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 28px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.header_wrap .menu {
+    display: flex;
+    color: #fff;
+}
+.header_wrap .menu ul {}
+.header_wrap .menu ul li {
+}
+.header_wrap .member {
+}
+.header_wrap .member .login {}
+.header_wrap .member .join {}
+
+
+#contents {}
+#contents img {
+}
+#contents h1 {
+}
+#contents .container h1 em {
+}
+#contents .container span {
+}
+#contents .container .speaker {}
