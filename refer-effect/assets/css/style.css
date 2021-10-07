@@ -694,6 +694,7 @@ figcaption {
   list-style: none;
 }
 
+/* nav */
 .paraNav {
   position: fixed;
   right: 20px;
@@ -726,6 +727,7 @@ figcaption {
   border-radius: 50%;
 }
 
+/* info */
 .paraInfo {
   padding: 20px;
 }
