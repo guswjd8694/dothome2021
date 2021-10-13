@@ -1,0 +1,36 @@
+body {}
+
+/* header */
+#header {}
+.header_wrap {}
+.header_wrap .logo {}
+.header_wrap .menu {}
+.header_wrap .menu ul {}
+.header_wrap .menu ul li {}
+/* //header */
+
+
+/* info */
+.info_text {}
+.info_text h2 {}
+.info_text p {}
+/* //info */
+
+
+/* contents */
+#contents {}
+.content_wrap {}
+
+.content1 {}
+.content1 .image {}
+.content1 .image img {}
+.content1 .image h2 {}
+.content1 .image p {}
+
+
+.content2 {}
+.content2 .card_wrap {}
+.content2 .card {}
+.content2 .card .image {}
+.content2 .card .image img {}
+.content2 .card .text {}
