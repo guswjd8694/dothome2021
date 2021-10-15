@@ -36,14 +36,14 @@ li {list-style: none;}
 
 /* content1 */
 #content1 {margin-top: 20px;}
-#content1 .left {float: left; width: 49%; padding: 20px; background: #f2f2f2 url(../img/2222/images/bg1.jpg) no-repeat right 20px center; background-size: 80px; box-sizing: border-box; margin-right: 2%;}
+#content1 .left {float: left; width: 49%; padding: 20px; background: #f2f2f2 url(../img/2222/bg1.jpg) no-repeat right 20px center; background-size: 80px; box-sizing: border-box; margin-right: 2%;}
 #content1 .left .title {font-size: 22px; padding-bottom: 5px;}
 #content1 .left .desc {font-size: 14px; color: #666; padding-bottom: 15px;}
-#content1 .left .btn {background: url(../img/2222/images/icon1.jpg) no-repeat left top; background-size: 20px; padding-left: 25px; padding-top: 3px;}
-#content1 .right {float: left; width: 49%; padding: 20px; background: #f2f2f2 url(../img/2222/images/bg2.jpg) no-repeat right 20px center; background-size: 80px; box-sizing: border-box; margin-right: 0%;}
+#content1 .left .btn {background: url(../img/2222/icon1.jpg) no-repeat left top; background-size: 20px; padding-left: 25px; padding-top: 3px;}
+#content1 .right {float: left; width: 49%; padding: 20px; background: #f2f2f2 url(../img/2222/bg2.jpg) no-repeat right 20px center; background-size: 80px; box-sizing: border-box; margin-right: 0%;}
 #content1 .right .title {font-size: 22px; padding-bottom: 5px;}
 #content1 .right .desc {font-size: 14px; color: #666; padding-bottom: 15px;}
-#content1 .right .btn {background: url(../img/2222/images/icon2.jpg) no-repeat left top; background-size: 20px; padding-left: 25px; padding-top: 2px;}
+#content1 .right .btn {background: url(../img/2222/icon2.jpg) no-repeat left top; background-size: 20px; padding-left: 25px; padding-top: 2px;}
 #content1 .right .btn em {font-size: 13px; color: #999; font-style: normal;}
 
 /* content2 */

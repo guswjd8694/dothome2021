@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clearfix::before, .clearfix::after {
+    content: ''; 
+    display: block;
+    clear: both;
+}
+/* reset */
+
+
+#wrap {
+}
+.main_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.footer_wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* wrap */
+
+
+#header {
+    
+}
+#header h1 {
+    float: left;
+}
+#header img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+#header .menu {
+    float: right;
+    text-transform: uppercase;
+}
+#header .menu li {
+    display: inline-block;
+    padding: 0px 0px 0px 71px;
+}
+#header .menu li a {
+    font-size: 20px;
+    font-weight: 900;
+}
+.sub_menu {
+    display: none;
+}
+.sub_menu li {
+}
+.sub_menu li a {}
+/* header */
+
+
+#banner {
+    height: 389px;
+    overflow: hidden;
+}
+.slider_wrap {
+    height: 1167px;
+    position: relative;
+}
+.slideImg {
+    width: 1000px;
+    position: relative;
+    float: left;
+}
+.slideImg h2 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+.slideImg img {
+    width: 100%;
+    display: block;
+}
+/* banner */
+
+
+#content1 {overflow: hidden;}
+#content1 div {
+    display: block;
+    padding: 25px 30px;
+    width: 43%;
+    margin: 30px 0;
+}
+.left {
+    float: left;
+    padding-right: 5px;
+    background: #f2f2f2 url(../img/2222/bg1.jpg) no-repeat right 40px center;
+    background-size: 65px;
+}
+.right {
+    float: right;
+    padding-left: 5px;
+    background: #f2f2f2 url(../img/2222/bg2.jpg) no-repeat right 40px center;
+    background-size: 65px;
+}
+#content1 .title {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+#content1 .desc {
+    font-size: 14px;
+    color: #444;
+    padding-bottom: 15px;
+}
+#content1 .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+.left .btn {
+    background: url(../img/2222/icon1.jpg) no-repeat left top;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-top: 3px;
+}
+.right .btn {
+    background: url(../img/2222/icon2.jpg) no-repeat left top;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-top: 3px;
+}
+#content1 .btn span {
+    font-size: 12px;
+    color: #888;
+    padding-left: 5px;
+}
+/* content1 */
+
+
+#content2 {}
+.tab_menu {
+}
+.tab_btn {}
+.tab_btn li {
+    display: inline-block;
+}
+.tab_btn li::after {
+    content: '|';
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.tab_btn li:last-child::after {
+    content: '';
+}
+.tab_btn li.active a {
+    color: #000;
+}
+.tab_btn li a {
+    font-size: 30px;
+    font-weight: 600;
+    color: #999;
+}
+.tab_cont {}
+.cont_wrap {
+    padding-top: 30px;
+}
+.cont_wrap.active {
+    display: none;
+}
+.cont_wrap div {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+.cont_wrap div:last-child {
+    margin-right: 0;
+}
+.cont_wrap img {
+    width: 100%;
+}
+.cont_wrap h2 {
+    padding: 10px 0;
+    font-size: 14px;
+}
+.cont_wrap span {
+    font-size: 14px;
+    font-weight: 800;
+}
+.cont_wrap em {
+    font-size: 13px;
+    color: #999;
+    font-weight: 600;
+}
+/* content2 */
+
+
+#footer {
+    background-color: #202020;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+#footer img {
+    width: 150px;
+}
+#footer .foot {
+    float: right;
+}
+#footer .foot ul {
+    color: #fff;
+}
+#footer .foot ul li {
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+}
+#footer .foot ul li::after {
+    content: '|';
+    padding: 0 20px;
+    color: #444;
+    font-weight: 600;
+}
+#footer .foot ul li:last-child:after{
+    content: '';
+}
+#footer .address {
+    color: #555;
+    float: right;
+    padding-right: 35px;
+}
+#footer .address ul {
+}
+
+#footer .address ul li {
+    font-size: 11px;
+    padding: 2px 0;
+}
+.address span {
+    font-size: 8px;
+    padding: 0 5px;
+}
+/* footer */

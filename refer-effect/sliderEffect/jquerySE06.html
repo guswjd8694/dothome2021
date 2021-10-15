@@ -7,7 +7,7 @@
     <title>Slider Effect</title>
 
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/highlight.min.css">
+    <link rel="stylesheet" href="../assets/css/highlight.css">
     <style>
         /* slider */
         .slider-wrap {
@@ -29,7 +29,7 @@
         }
         .slider-inner {
             position: relative;
-            width: 4000px;
+            /* width: 4000px; */
             height: 480px;
             overflow: hidden;
         }
@@ -75,35 +75,59 @@
         }
         .slider-btn .prev {
             left: 0;
+            margin-left: 450px;
         }
         .slider-btn .next {
             right: 0;
+            margin-right: 450px;
+        }
+        .slider-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            margin-bottom: 160px;
+        }
+        .slider-dot .dot {
+            width: 15px;
+            height: 15px;
+            background: rgba(0,0,0,.4);
+            display: inline-block;
+            border-radius: 50%;
+            transition: all 0.3s;
+            text-indent: -9999px;
+            margin: 5px;
+        }
+        .slider-dot .dot.active {
+            background: rgba(255,255,255,.9);
         }
 
     </style>
 </head> 
-<body class="bg bg5"> 
+<body class="bg bg20"> 
 
     <!-- contents -->
     <main>
         <div class="slider-wrap">
-            <div class="slider-img slider-img1">
-                <div class="slider-inner slider-inner1">
-                    <div class="slider slider1" data-name="이미지1"><img src="../assets/img/bg1.jpg" alt="이미지1"></div>
-                    <div class="slider slider1" data-name="이미지2"><img src="../assets/img/bg3.jpg" alt="이미지2"></div>
-                    <div class="slider slider1" data-name="이미지3"><img src="../assets/img/bg2@2x.jpg" alt="이미지3"></div>
-                    <div class="slider slider1" data-name="이미지4"><img src="../assets/img/bg3@2x.jpg" alt="이미지4"></div>
-                    <div class="slider slider1" data-name="이미지5"><img src="../assets/img/bg8.jpg" alt="이미지5"></div>
+            <div class="slider-img">
+                <div class="slider-inner">
+                    <div class="slider" data-name="이미지1"><img src="../assets/img/bg19.jpg" alt="이미지1"></div>
+                    <div class="slider" data-name="이미지2"><img src="../assets/img/bg14.jpg" alt="이미지2"></div>
+                    <div class="slider" data-name="이미지3"><img src="../assets/img/bg15.jpg" alt="이미지3"></div>
+                    <div class="slider" data-name="이미지4"><img src="../assets/img/bg16.jpg" alt="이미지4"></div>
+                    <div class="slider" data-name="이미지5"><img src="../assets/img/bg17.jpg" alt="이미지5"></div>
                 </div>
             </div>
-            <div class="slider-img slider-img2">
-                <div class="slider-inner slider-inner2">
-                    <div class="slider slider2" data-name="이미지1"><img src="../assets/img/bg1.jpg" alt="이미지1"></div>
-                    <div class="slider slider2" data-name="이미지2"><img src="../assets/img/bg3.jpg" alt="이미지2"></div>
-                    <div class="slider slider2" data-name="이미지3"><img src="../assets/img/bg2@2x.jpg" alt="이미지3"></div>
-                    <div class="slider slider2" data-name="이미지4"><img src="../assets/img/bg3@2x.jpg" alt="이미지4"></div>
-                    <div class="slider slider2" data-name="이미지5"><img src="../assets/img/bg8.jpg" alt="이미지5"></div>
-                </div> 
+            <div class="slider-btn">
+                <a href="#" class="prev">prev</a>
+                <a href="#" class="next">next</a>
+            </div>
+            <div class="slider-dot">
+                <!-- <a href="#" class="dot active">1</a>
+                <a href="#" class="dot">2</a>
+                <a href="#" class="dot">3</a>
+                <a href="#" class="dot">4</a>
+                <a href="#" class="dot">5</a> -->
             </div>
         </div>
     </main>
@@ -111,8 +135,8 @@
 
     <!-- info -->
     <div class="info">
-        <h1><a href="#">Slider Effect04 - jQuery</a></h1>
-        <p>이미지 슬라이드 - 위로 움직이기</p>
+        <h1><a href="#">Slider Effect06 - jQuery</a></h1>
+        <p>이미지 슬라이드 - 닷 버튼 추가</p>
     </div>
     <div class="info right">
         <ul>
@@ -121,13 +145,15 @@
             <li><a href="javascriptSE03.html">3</a></li>
             <li><a href="javascriptSE04.html">4</a></li>
             <li><a href="javascriptSE05.html">5</a></li>
+            <li><a href="javascriptSE06.html">6</a></li>
         </ul>
         <ul>
             <li><a href="jquerySE01.html">1</a></li>
             <li><a href="jquerySE02.html">2</a></li>
             <li><a href="jquerySE03.html">3</a></li>
-            <li class="active"><a href="jquerySE04.html">4</a></li>
+            <li><a href="jquerySE04.html">4</a></li>
             <li><a href="jquerySE05.html">5</a></li>
+            <li class="active"><a href="jquerySE06.html">6</a></li>
         </ul>
     </div>
 
@@ -186,31 +212,56 @@
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/highlight.min.js"></script>
     <script>
-        const sliderWRap = $(".slider-wrap");
+        const sliderInner = $(".slider-inner");
         const slider = $(".slider");
+        const sliderBtn = $(".slider-btn");
+        const sliderDot = $(".slider-dot");
 
-        const sliderImg1 = $(".slider-img1");
-        const sliderInner1 = $(".slider-inner1");
-
-        const sliderImg2 = $(".slider-img2");
-        const sliderInner2 = $(".slider-inner2");
-
+        let sliderCount = slider.length;
+        let sliderWidth = slider.width();
+        let sliderTotalWidth = sliderWidth * sliderCount;
         let currentIndex = 0;
-        let sliderHeight = slider.height();
+        let dotIndex = "";
 
-        setInterval(function(){
+        //이미지 가로값 세팅
+        sliderInner.css({width: sliderTotalWidth});
 
-            //왼쪽
-            currentIndex < 4 ? currentIndex++ : currentIndex = 0;
-            let sliderPosition = currentIndex * -sliderHeight;
-            sliderInner1.animate({top: sliderPosition}, 600, "easeOutExpo");
+        //닷 버튼 생성 : 이미지 갯수 만큼 닷 메뉴 생성
+        slider.each(function(index){
+            dotIndex += "<a href='#' class='dot'>" + index + "</a>"
+        });
+        sliderDot.html(dotIndex);
+        sliderDot.find("a").eq(currentIndex).addClass("active");
 
-            //오른쪽
-            sliderInner2.animate({top: -sliderHeight}, 600, function(){
-                $(".slider2:first-child").appendTo(sliderInner2);
-                sliderInner2.css("top","");
-            })
-            
-        },2000)
+        //이미지 움직이기
+        function gotoSlider(num){
+            sliderInner.animate({left: -sliderWidth * num}, 600, "easeInQuart");
+            currentIndex = num;
+            console.log(currentIndex);
+            sliderDot.find("a").removeClass("active").eq(currentIndex).addClass("active");
+        };
+
+        //닷 버튼 클릭하기
+        sliderDot.on("click", "a", function(e){
+            e.preventDefault();
+            gotoSlider($(this).index());
+        });
+
+        //버튼 클릭하기
+        sliderBtn.on("click", "a", function(e){
+            e.preventDefault();
+
+            let nextIndex = (currentIndex + 1) % sliderCount;
+            let prevIndex = (currentIndex - 1) % sliderCount;
+
+            if(currentIndex == 0) prevIndex = sliderCount - 1;
+            console.log(prevIndex)
+
+            if( $(this).hasClass("prev")){
+                gotoSlider(prevIndex);
+            }else{
+                gotoSlider(nextIndex);
+            }
+        });
     </script>
 </html>
