@@ -24,7 +24,7 @@
         }
         .textWrap .line .left {
             width: 50vw;
-            color: orange;
+            color: rgb(161, 64, 40);
             overflow: hidden;
             transform: skew(0deg, -15deg);
         }
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="imgWrap">
-                    <img src="../assets/img/bg1.jpg" alt="">
+                    <img src="../assets/img/bg19.jpg" alt="">
                 </div>
             </div>
         </div>    
@@ -174,16 +174,14 @@
     <script src="../assets/js/highlight.min.js"></script>
 
     <script>
-        // function mouseMove(e){
-        //     let positionSlow = (e.pageX - ($(window).width()/2)) * 0.1;
-        //     let positionFast = (e.pageX - ($(window).width()/2)) * 0.2;
+        function mouseMove(e){
+            let positionSlow = (e.pageX - window.innerWidth/2) * 0.1;
+            let positionFast = (e.pageX - window.innerWidth/2) * 0.2;
 
-        //     gsap.to(".spanSlow", {duration: 0.4, x: positionSlow})
-        //     gsap.to(".spanFast", {duration: 0.4, x: -positionFast})
-        // }
-
-        // $(window).on("mousemove", mouseMove);
-
+            gsap.to(".spanSlow", {duration: 0.4, x: positionSlow})
+            gsap.to(".spanFast", {duration: 0.4, x: -positionFast})
+        };
+        window.addEventListener("mousemove", mouseMove);
 
     </script>
 </body>
