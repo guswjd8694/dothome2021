@@ -73,6 +73,7 @@ setInterval(function(){
     $(".slideList").animate({ top:slidePosition},400);
 },3000);
 
+
 //탭메뉴
 var tabMenu = $(".notice");
 
@@ -85,6 +86,7 @@ function tabList(e){
     target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("ul").hide();
 };
 tabMenu.find("ul > li > a").click(tabList).focus(tabList);
+
 
 //팝업
 $(".ad").click(function(){

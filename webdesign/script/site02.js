@@ -20,6 +20,7 @@ $(".nav > ul > li").mouseover(function(){
 //     $(".slideList").animate({top: slidePosition},400);
 // }, 3000);
 
+
 //이미지 슬라이드(좌우)
 var currentIndex = 0;
 
@@ -33,6 +34,9 @@ setInterval(function(){
     var slidePosition = currentIndex * (-1000)+"px";
     $(".slideList").animate({left : slidePosition}, 400);
 }, 3000);
+
+
+
 
 //탭메뉴
 var tabBtn = $(".tab-btn > ul > li");
@@ -50,6 +54,8 @@ tabBtn.click(function(e){
     tabCont.eq(index).css("display","block");
 });
 
+
+
 //레이어 팝업
 $("#content1 .right").click(function(){
     $(".layer").slideDown(300);
@@ -59,3 +65,4 @@ $(".layer .close").click(function(){
     $(".layer").slideUp(300);
     $(".layer_bg").hide();
 });
+

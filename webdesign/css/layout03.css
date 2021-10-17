@@ -14,8 +14,8 @@ table {border-spacing: 0;}
 #header .nav li {position: relative; float: left; width: 25%; text-align: center; }
 #header .nav li a {padding: 10px; display: block; font-size: 20px; color: #fff; }
 #header .nav li a:hover {background: rgba(0,0,0,0.4);}
-#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #b39ddb;}
-#header .nav li ul.submenu li {width: 100%; border-right: 0;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #b39ddb; z-index: 1000;}
+#header .nav li ul.submenu li {width: 100%; border-right: 0; z-index: 1000;}
 
 /* banner */
 #banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}

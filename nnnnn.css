@@ -17,9 +17,15 @@ a {text-decoration: none;color: #000;font-size: 18px;font-weight: 700;}
 #header .menu ul li {
     display: inline-block;
     padding-left: 50px;
+    position: relative;
 }
 #header .menu ul li .sub_menu {
+    background-color: #999;
     display: none;
+    position: absolute;
+    left: 0;
+    top: 67px;
+    z-index: 100;
 }
 #header .menu ul li .sub_menu li {}
 
@@ -30,15 +36,27 @@ a {text-decoration: none;color: #000;font-size: 18px;font-weight: 700;}
     height: 389px;
     overflow: hidden;
 }
-#banner .slide_list {
-    height: 1167px;
-}
-#banner .slide_list .slide {
-    float: left;
-}
-#banner .slide_list .slide img {
+#banner img {
     width: 100%;
     display: block;
+}
+
+/* 상하 */
+/* #banner .slide_list {
+    width: 1000px;
+    height: 389px;
+    position: relative;
+} */
+
+/* 좌우 */
+#banner .slide_list {
+    width: 3000px;
+    position: relative;
+}
+
+#banner .slide_list .slide {
+    width: 1000px;
+    float: left;
 }
 
 /* banner */
@@ -88,6 +106,15 @@ a {text-decoration: none;color: #000;font-size: 18px;font-weight: 700;}
 /* content1 */
 
 
+.layer_bg {display: none; position: fixed; left: 0; top: 0; z-index: 900; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+.layer {display: none; position: absolute; left: 30px; top: 30px; width: 500px; height: 500px; z-index: 1000; border: 3px solid #000; background: #fff;}
+.layer h2 {padding: 20px; color: #000;}
+.layer .close {position: absolute; bottom: 20px; right: 20px;}
+
+/* layer */
+
+
+
 #content2 {}
 #content2 .tab_menu {}
 #content2 .tab_btn {
@@ -107,7 +134,7 @@ a {text-decoration: none;color: #000;font-size: 18px;font-weight: 700;}
 #content2 .tab_btn li:last-child:after {
     content: '';
 }
-#content2 .tab_btn li.active a {
+#content2 .tab_btn li.show a {
     color: #000;
 }
 #content2 .tab_btn li a {

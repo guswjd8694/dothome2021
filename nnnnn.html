@@ -90,6 +90,13 @@
             </a>
         </div>
         <!-- //content1 -->
+
+        <div class="layer_bg"></div>
+        <div class="layer">
+            <h2>제목</h2>
+            <a href="#" class="close">닫기</a>
+        </div>
+        <!-- //layer -->
     
         <div id="content2">
             <div class="tab_menu">
@@ -117,7 +124,7 @@
                             <span>32,800원 <em>/3인분</em></span>
                         </div>
                     </div>
-                    <div class="cont_wrap active">
+                    <div class="cont_wrap show">
                         <div class="card">
                             <img src="webdesign/img/2222/best2.jpg" alt="새우주꾸미삼겹살">
                             <h2>새우주꾸미삼겹살</h2>
@@ -165,6 +172,105 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
 
 <script>
+    // 네비게이션
+    // 서브메뉴에 display: none 해주기
+    $(".menu > ul > li").mouseover(function(){
+        $(this).find(".sub_menu").stop().slideDown(200);
+    });
+    $(".menu > ul > li").mouseout(function(){
+        $(this).find(".sub_menu").stop().slideUp(200);
+    });
+
+
+    //이미지 슬라이드 (가로)
+    var currentIndex = 0;
+
+    setInterval(function(){
+        if(currentIndex < 2){
+            currentIndex++;
+        }else{
+            currentIndex = 0;
+        }
+
+        var slidePosition = currentIndex * (-1000)+"px";
+        $(".slide_list").animate({left: slidePosition}, 300);
+    }, 3000);
+
+
+
+    //이미지 슬라이드 (세로)
+    // var currentIndex = 0;
+
+    // setInterval(function(){
+    //     if(currentIndex < 2){
+    //         currentIndex ++;
+    //     }else{
+    //         currentIndex = 0;
+    //     }
+    //     var slidePosition = currentIndex * (-389)+"px";
+
+    //     $(".slide_list").animate({top: slidePosition}, 300);
+    // }, 2000);
+
+
+    //레이어 팝업
+    $("#content1 .right").on("click", function(){
+        $(".layer").slideDown(300);
+        $(".layer_bg").show();
+    });
+    $("#content1 .left").on("click", function(){
+        $(".layer").slideDown(300);
+        $(".layer_bg").show();
+    });
+    $(".layer .close").on("click", function(){
+        $(".layer").slideUp(300);
+        $(".layer_bg").hide();
+    });
+
+
+    //탭메뉴
+    // var tabBtn = $(".tab_btn > ul > li");
+    // var tabCont = $(".cont_wrap");
+
+    // tabCont.hide().eq(0).show();
+    // tabBtn.on("click", function(e){
+    //     e.preventDefault();
+
+    //     var target = $(this);
+    //     var index = target.index();
+
+    //     tabBtn.removeClass("show");
+    //     target.addClass("show");
+
+    //     tabCont.css("display","none");
+    //     tabCont.eq(index).css("display","block");
+    // });
+
+
+    //탭메뉴
+
+    var tabBtn = $(".tab_btn > ul > li");
+    var tabCont = $(".cont_wrap");
+
+    tabCont.hide().eq(0).show();
+
+    tabBtn.on("click", function(e){
+        e.preventDefault();
+
+        var target = $(this);
+        var index = target.index();
+
+        tabBtn.removeClass("show");
+        target.addClass("show");
+
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+    });
+
+
+
+
+
 </script>
 
 </body>
