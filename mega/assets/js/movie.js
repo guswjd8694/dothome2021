@@ -1,6 +1,6 @@
 (function($){
 
-    /* 트레일러 영상 플레이어를 활성화 */
+    /* 트레일러 영상 플레이어 활성화 */
     /* YouTube iframe API: https://developers.google.com/youtube/player_parameters */
     
     (function handleTrailer() {
@@ -34,7 +34,7 @@
         $selector.showButton.on( "click", showPlayer );
         $selector.hideButton.on( "click", hidePlayer );
 
-        // YouTube API를 이용해 iframe을 생성
+        // YouTube API를 이용해 iframe 생성
         function setPlayer( id ) {
             player.obj = new YT.Player( "trailer", {
                 width: 480,
@@ -72,7 +72,7 @@
 
         // iframe 보이기
         function showPlayer() {
-            // 처음 클릭시 iframe을 생성 
+            // 처음 클릭시 iframe 생성 
             if ( !player.obj ) {
                 setPlayer( $selector.showButton.data("youtube") );
             }

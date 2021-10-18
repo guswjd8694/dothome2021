@@ -1,0 +1,26 @@
+:root {
+    // --font-sub: 'Rajdhani';
+    // --font-kor1: 'Chosunilbo_myungjo';
+    // --font-kor2: 'SCoreDream';
+    // --font-main: 'saol';
+    // --font-logo: 'Playfair Display';
+}
+$font-sub: 'Rajdhani';
+$font-kor1: 'Chosunilbo_myungjo';
+$font-kor2: 'SCoreDream';
+$font-main: 'saol';
+$font-logo: 'Playfair Display';
+
+
+@media (max-width: 1200px){
+    :root {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 800px){
+    :root {
+        font-size: 12px;
+    }
+}
