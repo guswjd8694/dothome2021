@@ -7,13 +7,12 @@
     // #youtubeCont
 // #footer
 
-
 // #header
 #header {
     position: fixed;
     left: 0; top: 0;
     width: 100%;
-    background: black;
+    background: #282828;
     color: #fff;
     display: flex;
     align-items: center;
@@ -22,7 +21,6 @@
     border-top: 1px solid #2e2e30;
 
     border-bottom: 1px solid #2e2e30;
-
 
     .header__port {
         flex: 0 0 30%;
@@ -86,6 +84,12 @@
         }
     }
 }
+#header.about {
+    background-color: #f5f5f5;
+    color: #282828;
+}
+main {
+}
 @media (max-width: 1102px){
     #header {
         .header__port,
@@ -94,6 +98,18 @@
         }
         .header__logo {flex: 0 0 100%;}
         .header__ham {display: block;}
+    }
+    #header.about {
+        .header__ham {
+            &::before {
+                background: #282828;
+                box-shadow: 0 14px 0 #282828;
+            }
+            &::after {
+                background: #282828;
+                box-shadow: 0 -14px 0 #282828;
+            }
+        }
     }
 }
 @media (max-width: 800px){
