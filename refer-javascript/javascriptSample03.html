@@ -4,214 +4,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 속성 오름차순 내림차순</title>
+    <title>javascript</title>
+    <link rel="stylesheet" href="https://tistory4.daumcdn.net/tistory/2933724/skin/images/font.css">
+    <link rel="stylesheet" href="https://tistory4.daumcdn.net/tistory/2933724/skin/images/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
         @font-face {
-            font-family: 'GyeonggiBatang';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'TmonMonsori';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
         * {
             margin: 0;
             padding: 0;
-        }
-        img {
-            width: 100%;
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
         body {
-            background-image: url(img/search_bg.jpg);
-            background-size: cover;
-            background-position: center bottom;
-            background-attachment: fixed;
+            padding: 5%;
+            margin-bottom: 400px;
         }
-        .girl {
-            width: 250px;
-            position: fixed;
-            bottom: -60px;
-            right: 5%;
+        h1 {
+            padding-bottom: 20px;
         }
-        .dog {
-            width: 150px;
-            position: fixed;
-            bottom: -40px;
-            left: 5%;
+        hr {
+            margin: 5% 0;
+            border-style: dashed;
+            border-color: #e6e6e6;
+            border-width: 1px;
         }
-        .board {
-            margin: 5vw 10vw 10vw 10vw;
-            width: 80vw;
-            background-color: #F1F3F6;
-            border: 2px solid #000;
-            padding: 3%;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .board h1 {
-            font-family: 'TmonMonsori';
-            color: #223547;
-            font-size: 60px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        .board span {
-            font-family: 'GyeonggiBatang';
-            color: #223547;
-            font-size: 20px;
-        }
-        .board .search label {
-            font-family: 'GyeonggiBatang';
-            background-color: #BFE6FE;
-            font-size: 26px;
-            padding: 10px 30px;
-            border: 1px solid #000;
-            border-radius: 40px;
-            display: none;
-        }
-        .board .search input {
-            font-family: 'GyeonggiBatang';
-            font-size: 24px;
-            border: 1px solid #000;
-            padding: 10px 10px 10px 30px;
-            border-radius: 40px;
-            outline: none;
-        }
-        .board .search-result {
-            text-align: left;
-            margin-top: 40px;
-        }
-        .board .search-result ul li {
-            font-family: 'GyeonggiBatang';
-            line-height: 1.6;
-            list-style: none;
-            background-color: #BDD6E6;
+        img {
+            vertical-align: top;
+            border-radius: 5px;
             margin: 5px;
-            padding: 5px 10px;
-            border-radius: 4px;
         }
-        .board .search-result ul li.hide {
-                display: none;
-            }
-
-        @media (max-width: 800px){
-            .board {
-                width: 92vw;
-                padding: 6% 3% 3% 3%;
-                margin: 4vw;
-            }
-            .board h1 {
-                font-size: 30px;
-                margin-top: 5px;
-            }
-            .board span {
-                font-size: 12px;
-            }
-            .board .search input {
-                width: 100%;
-                box-sizing: border-box;
-                font-size: 16px;
-                padding: 10px 10px 10px 20px;
-            }
-            .board .search-result {
-                margin-top: 20px;
-            }
-            .girl {
-                width : 200px;
-            }
-            .dog {
-                width : 100px;
-            }
+        ul {
+            list-style: none;
         }
-        button {
-            font-family: 'GyeonggiBatang';
-            padding: 10px 20px;
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .sample {
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+        }
+        .sample h2 {
+            position: relative;
+            font-size: 16px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-bottom: 1px solid #e6e6e6;
+            border-radius: 5px 5px 0 0;
+        }
+        .sample h2 .dot {
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        .sample h2 .dot::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            border-radius: 50%;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+        .sample h2 .dot::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px; 
+            top: 0;
+        }
+        .sample .ex {
+            padding: 20px;
+        }
+        .sample .ex .text {
+            margin: 10px 0;
+        }
+        .sample .re {
+            padding: 20px;
+            border-top: 1px solid #e6e6e6;
+        }
+        .sample .re a {
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .sample .re a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .sample .problem {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+            line-height: 1.6;
+        }
+        .sample pre {margin: 0 !important; border-radius: 0;;}
+        .sample .desc {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .sample .desc dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+        .sample .desc dd {
+            padding: 3px 0 16px 0;
+            line-height: 1.6;
+        }
+        .sample .sam {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .sample .sam dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+        }
+        .sample .sam dd {
+            padding: 3px 0 16px 0;
+        }
+        ol {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+        ol li {
+            border: 1px solid #000;
+            display: inline-block;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+        }
+        ol li.active {
+            background: #000;
+        }
+        ol li.active a {
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div id="wrap">
-        <div class="board">
-            <span>CSS 속성을 순서대로 정리하기^_^</span>
-            <h1>CSS 속성 정리</h1>
-            <div class="button-wrap">
-                <button class="asce">오름차순</button>
-                <button class="desc">내림차순</button>
-            </div>
-            <div class="search-result">
-                <ul>
-                    <li>align-content</li>
-                    <li>align-items</li>
-                    <li>align-self</li>
-                    <li>all</li>
-                </ul>
-            </div>
+    
+    <h1>Javascript 알고리즘 공부하기</h1>
+    <ol>
+        <li><a href="javascriptSample01.html">01</a></li>
+        <li><a href="javascriptSample02.html">02</a></li>
+        <li class="active"><a href="javascriptSample03.html">03</a></li>
+        <li><a href="javascriptSample04.html">04</a></li>
+        <li><a href="javascriptSample05.html">05</a></li>
+        <li><a href="javascriptSample06.html">06</a></li>
+        <li><a href="javascriptSample07.html">07</a></li>
+        <li><a href="javascriptSample08.html">08</a></li>
+        <li><a href="javascriptSample09.html">09</a></li>
+        <li><a href="javascriptSample10.html">10</a></li>
+    </ol>
+
+    <div id="sample01" class="sample">
+        <h2>1부터 N까지의 합 출력하기<span class="dot"></span></h2>
+        <p class="problem">
+            Q : 자연수 N이 입력되면 1 부터 N 까지의 합을 출력하는 프로그램을 작성하시오.
+        </p>
+        <div class="desc">
+            <dl>
+                <dt><i class="fab fa-github-alt"></i> 입력 설명</dt>
+                <dd>20 이하의 자연수 N을 입력한다.</dd>
+                <dt><i class="fab fa-github-alt"></i> 출력 설명</dt>
+                <dd>1부터 N까지의 합이 출력된다.</dd>
         </div>
-        <div class="girl">
-            <img src="img/search_girl.png" alt="">
-        </div>
-        <div class="dog">
-            <img src="img/search_dog.png" alt="">
+        <div class="sam">
+            <dl>
+                <dt><i class="fas fa-ghost"></i> 입력 예제</dt>
+                <dd>10</dd>
+                <dt><i class="fas fa-ghost"></i> 출력 예제</dt>
+                <dd>55</dd>
+            </dl>
         </div>
     </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">function solution(num){
+    let answer = 0;
 
+    for(let i=1; i&lt;=num; i++){
+        answer += i;
+    }
+    return answer;
+}
+console.log(solution(10));
+</code></pre></div><hr>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
-        const cssProp = [
-            {
-                id: 1,
-                name : "align-content"
-            },
-            {
-                id: 4,
-                name : "align-selfdd"
-            },
-            {
-                id: 2,
-                name : "align-items"
-            },
-            {
-                id: 3,
-                name : "align-self"
-            },
-            {
-                id: 5,
-                name : "align-sedd"
-            },
-        ];
-        
-        const searchResult = document.querySelector(".search-result");
-        const asceButton = document.querySelector(".asce");
+        function solution(num){
+            let answer = 0;
 
-        function updataList(){
-            let listHTML = '';
-            // document.write(cssProp[0].name)
-            // document.write(cssProp[1].name)
-            // document.write(cssProp[2].name)
-
-            // searchResult.innerHTML = "<li>"+cssProp[0].name+"</li>";
-            // searchResult.innerHTML += "<li>"+cssProp[1].name+"</li>";
-            // searchResult.innerHTML += "<li>"+cssProp[2].name+"</li>";
-
-            for ( let prop of cssProp ){
-                searchResult.innerHTML += "<li>"+prop.id +" : "+ prop.name+"</li>";
+            for(let i=1; i<=num; i++){
+                answer += i;
             }
+            return answer;
         }
-        updataList();
-
+        console.log(solution(10));
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
