@@ -61,7 +61,7 @@
         * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'NEXONLv2Gothic';}
         a {text-decoration: none;}
         li {list-style: none;}
-        body {height: 10000px;}
+        iframe {border: 0;}
         /* //reset */
 
 
@@ -73,19 +73,43 @@
         #contents > div {
             position: relative;
         }
-        #section1 {height: 7000px;}
+        #section1 {
+            background: red;
+            height: 7000px; 
+            /* 섹션1 내용이 스크롤 7000까지 있어서 h값을 줌 */
+            /* 일단 적어놓고 다시 읽어보기 그래도 몰겠으면 검색하기 그래도 모르면 질문하기*/
+            /* 틀리면 방금 전에 한거로 돌아가보기 */
+            /* 다시 코드를 읽어보고 뭘 왜 했는지 주석달기 */
+
+        }
         #section2 {
-            /* background: #000;  */
-            height: 19000px; 
-            z-index: 2000;
+            background: orange; 
+            z-index: 5000;
+            height: 20000px;
+            /* 하이ㅡ를 왜줬는지 백그라운드를 왜줬는지 생각해보기 */
+            /* 그리고 주석달기 */
+
+            /* 섹션2의 끝 하이트 값은 27000 */
         }
         #section3 {
-            /* background: blue;  */
-            height: 3000px; 
+            background: yellow; 
             z-index: 3000;
+            height: 13500px;
+            /* 섹션3은 40500px에서 끝나니까 13500을 줌 */
+
         }
-        #section4 {}
-        #section5 {}
+        #section4 {
+            background: green; 
+            z-index: 3000;
+            height: 10000px;
+            /* 아직 섹션4하고있어서 임의로 하이트값 지정해줌 */
+
+        }
+        #section5 {
+            height: 10000px;
+            background: blue;
+            z-index: 4000;
+        }
         #section6 {}
         #section7 {}
         /* //contents */
@@ -100,6 +124,7 @@
             left: 50%; top: 50%; 
             transform: translate(-50%, -50%); 
         }
+        /* 요소를 가운데에 고정기켜주기 위해 저것들을 즘 */
         /* //setting */
 
 
@@ -189,12 +214,15 @@
 
     <div id="contents">
         <section id="section1">
-            <div class="s1Text1 fixed"
+            <div class="s1Text1 fixed" 
                 data-0 = "transform: translate(-50%, 0%); opacity: 0;"
                 data-500 = "transform: translate(-50%, -50%); opacity: 1;"
                 data-1000 = "transform: translate(-50%, -100%); opacity: 0;"
             >안녕하세요!</div>
-
+            <!-- fixed 준 이유: 안녕하세요(s1Text1) 고정시켜놓고 data값으로 움직여주려고 -->
+            <!-- 0에서 500이 되는 동안 투명도가 0에서 1로 바뀌는 중  -->
+            <!-- 원래 translate(-50%, -50%)였는데 y값을 0으로 바꿨으니까 data-0일 때 눈에 안보이는 것 -->
+            <!-- 500에서 1000으로 가면서 y값으로 인해 올라가면서 투명도 0으로 바뀜 -->
 
             <div class="s1Text2 fixed"
                 data-1500 = "transform: translate(-50%, 0%); opacity: 0;"
@@ -202,7 +230,7 @@
                 data-2500 = "transform: translate(-50%, -50%); opacity: 1; font-size: 8vw"
                 data-3500 = "transform: translate(-50%, -50%); opacity: 1; font-size: 0vw"
             >프론트엔드 개발자입니다🦖</div>
-
+            <!-- 위와 동일함 y가 0%니까 안보이다가 2000이 되면서 위로 올라옴+투명도 1 폰트사이즈만 변화줘서 그대로 글씨만 작아짐 -->
 
             <div class="s1Text3 fixed"
                 data-3200 = "width: 0vw"
@@ -340,63 +368,281 @@
                 font-weight: 100;
                 font-family: 'NEXONLv1Gothic';
                 text-transform: uppercase;
+                white-space: nowrap;
             }
             .s3Text1 span {
                 display: inline-block;
+                background: #000;
+                color: #fff;
+                margin: 0 2px;
+                min-width: 1vw;
+                height: 100vh;
+                overflow: hidden;
+                padding-top: 1vw;
             }
-            .s3Text1 .s1 {
-                transform: translate(50vw, 50vw);
+            .s3Text1 span em {
+                font-style: normal;
+                position: relative;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
             }
-            .s3Text1 .s2 {
-                transform: translate(50vw, 50vw);
+            .s3Text2 {
+                perspective: 500px;
             }
-            
-            .s3Text1 .s3 {
-                transform: translate(10vw, 50vw);
+            .s3Text2 iframe {
+                width: 60vw;
+                height: 60vh;
+                transform-style: preserve-3d;
+                transform: translate3d(0, 0, 0);
             }
-            .s3Text1 .s4 {
-                transform: translate(30vw, -50vw);
+            .s3Text2 .il-text {
+                width: 60vw;
+                height: 60vh;
+                transform-style: preserve-3d;
+                transform: translate3d(0, 0, 0);
             }
-            .s3Text1 .s5 {
-                transform: translate(10vw, 50vw);
+            .s3Text2 .i1 {
+                position: absolute;
+                left: 0; top: 0;
             }
-            .s3Text1 .s6 {
-                transform: translate(50vw, 3vw);
+            .s3Text2 .i2 {
+                position: absolute;
+                left: 0; top: 0;
+            }
+            .s3Text2 .i3 {
+                position: absolute;
+                left: 0; top: 0;
             }
         </style>
         <section id="section3">
             <div class="s3Text1 fixed"
+                data-25000 = "top:150%; height: 0vh;"
+                data-27000 = "top:50%; height: 100vh;"
+                data-40000 = "top:50%; height: 100vh;"
+                data-42000 = "top:-50%; height: 100vh;"
                 >
                 <span class="s1"
-                    data-26000 = "transform: translate(-30vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >s</span><span class="s2"
-                    data-26000 = "transform: translate(-10vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >c</span><span class="s3"
-                    data-26000 = "transform: translate(10vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >r</span><span class="s4"
-                    data-26000 = "transform: translate(10vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >i</span><span class="s5"
-                    data-26000 = "transform: translate(30vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >p</span><span class="s6"
-                    data-26000 = "transform: translate(30vw, 50vw)"
-                    data-27000 = "transform: translate(0vw, 0vw)"
-                >t</span>
+                    data-27000 = "width: 1vw"
+                    data-27300 = "width: 5vw"
+                    data-31600 = "width: 5vw; height: 100vh;"
+                    data-32600 = "width: 5vw; height: 16vh;"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >s</em></span><span class="s2"
+                    data-27500 = "width: 1vw"
+                    data-28000 = "width: 5.3vw"
+                    data-31600 = "width: 5.3vw; height: 100vh"
+                    data-32600 = "width: 5.3vw; height: 16vh"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >c</em></span><span class="s3"
+                    data-28500 = "width: 1vw"
+                    data-29000 = "width: 5.2vw"
+                    data-31600 = "width: 5.2vw; height: 100vh"
+                    data-32600 = "width: 5.2vw; height: 16vh"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >r</em></span><span class="s4"
+                    data-29500 = "width: 1vw"
+                    data-30000 = "width: 2vw"
+                    data-31600 = "width: 2vw; height: 100vh"
+                    data-32600 = "width: 2vw; height: 16vh"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >i</em></span><span class="s5"
+                    data-30000 = "width: 1vw"
+                    data-30500 = "width: 5.3vw"
+                    data-31600 = "width: 5.3vw; height: 100vh"
+                    data-32600 = "width: 5.3vw; height: 16vh"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >p</em></span><span class="s6"
+                    data-30500 = "width: 1vw"
+                    data-31000 = "width: 5vw"
+                    data-31600 = "width: 5vw; height: 100vh"
+                    data-32600 = "width: 5vw; height: 16vh"
+                ><em
+                    data-31000 = "left: 10vw"
+                    data-31300 = "left: 0vw"
+                    data-31600 = "left: 0vw; top: 50%"
+                    data-32600 = "left: 0vw; top: 50%"
+                >t</em></span>
+            </div>
+            <div class="s3Text2 fixed">
+                <iframe class="i1" src="../mouseEffect/javascriptME04.html" alt="mouse"
+                    data-33000 = "transform: translate3d(-80%, -50%, -10000px); opacity:0"
+                    data-34000 = "transform: translate3d(-80%, -50%, 0px); opacity:1"
+                    data-39000 = "transform: translate3d(-80%, -50%, 0px); opacity:1"
+                    data-40000 = "transform: translate3d(-80%, -50%, 1000px); opacity:0"
+                ></iframe>
+                <iframe class="i2" src="../mouseEffect/javascriptME05.html" alt="mouse"
+                    data-34000 = "transform: translate3d(-50%, -80%, -10000px); opacity:0"
+                    data-35000 = "transform: translate3d(-50%, -80%, 0px); opacity:1"
+                    data-38500 = "transform: translate3d(-50%, -80%, 0px); opacity:1"
+                    data-39500 = "transform: translate3d(-50%, -80%, 1000px); opacity:0"
+                ></iframe>
+                <iframe class="i3" src="../mouseEffect/javascriptME06.html" alt="mouse"
+                    data-36000 = "transform: translate3d(-30%, -30%, -10000px); opacity:0"
+                    data-37000 = "transform: translate3d(-30%, -30%, 0px); opacity:1"
+                    data-38000 = "transform: translate3d(-30%, -30%, 0px); opacity:1"
+                    data-39000 = "transform: translate3d(-30%, -30%, 1000px); opacity:0"
+                ></iframe>
             </div>
         </section>
         <!-- //section3 -->
+        <style>
+            .s4Text1 {}
+            .s4Text1 > div {
+                background: #000;
+                border-radius: 50%;
+            }
+            .s4Text1 .circle1 {
+                left: 20%; top: 70%;
+            }
+            .s4Text1 .circle2 {
+                left: 10%; top: 20%;
+            }
+            .s4Text1 .circle3 {
+                left: 80%; top: 70%;
+            }
+            .s4Text1 .circle4 {
+                left: 50%; top: 50%;
+            }
+            .s4Text1 .circle5 {
+                left: 80%; top: 30%;
+            }
+            .s4Text1 .circle6 {
+                left: 40%; top: 80%;
+            }
+            .s4Text1 .circle7 {
+                left: 20%; top: 70%;
+            }
+            .s4Text1 .circle8 {
+                left: 40%; top: 80%;
+            }
+            .s4Text1 .circle9 {
+                left: 40%; top: 80%;
+            }
+
+            .s4Text2 {
+            }
+            .s4Text2 iframe {
+                width: 50vw;
+                height: 50vh;
+                transform-style: preserve-3d;
+                transform: translate3d(0, 0, 0);
+            }
+            .s4Text2 iframe.trex {
+                width: 100vw;
+                height: 100vh;
+            }
+            .s4Text2 iframe.stars {
+                width: 100vw;
+                height: 100vh;
+            }
+            .s4Text2 .i1 {
+            }
+            .s4Text-text {
+                color: #fff;
+                font-size: 7vw;
+                font-weight: 900;
+            }
+        </style>
         
         <section id="section4">
+            <div class="s4Text1"
+                data-39999 = "dispaly: none"
+                data-40000 = "dispaly: block"
+                data-43000 = "dispaly: block"
+                data-43001 = "dispaly: none"
+            >
+                <div class="circle1 fixed"
+                    data-40000 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 50vw; height: 50vw"
+                ></div>
+                <div class="circle2 fixed"
+                    data-40050 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
 
+                ></div>
+                <div class="circle3 fixed"
+                    data-40100 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle4 fixed"
+                    data-40150 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle5 fixed"
+                    data-40100 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle6 fixed"
+                    data-40250 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle7 fixed"
+                    data-40300 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle8 fixed"
+                    data-40350 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 100vw; height: 100vw"
+
+                ></div>
+                <div class="circle9 fixed"
+                    data-40400 = "width: 0vw; height: 0vw"
+                    data-41000 = "width: 200vw; height: 200vw"
+                ></div>
+
+            </div>
+            <div class="s4Text2 fixed">
+                <div class="s4Text-text fixed"
+                    data-41000="opacity:0; top:50%;"
+                    data-43000="opacity:1; top:15%;"
+                >
+                    Animation
+                </div>
+                <iframe class="trex" src="codepen-6.html"
+                    data-42000="opacity:0;"
+                    data-43500="opacity:1;"
+                ></iframe>
+                <div class="s4Text-text2 fixed"
+                    data-41000="opacity:0; top:50%;"
+                >
+                    CONTACT ME
+                </div>
+            </div>
         </section>
         <!-- //section4 -->
         
+        <style>
+        </style>
         <section id="section5">
-
+            <div class="s5Text1 fixed">
+            </div>
         </section>
         <!-- //section5 -->
         
