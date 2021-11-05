@@ -1,5 +1,5 @@
 export class Point{
-    constructor(x, y) {
+    constructor(index, x, y) {
         this.x = x;
         this.y = y;
         this.fixedY = y;

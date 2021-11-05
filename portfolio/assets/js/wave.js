@@ -5,7 +5,7 @@ import {
 export class Wave {
     constructor(index, totalPoints, color){
         this.index = index;     //고유 index를 넘겨줘서 웨이브가 차이를 두고 움직이도록
-        this.totaPoints = totalPoints;  //몇 개의 포인트를 생성할 것인지
+        this.totalPoints = totalPoints;  //몇 개의 포인트를 생성할 것인지
         this.color = color;
         this.points = [];
     }
@@ -19,7 +19,6 @@ export class Wave {
         //화면 중간에 놓기 위함
         this.centerX = stageWidth / 2;
         this.centerY = stageHeight / 2;
-
         //포인트 간격 정의
         //포인트 간격 = 총 스테이지 넓이 / totalPoints
         this.pointGap = this.stageWidth / (this.totalPoints -1);
@@ -31,11 +30,10 @@ export class Wave {
     //resize 이벤트에서 정의했던 centerX,Y값을 넘겨줘서 화면 중간을 기준으로 그려질 수 있게 정의
     init(){
         this.point = [];
-
         //정해진 포인트 만큼 간격에 맞춰 화면에 그려줌
         for (let i = 0; i < this.totalPoints; i++){
             const point = new Point(
-                this.inex + i,
+                this.index + i,
                 this.pointGap * i,
                 this.centerY,
             );
@@ -47,13 +45,13 @@ export class Wave {
     draw(ctx){
         ctx.beginPath();
         ctx.fillStyle = this.color;
-
+        console.log(this.points[1]);
         let prevX = this.points[0].x;
         let prevY = this.points[0].y;
 
         ctx.moveTo(prevX, prevY);
 
-        for (let i = 0; i < this.totalPoints; i++){
+        for (let i = 1; i < this.totalPoints; i++){
             if (i < this.totalPoints - 1){
                 this.points[i].update();
             }
@@ -61,7 +59,7 @@ export class Wave {
             const cx = (prevX + this.points[i].x) / 2;
             const cy = (prevY + this.points[i].y) / 2;
 
-            ctx.lineTo(cx, cy);
+            ctx.quadraticCurveTo(prevX, prevY, cx, cy);
 
             prevX = this.points[i].x;
             prevY = this.points[i].y;
