@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MB';
+    src: url('../font/Moon\ Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ML';
+    src: url('../font/Moon\ Light.otf') format('opentype');
+}
