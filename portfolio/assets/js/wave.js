@@ -18,7 +18,7 @@ export class Wave {
 
         //화면 중간에 놓기 위함
         this.centerX = stageWidth / 2;
-        this.centerY = stageHeight / 2;
+        this.centerY = stageHeight * 0.8;
         //포인트 간격 정의
         //포인트 간격 = 총 스테이지 넓이 / totalPoints
         this.pointGap = this.stageWidth / (this.totalPoints -1);
@@ -45,7 +45,6 @@ export class Wave {
     draw(ctx){
         ctx.beginPath();
         ctx.fillStyle = this.color;
-        console.log(this.points[1]);
         let prevX = this.points[0].x;
         let prevY = this.points[0].y;
 
