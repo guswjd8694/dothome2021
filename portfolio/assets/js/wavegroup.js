@@ -5,10 +5,10 @@ import {
 //여러 개의 wave를 만들기 위해 WaveGroup 생성
 export class WaveGroup {
     constructor() {
-        this.totalWaves = 3;
-        this.totalPoints = 10;   //몇 개의 point를 하나의 wave에 그릴 것인지
+        this.totalWaves = 2;
+        this.totalPoints = 5;   //몇 개의 point를 하나의 wave에 그릴 것인지
 
-        this.color = ['rgba(0,199,235,0.4)', 'rgba(0,146,199,0.4)', 'rgba(0,87,158,0.4)'];
+        this.color = ['rgba(220,137,140,0.8)', 'rgba(253,148,125,0.9)', 'rgba(220,137,140, 0.8)'];
 
         this.waves = [];
 

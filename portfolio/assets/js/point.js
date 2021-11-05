@@ -5,7 +5,7 @@ export class Point{
         this.fixedY = y;
         this.speed = 0.03; 
         this.cur = index;   //index 값을 넘겨서 현재 몇 번째 point 인지를 정의
-        this.max = Math.random() * 100 + 10;   //얼만큼 움직일 건지
+        this.max = Math.random() * 60;   //얼만큼 움직일 건지
     }
 
     update(){
