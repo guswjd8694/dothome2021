@@ -27,14 +27,27 @@
         <div id="sun"></div>
         <div id="sunS"></div>
         <div id="ship"><img src="./assets/img/ship.svg" alt="ship"></div>
-        <script type="module" src="./assets/js/app.js"></script>
+        <div id="waves" class="fixed">
+            <script type="module" src="./assets/js/app.js"></script>
+        </div>
     </div>
 
     <div id="section01">
-        <div id="cliff_left"><img src="./assets/img/cliff_left.svg" alt="cliff_left"></div>
+        <!-- <div id="cliff_left"><img src="./assets/img/cliff_left.svg" alt="cliff_left"></div> -->
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script>
+
+    let sun = document.getElementById('sun');
+
+    window.addEventListener('scroll', () => {
+        let value = window.scrollY
+
+        console.log(value)
+        sun.style.top = value+60 * 0.8 + '%';
+    })
+</script>
 
 </body>
 </html>
