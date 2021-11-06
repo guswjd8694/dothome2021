@@ -24,6 +24,9 @@
             </div>
         </div>
         <div id="land"><img src="./assets/img/11111.svg" alt="land"></div>
+        <div id="mountain1"><img src="./assets/img/mountain.svg" alt="mountain1"></div>
+        <div id="mountain2"><img src="./assets/img/mountain2.svg" alt="mountain2"></div>
+        <div id="mountain3"><img src="./assets/img/mountain3.svg" alt="mountain3"></div>
         <div id="sun"></div>
         <div id="sunS"></div>
         <div id="ship"><img src="./assets/img/ship.svg" alt="ship"></div>
@@ -37,16 +40,19 @@
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 <script>
 
-    let sun = document.getElementById('sun');
-
-    window.addEventListener('scroll', () => {
-        let value = window.scrollY
-
-        console.log(value)
-        sun.style.top = value+60 * 0.8 + '%';
-    })
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#sun", {
+    scrollTrigger: {
+        trigger: "#sun",
+        start: "top",
+        scrub: 3,
+    },
+    y: 500, duration: 3,
+    });
 </script>
 
 </body>

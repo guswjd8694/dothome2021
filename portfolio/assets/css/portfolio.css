@@ -104,12 +104,21 @@ canvas {
   z-index: -1;
 }
 
-#sun {
+/* #mountain1 img {
+  width: 25vw;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 61%;
+  left: 80%;
   transform: translate(-50%, -50%);
   z-index: -2;
+} */
+
+#sun {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
   border-radius: 50%;
   width: 450px; height: 450px;
   background: linear-gradient(120deg, rgba(252,172,149), rgba(243, 118, 102));
