@@ -30,7 +30,7 @@
             z-index: 0;
         }
     </style>
-    
+
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
@@ -574,22 +574,6 @@
                 window.scrollTo(0, 0);
             }
 
-
-        let fullscreen;
-        let fsEnter = document.getElementById('fullscr');
-        fsEnter.addEventListener('click', function (e) {
-            e.preventDefault();
-            if (!fullscreen) {
-                fullscreen = true;
-                document.documentElement.requestFullscreen();
-                fsEnter.innerHTML = "Exit Fullscreen";
-            }
-            else {
-                fullscreen = false;
-                document.exitFullscreen();
-                fsEnter.innerHTML = "Go Fullscreen";
-            }
-        });
     </script>
 </body>
 </html>

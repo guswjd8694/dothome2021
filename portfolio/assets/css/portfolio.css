@@ -25,9 +25,12 @@ body {
   background: #9f979f
 }
 
+svg {
+
+}
+
 img {
   width: 100%; 
-  vertical-align: top;
 }
 .fixed {
   position: fixed; 
@@ -166,29 +169,32 @@ canvas {
 #left_stone img {
   position: absolute;
   bottom: 0%;
-  left: 45%;
-  transform: translate(-50%, -50%);
+  left: 17%;
+  transform: translate(-50%, 0);
   z-index: 1;
+  width: 35vw;
 }
 #dog img {
   position: absolute;
-  bottom: 0%;
-  left: 45%;
+  bottom: 4%;
+  left: 18%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  width: 15vw;
 }
 #pink img {
   position: absolute;
   bottom: 0%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, 0);
   z-index: 4;
-  width: 100vw;
+  width: 80vw;
 }
 #tree img {
   position: absolute;
-  bottom: 0%;
-  left: 45%;
+  bottom: 5%;
+  left: 30%;
   transform: translate(-50%, -50%);
   z-index: 4;
+  width: 10vw;
 }
