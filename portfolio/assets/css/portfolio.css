@@ -12,6 +12,10 @@ html {
   height: 100%;
 }
 
+.scroll {position: fixed; right: 10px; top: 10px; width: 50px; height: 50px; background: rgba(0,0,0,.3); text-align: center; line-height: 50px; color: #fff; border-radius: 50%; z-index: 10000;}
+/* //scroll */
+
+
 body {
   width: 100vw;
   height: 100%;
@@ -95,9 +99,9 @@ canvas {
 #land img {
   width: 100vw;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 25%);
   z-index: -1;
 }
 
@@ -112,15 +116,16 @@ canvas {
 
 #sun {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -3;
   border-radius: 50%;
-  max-width: 500px; max-height: 500px;
-  width: 100%; height: 100%;;
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(120deg, rgba(252,172,149), rgba(243, 118, 102));
-  
 }
 #sunS {
   position: absolute;
@@ -146,5 +151,44 @@ canvas {
 
 #section01 {
   height: 4000px;
-  background:linear-gradient(rgb(214, 141, 141), rgb(238,194,179), rgb(249,223,215))
+  background:linear-gradient(rgb(214, 141, 141), rgb(238,194,179), rgb(249,223,215));
+  position: relative;
+}
+
+#cliff_left img {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  transform: translate(-45%, 0%);
+  z-index: 2;
+  width: 100vw;
+}
+#left_stone img {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#dog img {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#pink img {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 4;
+  width: 100vw;
+}
+#tree img {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 }
