@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyun Joying's Portfolio</title>
+    
     <link rel="stylesheet" href="./assets/css/portfolio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,31 +27,48 @@
                 <div id="desc">web developer portfolio site</div>
             </div>
         </div>
-        <div id="land"><img src="./assets/img/11111.svg" alt="land"  class="fixed"
-            data-0 = "transform: translate(-50%, 25%); opacity: 0;"
-            data-1000 = "transform: translate(-50%, 25%); opacity: 1;"
-        ></div>
+        <div id="land"><img src="./assets/img/11111.svg" alt="land"  class="fixed"></div>
         <div id="mountain1"><img src="./assets/img/mountain.svg" alt="mountain1"></div>
         <div id="mountain2"><img src="./assets/img/mountain2.svg" alt="mountain2"></div>
         <div id="mountain3"><img src="./assets/img/mountain3.svg" alt="mountain3"></div>
-        <div id="sun"
-            data-100 = "transform: translate(50%, 50%);"
-            data-1000 = "transform: translate(50%, 150%);"
-        ></div>
+        <div id="sun"></div>
         <div id="sunS"></div>
-        <div id="ship"><img src="./assets/img/ship.svg" alt="ship"></div>
-        <div id="waves" class="fixed">
+        <div id="waves">
             <script type="module" src="./assets/js/app.js"></script>
         </div>
+        <div id="ship"><img src="./assets/img/ship.svg" alt="ship"></div>
     </div>
 
     <div id="section01">
+        <div id="me"><img src="./assets/img/me.svg" alt="me"
+            data-0="display:none; opacity:0"
+            data-1000="display:block; opacity:1"
+            ></div>
+            
+            <div id="introduce">
+                <img src="./assets/img/wt.png" alt="me">
+                <p>만나서 반가워요 👋<br>
+                    저는 프론트 엔드를 꿈꾸는<br>
+                    웹 퍼블리셔를 꿈꾸는<br>
+                    꿈빛 파티시엘 김현정입니다.<br><br>
+                    
+                    포근포근 달콤해 둥글둥글 부푸는 마음<br>
+                    맛있는 꿈을 그려봐요 행복한 꿈빛 파티시엘<br><br>
+                    
+                     매일 반복되는 새 아침도 오늘은 좀 더 특별하죠<br>
+                    어서가요 스위트 왕국으로 </p>
+            </div>
+
+
+
         <div id="cliff_left"><img src="./assets/img/cliff_left.svg" alt="cliff_left"></div>
         <div id="left_stone"><img src="./assets/img/left_stone.svg" alt="left_stone"></div>
         <div id="dog"><img src="./assets/img/dog.svg" alt="dog"></div>
         <div id="pink"><img src="./assets/img/pink.svg" alt="pink"></div>
         <div id="tree"><img src="./assets/img/tree.svg" alt="tree"></div>
     </div>
+
+    <div class="scrollElement"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
@@ -65,10 +83,16 @@
 
     }); */
 
-
-   gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to("#sun", {
+    var main = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#main",
+            pin: true,
+            scrub: 0.3,
+            start: "top top",
+            end: "+=1080"
+        }
+    })
+    main.to("#sun", {
         scrollTrigger: {
             trigger: "#sun",
             start: "bottom center",
@@ -77,6 +101,7 @@
     y: 600, duration: 2,
     }); 
 
+    
 </script>
 
 </body>
