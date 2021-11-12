@@ -241,10 +241,6 @@ line-height: 2;
   width: 13vw;
 }
 
-#leaf {
-
-}
-
 #pink_leaf {
   position: absolute;
   left: 0%;
@@ -302,26 +298,114 @@ line-height: 2;
 
 #tree1 {
   position: absolute;
-  left: 3%;
-  bottom: 0%;
+  left: 20%;
+  bottom: 11%;
   z-index: 3;
-  width: 10vw;
+  width: 6vw;
 }
 
 #tree2 {
   position: absolute;
-  left: 3%;
-  bottom: 0%;
+  left: 22%;
+  bottom: 11%;
+  z-index: 3;
+  width: 7vw;
+}
+/* leaf_Left */
+
+
+#pink_leaf2 {
+  position: absolute;
+  left: 63%;
+  bottom: 0;
+  z-index: 3;
+  width: 12vw;
+}
+#babyPink_leaf2 {
+  position: absolute;
+  left: 62%;
+  bottom: 0;
+  z-index: 4;
+  width: 10vw;
+}
+#red_right {
+  position: absolute;
+  left: 61%;
+  bottom: 0;
+  z-index: 3;
+  width: 4vw;
+}
+#red_right2 {
+  position: absolute;
+  left: 69%;
+  bottom: 0;
+  z-index: 2;
+  width: 3.7vw;
+}
+#babyPurple_leaf2 {
+  position: absolute;
+  left: 59%;
+  bottom: 0;
+  z-index: 3;
+  width: 12vw;
+}
+#yell_leaf2 {
+  position: absolute;
+  left: 56%;
+  bottom: 0;
   z-index: 3;
   width: 10vw;
 }
+/* leaf_Right */
 
-#tree img {
-position: absolute;
-bottom: 15%;
-left: 15%;
-transform: translate(-50%, -50%);
-z-index: 2;
-width: 5%;
+#hippocampus {
+  position: absolute;
+  left: 30%;
+  bottom: 17%;
+  z-index: 3;
+  width: 2vw;
+}
+#hippocampus2 {
+  position: absolute;
+  left: 32.5%;
+  bottom: 17%;
+  z-index: 3;
+  width: 1.5vw;
+}
+#hippocampus3 {
+  position: absolute;
+  left: 34.5%;
+  bottom: 17.5%;
+  z-index: 3;
+  width: 1vw;
+}
+#miniFish {
+  position: absolute;
+  left: 21%;
+  bottom: 25%;
+  z-index: 3;
+  width: 7vw;
+}
+#yellFish {
+  position: absolute;
+  left: 55%;
+  bottom: 11%;
+  z-index: 3;
+  width: 5vw;
+}
+#nimoFish {
+  position: absolute;
+  left: 64%;
+  bottom: 12%;
+  z-index: 3;
+  width: 5vw;
+}
+#nimoFish2 {
+  position: absolute;
+  left: 68%;
+  bottom: 11%;
+  z-index: 3;
+  width: 3vw;
+  transform: rotate(12deg);
 }
 /* //section02 */
