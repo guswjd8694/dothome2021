@@ -1,233 +1,257 @@
 * {
-  user-select: none;
-  -ms-user-select: none;
-  outline: 0;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+    user-select: none;
+    -ms-user-select: none;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
 
-html {
-  width: 100%;
-  height: 100%;
-}
+  body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    position: relative;
+    background: #9f979f
+  }
+  
+  .fixed {
+    position: fixed; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%); 
+  }
 
-.scroll {position: fixed; right: 10px; top: 10px; width: 50px; height: 50px; background: rgba(0,0,0,.3); text-align: center; line-height: 50px; color: #fff; border-radius: 50%; z-index: 10000;}
-/* //scroll */
-
-
-body {
-  width: 100vw;
-  height: 100%;
-  overflow-x: hidden;
-  background-color: #fff;
-  position: relative;
-  background: #9f979f
-}
-
-svg {
-
+  .paraScroll {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 20px;
 }
 
 img {
-  width: 100%; 
+    width: 100%; 
+    vertical-align: top;
 }
-.fixed {
-  position: fixed; 
-  left: 50%; top: 50%; 
-  transform: translate(-50%, -50%); 
-}
+/* //setting */
 
-#container {
-  max-width: 90%;
-  height: 100vh;
-  margin: 0 auto;
-  /* overflow: hidden; */
-  position: relative;
-}
 
-#header {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-}
+  #main {
+    height: 100vh;
+    overflow: hidden;
+  }
 
-canvas {
-  width: 100%;
-  height: 100%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-/* //파도 */
-
-#waves {
-  opacity: .99;
-  z-index: 1;
-}
-
-#main {
-  height: 100vh;
-  overflow: hidden;
-}
-
-#me img {
-    width: 10vw;
+  #container {
+    max-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    top: 0%;
+  }
+  
+  #waves {
+    opacity: .99;
+    z-index: 1;
+  }
+  
+  #me img {
+      width: 10vw;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 25%);
+      z-index: 8;
+  }
+  
+  #main_title {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    z-index: 10;
+  }
+  
+  #title {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: #3d3d3e;
+    margin-bottom: 15px;
+  }
+  
+  #desc {
+    font-family: 'ML';
+    font-size: 20px;
+    color: #3d3d3e;
+    text-transform: uppercase;
+  }
+  
+  #land img {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 25%);
-    z-index: 8;
+    z-index: -1;
+  }
   
-}
+  /* #mountain1 img {
+    width: 25vw;
+    position: absolute;
+    top: 61%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+  } */
+  
+  #sun {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(252,172,149), rgba(243, 118, 102));
+  }
+  
+  #sunS {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  #ship img {
+    width: 200px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    animation: ship 0.8s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
+  }
+  @keyframes ship {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, 15px);}
+  }
+  
+  
+  #section01 {
+    height: 3000px;
+    background:linear-gradient(rgb(214, 141, 141), rgb(238,194,179), rgb(249,223,215));
+    position: relative;
+  }
+  #introduce {
+    text-align: center;
+    vertical-align: top;
+    font-family: 'Noto Serif KR', serif;
+  
+  }
+  
+  #introduce img {
+    width: 20vw;
+    padding-top: 500px;
+  }
+  
+  #introduce p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    padding-top: 50px;
+  }
+  
+  
+  #section02 {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+  }
 
-#white {
-  width: 100vw; height: 100vh;
-  background-color: rgba(255, 255, 255, .3);
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  display: none;
-}
-
-#main_title {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  z-index: 10;
-}
-
-#title {
-  font-family: 'Noto Serif KR', serif;
-  font-weight: 600;
-  font-size: 45px;
-  color: #3d3d3e;
-  margin-bottom: 15px;
-}
-
-#desc {
-  font-family: 'ML';
-  color: #3d3d3e;
-  text-transform: uppercase;
-}
-
-#land img {
-  width: 100vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 25%);
-  z-index: -1;
-}
-
-/* #mountain1 img {
-  width: 25vw;
-  position: absolute;
-  top: 61%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  z-index: -2;
-} */
-
-#sun {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -3;
-  border-radius: 50%;
-  max-width: 500px;
-  max-height: 500px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(252,172,149), rgba(243, 118, 102));
-}
-#sunS {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  #sec2Bg img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  #cliff_left img {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transform: translate(0%, 0%);
+    z-index: 2;
+    width: 180%;
+  }
+  #left_stone img {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transform: translate(0, 0);
+    z-index: 1;
+    width: 20%;
+  }
+  #dog img {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 15vw;
+  }
+  #pink img {
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0%, 0);
+    z-index: 4;
+    width: 80vw;
+  }
+  #tree img {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 5%;
+  }
 
 
-#ship img {
-  width: 200px;
-  position: absolute;
-  top: 60%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  animation: ship 0.8s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
+  /* section2 */
+.img {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 30vw;
+    height: 30vw;
 }
-@keyframes ship {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(0, 15px);}
+.img svg {
+    width: 100%; height: 100%;
 }
-
-
-#section01 {
-  height: 3000px;
-  background:linear-gradient(rgb(214, 141, 141), rgb(238,194,179), rgb(249,223,215));
-  position: relative;
-}
-#introduce {
-  text-align: center;
-  vertical-align: top;
-  font-family: 'Noto Serif KR', serif;
-
-}
-
-#introduce img {
-  width: 20vw;
-  padding-top: 500px;
-}
-
-#introduce p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 2;
-  padding-top: 50px;
-}
-
-#cliff_left img {
-  position: absolute;
-  bottom: 0%;
-  left: 45%;
-  transform: translate(-45%, 0%);
-  z-index: 2;
-  width: 100vw;
-}
-#left_stone img {
-  position: absolute;
-  bottom: 0%;
-  left: 17%;
-  transform: translate(-50%, 0);
-  z-index: 1;
-  width: 35vw;
-}
-#dog img {
-  position: absolute;
-  bottom: 4%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 15vw;
-}
-#pink img {
-  position: absolute;
-  bottom: 0%;
-  left: 40%;
-  transform: translate(-50%, 0);
-  z-index: 4;
-  width: 80vw;
-}
-#tree img {
-  position: absolute;
-  bottom: 5%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  z-index: 4;
-  width: 10vw;
+.cls-2 {
+    clip-path: url(#clip-path);
 }
