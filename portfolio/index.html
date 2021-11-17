@@ -77,18 +77,23 @@
         </div>
     </section>
     <!-- //section01 -->
-
-
+ 
+    
     <!-- section02 -->
     <section id="section02">
+    <div class="s2 fixed"
+            data-2508 = "transform: translate(0%, 100%);  display:none;"
+            data-2509 = "transform: translate(0%, 100%);  display:block;"
+            data-3409 = "transform: translate(0%, 0%);  display:block;"
+            data-5700 = "transform: translate(-100%, 0%);">
         <div class="me"><img src="./assets/img/me.svg" alt="me"
-            data-3000 = "opacity: 0; left: -200px; transform: translate(0%,0%);"
-            data-3500 = "opacity: 1; left: 150px; transform: translate(0%, 0%);"
-            data-4500 = "left: 100px; transform: translate(300%, 1000%);"
-            data-4700 = "transform: translate(700%, 1000%);"
+            data-2600 = "opacity: 0; left:0%; top:0%;"
+            data-2800 = "opacity: 1; left:10%; top:10%;"
+            data-3500 = "left:30%; top:40%;"
+            data-4700 = "left:100%; top:60%;"
         ></div>
         <div class="stoneLeft"><img src="./assets/img/stoneLeft.svg" alt="stoneLeft"></div>
-        <div class="floor"><img src="./assets/img/floor.svg" alt="floor"></div>
+        <div class="floor"><img src="./assets/img/floor1.svg" alt="floor1"></div>
         <div class="sealWrap">
             <div class="seal"><img src="./assets/img/seal.svg" alt="seal"></div>
             <!-- <div class="seal"><img src="./assets/img/dogBody.svg" alt="seal"></div> -->
@@ -132,13 +137,49 @@
         <img class="yellFish" src="./assets/img/yellFish.svg" alt="yellFish.svg">
         <img class="nimoFish" src="./assets/img/nimoFish.svg" alt="nimoFish.svg">
         <img class="nimoFish2" src="./assets/img/nimoFish.svg" alt="nimoFish2.svg">
+        </div>
     </section>
     <!-- //section02 -->
 
 
-    <section id="section3"> </section><!-- //section3 -->
-    <section id="section4"> </section><!-- //section4 -->
-    <section id="section5"> </section><!-- //section5 -->
+    <section id="section03">
+        <div class="s3 fixed"
+            data-3399 = "left: 150%; display:none;"
+            data-3400 = "left: 150%; display:block;"
+            data-5700 = "left: 50%;"
+            data-8000 = "left: -100%;"
+        >
+            <div class="floor"><img src="./assets/img/floor2.svg" alt="floor2"></div>
+            <div class="octopus"><img src="./assets/img/octopus.svg" alt="octopus"></div>
+        </div>
+    </section>
+    <!-- //section03 -->
+
+
+    <section id="section04">
+        <div class="s4 fixed"
+            data-5699 = "left: 150%; display:none;"
+            data-5700 = "left: 150%; display:block;"
+            data-8000 = "left: -1%;"
+            data-8730 = "left: -100%;"
+        >
+            <div class="floor"><img src="./assets/img/floor3.svg" alt="floor3"></div>
+        </div>
+        
+    </section>
+    <!-- //section04 -->
+
+
+    <section id="section05">
+        <div class="s5 fixed"
+            data-7209 = "left: 150%; display:none;"
+            data-7210 = "left: 150%; display:block;"
+            data-8730 = "left: 50%;"
+        >
+            <div class="floor"><img src="./assets/img/floor4.svg" alt="floor4"></div>
+        </div>
+    </section>
+    <!-- //section05 -->
 </div>
 <!-- //contents -->
 
@@ -154,7 +195,7 @@
     AOS.init();
 
     //새로고침 스크롤
-    history.scrollRestoration = "manual"  
+    // history.scrollRestoration = "manual"  
 
     //메인 화면 고정
     let main = gsap.timeline({
@@ -318,6 +359,9 @@
     }
     // 물방울
     
+
+
+
 
 </script>
 
