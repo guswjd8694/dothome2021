@@ -51,13 +51,15 @@ img {
 /* //setting */
 
 #contents {
+  height: 5000vh;
   background: linear-gradient(rgb(214, 141, 141), rgb(238, 194, 179), rgb(249, 223, 215));
 }
 
 #main {
   height: 100vh;
   overflow: hidden;
-  background: #9f979f
+  background: #9f979f;
+  position: relative;
 }
 
 .container {
@@ -83,9 +85,42 @@ canvas {
 
 .main_title {
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   left: 0;
   z-index: 10;
+}
+
+.name {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.name h2 {
+  font-family: 'Noto Serif KR',
+    serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: #3d3d3e;
+  margin-bottom: 15px;
+}
+
+/* .name em {
+  font-family: 'Noto Serif KR',
+  serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: #3d3d3e;
+  margin-bottom: 15px;
+} */
+
+.name strong {
+  font-family: 'ML';
+  font-size: 20px;
+  font-weight: 500;
+  color: #3d3d3e;
+  text-transform: uppercase;
+  width: 300px;
 }
 
 .title {
@@ -101,6 +136,7 @@ canvas {
   font-size: 20px;
   color: #3d3d3e;
   text-transform: uppercase;
+  width: 300px;
 }
 
 .land img {
@@ -115,10 +151,10 @@ canvas {
 
 .sun {
   position: absolute;
-  top: 5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -3;
+  z-index: 0;
   border-radius: 50%;
   max-width: 500px;
   max-height: 500px;
@@ -137,6 +173,49 @@ canvas {
   animation: ship 0.8s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
 }
 
+.waveWrap {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.waveWrap::after {
+  content: '';
+  width: 100%;
+  height: 30vh;
+  background: rgba(211, 141, 141, 1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.waves {
+  position: absolute;
+  left: 0;
+  bottom: 30vh;
+  width: 100%;
+  height: 35vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.waves .parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.waves .parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 4s;
+}
+
+.waves .parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 7s;
+}
+
 @keyframes ship {
   0% {
     transform: translate(0, 0);
@@ -144,6 +223,23 @@ canvas {
 
   100% {
     transform: translate(0, 15px);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
 }
 
@@ -584,11 +680,13 @@ canvas {
   position: relative;
   overflow: hidden;
 }
-.s3{
-    width: 100%;
-    height: 100%;
-    left: 150%;
+
+.s3 {
+  width: 100%;
+  height: 100%;
+  left: 150%;
 }
+
 .octopus {
   position: absolute;
   left: 25%;
@@ -604,7 +702,8 @@ canvas {
   position: relative;
   overflow: hidden;
 }
-.s4{
+
+.s4 {
   width: 100%;
   height: 100%;
   left: 150%;
@@ -616,6 +715,7 @@ canvas {
   position: relative;
   overflow: hidden;
 }
+
 .s5 {
   width: 100%;
   height: 100%;
