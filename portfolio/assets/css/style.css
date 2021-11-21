@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Noto Serif KR'
 }
 
 html {
@@ -51,10 +52,8 @@ img {
 /* //setting */
 
 #contents {
-  height: 10000px;
   background: linear-gradient(rgb(214, 141, 141), rgb(238, 194, 179), rgb(249, 223, 215));
 }
-
 #main {
   height: 100vh;
   overflow: hidden;
@@ -483,7 +482,7 @@ canvas {
 
 .red_right2 {
   position: absolute;
-  left: 69%;
+  left: 68%;
   bottom: -0.2%;
   z-index: 3;
   width: 3.7vw;
@@ -675,6 +674,8 @@ canvas {
 /* //section02 */
 
 
+
+
 #section03 {
   width: 100%;
   height: 1500px;
@@ -693,15 +694,91 @@ canvas {
   left: 30%;
   bottom: 0%;
   z-index: 1;
-  width: 80%;
+  width: 90%;
 }
 
+.skillTitle {
+  display: inline-block;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
 
+.skillTitle h2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.skill {}
+
+.skill ul {}
+
+.skill ul li {
+  position: absolute;
+}
+
+.skill_one {
+  bottom: 45%;
+  left: 30%;
+}
+
+.skill_two {
+  bottom: 40%;
+  left: 50%;
+}
+
+.skill_three {
+  bottom: 45%;
+  left: 70%;
+}
+
+.skill_four {
+  bottom: 35%;
+  left: 90%;
+}
+
+.skill_five {
+  bottom: 30%;
+  left: 110%;
+}
+
+.skill ul li .skillType {
+  font-family: 'ML';
+  font-size: 12px;
+  font-weight: 300;
+  color: #555;
+}
+
+.skill ul li .skillName {
+  font-family: 'ML';
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.skill ul li .skillNumber {
+  font-family: 'ML';
+  font-size: 40px;
+  font-weight: 300;
+  color: #996f98;
+}
+
+/* section03 */
+
+
+
+
+/* section04 */
 #section04 {
   width: 100%;
   height: 1500px;
   position: relative;
   overflow: hidden;
+}
+
+.s4 {
+  width: 100%;
+  height: 100%;
+  left: 150%;
 }
 
 .cave {
@@ -722,26 +799,76 @@ canvas {
 
 .starFish {
   position: absolute;
-  right: 22%;
-  bottom: 45%;
+  right: 21%;
+  bottom: 40%;
   z-index: 5;
-  width: 5%;
+  width: 6%;
 }
 
 .crab {
   position: absolute;
   right: 5%;
-  bottom: 14%;
+  bottom: 13%;
   z-index: 5;
   width: 7%;
 }
 
-.s4 {
-  width: 100%;
-  height: 100%;
-  left: 150%;
+.miniFish2 {
+
 }
 
+.pink_leaf3 {
+  position: absolute;
+  right: 15%;
+  bottom: -0.2%;
+  z-index: 4;
+  width: 16vw;
+  animation: leaf2 2s linear infinite;
+}
+
+.babyPink_leaf3 {
+  position: absolute;
+  right: 24%;
+  bottom: -0.2%;
+  z-index: 3;
+  width: 11vw;
+  animation: leaf 5s linear infinite;
+}
+
+
+.babyPurple_leaf3 {
+  position: absolute;
+  right: 16%;
+  bottom: -0.8%;
+  z-index: 4;
+  width: 20vw;
+  animation: leaf3 4s linear infinite;
+}
+
+.yell_leaf3 {
+  position: absolute;
+  right: 25%;
+  bottom: -0.2%;
+  z-index: 4;
+  width: 14vw;
+  animation: leaf2 2s linear infinite;
+}
+
+.s4_red_left2 {
+  position: absolute;
+  right: 19%;
+  bottom: -0.2%;
+  z-index: 3;
+  width: 15vw;
+  animation: leaf2 2s linear infinite;
+}
+
+/* section04 */
+
+
+
+
+/* section05 */
 #section05 {
   width: 100%;
   height: 1500px;
@@ -753,4 +880,183 @@ canvas {
   width: 100%;
   height: 100%;
   left: 150%;
+}
+
+.shell img {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  z-index: 5;
+  width: 15%;
+}
+
+.starfish img {
+  position: absolute;
+  right: 35%;
+  bottom: 3%;
+  z-index: 5;
+  width: 6%;
+}
+
+.yellfish img {
+  position: absolute;
+  right: 30%;
+  bottom: 50%;
+  z-index: 5;
+  width: 7%;
+}
+
+.miniFish3 {
+  position: absolute;
+  left: 21%;
+  bottom: 65%;
+  z-index: 1;
+  width: 7vw;
+  animation: fish 1.5s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
+}
+
+.miniFish4 {
+  animation-delay: 0.3s;
+}
+
+
+.tree5_B img {
+  position: absolute;
+  right: 17%;
+  bottom: 34%;
+  z-index: 4;
+  width: 10%;
+}
+
+.leaf_R2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.yell_leaf4 {
+  position: absolute;
+  right: 11.8%;
+  bottom: -0.3%;
+  z-index: 7;
+  width: 10vw;
+  animation: leaf 3s linear infinite;
+}
+
+.babyPurple_leaf4 {
+  position: absolute;
+  right: 6%;
+  bottom: 0%;
+  z-index: 6;
+  width: 12vw;
+  animation: leaf2 3s linear infinite;
+}
+
+.babyPink_leaf4 {
+  position: absolute;
+  right: 3.6%;
+  bottom: 0%;
+  z-index: 6;
+  width: 10vw;
+  animation: leaf2 3s linear infinite;
+}
+
+.pink_leaf4 {
+  position: absolute;
+  bottom: -1%;
+  right: 0%;
+  z-index: 5;
+  width: 10vw;
+  animation: leaf 3s linear infinite;
+}
+
+.purple_leaf2 {
+  position: absolute;
+  right: 0%;
+  bottom: -3%;
+  z-index: 4;
+  width: 12vw;
+  animation: leaf2 5s linear infinite;
+}
+
+.s5_red_right2 {
+  position: absolute;
+  right: 7%;
+  bottom: -1%;
+  z-index: 4;
+  width: 17vw;
+  animation: leaf 3s linear infinite;
+}
+
+.red_right3 {
+  position: absolute;
+  right: -3%;
+  bottom: 6%;
+  z-index: 3;
+  width: 18vw;
+  animation: leaf2 3s linear infinite;
+}
+
+/* section05 */
+
+
+
+#section06 {
+  position: relative;
+  height: 6000px;
+}
+
+.s6 {
+  width: 100%;
+  height: 100%;
+}
+
+.stingray {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 25%;
+}
+
+.turtle {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 20%;
+}
+
+.blowFish {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 8%;
+}
+
+.miniOcto {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 10%;
+}
+
+.squid {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 10%;
+}
+
+.whale {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 30%;
+}
+
+
+
+.next {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

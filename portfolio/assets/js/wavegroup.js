@@ -6,7 +6,7 @@ import {
 export class WaveGroup {
     constructor() {
         this.totalWaves = 2;
-        this.totalPoints = 5;   //몇 개의 point를 하나의 wave에 그릴 것인지
+        this.totalPoints = 10;   //몇 개의 point를 하나의 wave에 그릴 것인지
 
         this.color = [ 'rgba(195,142,143,0.9)', 'rgba(214,141,141, 0.9)', 'rgba(220,137,140, 0.8)'];
 
