@@ -248,7 +248,7 @@ canvas {
 #section01 {
   position: relative;
   width: 100%;
-  height: 1500px;
+  height: 1800px;
 }
 
 .bubble {
@@ -278,7 +278,7 @@ canvas {
 
 .introduce {
   width: 100%;
-  padding-top: 350px;
+  /* padding-top: 350px; */
   text-align: center;
   font-family: 'Noto Serif KR', serif;
   display: block;
@@ -700,7 +700,7 @@ canvas {
 .skillTitle {
   display: inline-block;
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 5%;
 }
 
@@ -718,27 +718,27 @@ canvas {
 }
 
 .skill_one {
-  bottom: 45%;
+  bottom: 50%;
   left: 30%;
 }
 
 .skill_two {
-  bottom: 40%;
+  bottom: 45%;
   left: 50%;
 }
 
 .skill_three {
-  bottom: 45%;
+  bottom: 50%;
   left: 70%;
 }
 
 .skill_four {
-  bottom: 35%;
+  bottom: 40%;
   left: 90%;
 }
 
 .skill_five {
-  bottom: 30%;
+  bottom: 35%;
   left: 110%;
 }
 
@@ -903,7 +903,7 @@ canvas {
   right: 30%;
   bottom: 50%;
   z-index: 5;
-  width: 7%;
+  width: 5%;
 }
 
 .miniFish3 {
@@ -923,9 +923,9 @@ canvas {
 .tree5_B img {
   position: absolute;
   right: 17%;
-  bottom: 34%;
+  bottom: 37%;
   z-index: 4;
-  width: 10%;
+  width: 9%;
 }
 
 .leaf_R2 {
@@ -939,7 +939,7 @@ canvas {
   right: 11.8%;
   bottom: -0.3%;
   z-index: 7;
-  width: 10vw;
+  width: 9vw;
   animation: leaf 3s linear infinite;
 }
 
@@ -948,7 +948,7 @@ canvas {
   right: 6%;
   bottom: 0%;
   z-index: 6;
-  width: 12vw;
+  width: 11vw;
   animation: leaf2 3s linear infinite;
 }
 
@@ -957,7 +957,7 @@ canvas {
   right: 3.6%;
   bottom: 0%;
   z-index: 6;
-  width: 10vw;
+  width: 7vw;
   animation: leaf2 3s linear infinite;
 }
 
@@ -966,7 +966,7 @@ canvas {
   bottom: -1%;
   right: 0%;
   z-index: 5;
-  width: 10vw;
+  width: 9vw;
   animation: leaf 3s linear infinite;
 }
 
@@ -975,7 +975,7 @@ canvas {
   right: 0%;
   bottom: -3%;
   z-index: 4;
-  width: 12vw;
+  width: 9vw;
   animation: leaf2 5s linear infinite;
 }
 
@@ -984,7 +984,7 @@ canvas {
   right: 7%;
   bottom: -1%;
   z-index: 4;
-  width: 17vw;
+  width: 14vw;
   animation: leaf 3s linear infinite;
 }
 
@@ -993,7 +993,7 @@ canvas {
   right: -3%;
   bottom: 6%;
   z-index: 3;
-  width: 18vw;
+  width: 15vw;
   animation: leaf2 3s linear infinite;
 }
 
@@ -1003,60 +1003,239 @@ canvas {
 
 #section06 {
   position: relative;
-  height: 6000px;
+  height: 12000px;
 }
 
 .s6 {
   width: 100%;
   height: 100%;
+  top: 150%;
 }
 
 .stingray {
   position: absolute;
   top: 0%;
+  right: -50%;
+  width: 18%;
+}
+
+.cliff1 {
+  position: absolute;
+  top: 0%;
   right: 0%;
-  width: 25%;
+  width: 14%;
 }
 
 .turtle {
   position: absolute;
   top: 0%;
-  left: 0%;
-  width: 20%;
+  left: -50%;
+  width: 17%;
 }
 
 .blowFish {
   position: absolute;
   top: 0%;
-  right: 0%;
-  width: 8%;
+  right: -50%;
+  width: 6%;
 }
 
 .miniOcto {
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: -50%;
   width: 10%;
+}
+
+.cliff2 {
+  position: absolute;
+  top: 0%;
+  left: -1%;
+  width: 14%;
 }
 
 .squid {
   position: absolute;
   top: 0%;
-  right: 0%;
-  width: 10%;
+  right: -50%;
+  width: 7%;
 }
 
 .whale {
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: -50%;
   width: 30%;
 }
 
-
-
 .next {
   position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.s6_2 {
+  width: 100%;
+  height: 100%;
+  top: 150%;
+}
+/* //section06 */
+
+
+
+#section07 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: rgb(70,69,137);
+  background: linear-gradient(45deg, rgba(70,69,137,0.42) 0%, rgba(56,44,102,0.81) 47%, rgba(24,19,54,1) 100%);}
+
+.s7 {
+  width: 100%;
+  height: 100%;
+  top: 150%;
+}
+
+.moonShining {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 25vw;
+}
+
+.mountainBig {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+}
+
+.seaSand {
+  position: absolute;
+  bottom: -5%;
+  left: 0%;
+}
+
+.shipOnly {
+  position: absolute;
+  bottom: 15%;
+  left: 31%;
+  width: 12vw;
+}
+/* //section07 */
+
+
+
+/* section08 */
+#section08 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(172,127,127,1) 0%, rgba(89,82,126,1) 47%, rgba(38,51,73,1) 100%);
+}
+
+.s8 {
+  width: 100%;
+  height: 100%;
+}
+
+.cl {
+  width: 17%;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 29%;
+  left: 0;
+}
+.cloud2 {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+.cloud3 {
+  position: absolute;
+  top: 63%;
+  right: 18%;
+  width: 10%;
+  opacity: 0.5;
+}
+.cloud4 {
+  position: absolute;
+  top: 38%;
+  right: 0;
+}
+.moonShining2 {
+  position: absolute;
+  bottom: 30%;
+  right: 15%;
+  width: 20vw;
+}
+.mountainBack {
+  position: absolute;
+  bottom: -4%;
+  left: 0%;
+}
+.mountainMiddle {
+  position: absolute;
+  bottom: -4%;
+  left: 0%;
+}
+.mountainFront {
+  position: absolute;
+  bottom: -5%;
+  left: 0%;
+}
+
+.projectWrap {
+  position: absolute;
+  top: 10%;
+  left: 11%;
+}
+
+.projectWrap ul {
+  color: rgb(255 255 255 / 70%);
+  float: left;
+  margin-right: 180px;
+}
+
+.projectWrap ul li {
+    margin-bottom: 65px;
+}
+
+.projectWrap ul li .project {
+  margin-bottom: 5px;
+}
+
+.projectWrap ul li .project a {
+    font-family: 'ML';
+    font-size: 23px;
+}
+
+.projectWrap ul li .project a:hover {
+  color: #fff;
+}
+
+.projectWrap ul li .lang {
+    font-family: 'ML';
+    font-size: 11px;
+    color: rgb(255 255 255 / 50%);
+}
+/* //section08 */
+
+
+
+/* section09 */
+#section09 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(21,34,51,1) 30%, rgba(17,28,43,1) 85%);}
+
+.s9 {
   width: 100%;
   height: 100%;
 }
