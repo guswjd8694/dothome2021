@@ -1083,18 +1083,19 @@ canvas {
 
 
 
+/* section07 */
 #section07 {
   width: 100%;
-  height: 100vh;
+  height: 5000px;
   position: relative;
   overflow: hidden;
-  background: rgb(70,69,137);
-  background: linear-gradient(45deg, rgba(70,69,137,0.42) 0%, rgba(56,44,102,0.81) 47%, rgba(24,19,54,1) 100%);}
+}
 
 .s7 {
   width: 100%;
-  height: 100%;
-  top: 150%;
+  height: 100vh;
+  top: -100%;
+  background: linear-gradient(45deg, rgba(70,69,137,0.42) 0%, rgba(56,44,102,0.81) 47%, rgba(24,19,54,1) 100%);
 }
 
 .moonShining {
@@ -1202,7 +1203,7 @@ canvas {
 }
 
 .projectWrap ul li {
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .projectWrap ul li .project {
@@ -1230,7 +1231,7 @@ canvas {
 /* section09 */
 #section09 {
   width: 100%;
-  height: 100vh;
+  height: 1800px;
   position: relative;
   overflow: hidden;
   background: linear-gradient(0deg, rgba(21,34,51,1) 30%, rgba(17,28,43,1) 85%);}
@@ -1238,4 +1239,56 @@ canvas {
 .s9 {
   width: 100%;
   height: 100%;
+}
+
+.end {
+  position: absolute;
+  bottom: 0;
+
+}
+.moonShining3 {
+  position: absolute;
+  bottom: 3.5%;
+  left: 52%;
+  transform: translate(-50%);
+  width: 20vw;
+}
+
+.ending {
+  color: #fff;
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+}
+
+.endTitle {
+  margin-bottom: 120px;
+}
+
+.endTitle h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.contact {
+}
+
+.contact ul {
+
+}
+
+.contact ul li {
+  margin-bottom: 25px;
+}
+
+.contact ul li a {
+  font-family: 'ML';
+  font-size: 17px;
+  color: #d6fffc;
+  letter-spacing: 1.2px;
+}
+
+.contact ul li img {
+  width: 15px;
+  margin-right: 15px;
 }
