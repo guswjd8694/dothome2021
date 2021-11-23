@@ -459,7 +459,7 @@
     </div>
     <!-- //section08 -->
 
-    
+
 
 
     <div id="section09">
@@ -684,13 +684,13 @@
     
     
     btnModal.addEventListener("click", e => {
-        modalWrap.style.display = "block"
+        modal.style.display = "block"
     });
 
     modal.addEventListener("click", e => {
         const modalBg = e.target;
         if(modalBg.classList.contains("modalBg")){
-            modalWrap.style.display = "none"
+            modal.style.display = "none"
         }
     })
 
@@ -757,7 +757,7 @@
 
     function updateModal(){
         const output = [];
-        modalInfo.forEach(() => {
+        modalInfo.forEach((i) => {
             output.push(`
             <div class="modalWrap fixed">
                 <div class="modalBg">
@@ -768,19 +768,19 @@
                             <ul>
                                 <li>
                                     <div class="title">CLIENT</div>
-                                    <div class="desc client">${modalInfo.client}</div>
+                                    <div class="desc client">${modalInfo[0].client}</div>
                                 </li>
                                 <li>
                                     <div class="title">DESCRIPTION</div>
-                                    <div class="desc description">${modalInfo.description}</div>
+                                    <div class="desc description">${modalInfo[0].description}</div>
                                 </li>
                                 <li>
                                     <div class="title">ROLE</div>
-                                    <div class="desc role">${modalInfo.role}</div>
+                                    <div class="desc role">${modalInfo[0].role}</div>
                                 </li>
                                 <li>
                                     <div class="title">DATE</div>
-                                    <div class="desc date">${modalInfo.date}</div>
+                                    <div class="desc date">${modalInfo[0].date}</div>
                                 </li>
                             </ul>
                         </div>
@@ -790,6 +790,7 @@
             `)
         })
         modal.innerHTML = output.join(' ');
+    console.log(modalInfo[0].role)
     }
     updateModal();
 </script>
