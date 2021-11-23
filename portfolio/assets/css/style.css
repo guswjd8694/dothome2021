@@ -22,6 +22,7 @@ body {
   position: relative;
 }
 
+
 .fixed {
   position: fixed;
   left: 50%;
@@ -54,6 +55,7 @@ img {
 #contents {
   background: linear-gradient(rgb(214, 141, 141), rgb(238, 194, 179), rgb(249, 223, 215));
 }
+
 #main {
   height: 100vh;
   overflow: hidden;
@@ -813,9 +815,7 @@ canvas {
   width: 7%;
 }
 
-.miniFish2 {
-
-}
+.miniFish2 {}
 
 .pink_leaf3 {
   position: absolute;
@@ -1005,15 +1005,18 @@ canvas {
   position: relative;
   height: 12000px;
 }
+
 .s6Text {
   width: 100%;
   height: 100%;
   writing-mode: vertical-rl;
 }
+
 .s6Text img {
   position: absolute;
   width: 100px;
 }
+
 .s6 {
   width: 100%;
   height: 100%;
@@ -1087,6 +1090,7 @@ canvas {
   height: 100%;
   top: 150%;
 }
+
 /* //section06 */
 
 
@@ -1103,7 +1107,7 @@ canvas {
   width: 100%;
   height: 100vh;
   top: -100%;
-  background: linear-gradient(45deg, rgba(70,69,137,0.42) 0%, rgba(56,44,102,0.81) 47%, rgba(24,19,54,1) 100%);
+  background: linear-gradient(45deg, rgba(70, 69, 137, 0.42) 0%, rgba(56, 44, 102, 0.81) 47%, rgba(24, 19, 54, 1) 100%);
 }
 
 .night {
@@ -1142,6 +1146,7 @@ canvas {
   width: 10vw;
   animation: ship2 1s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
 }
+
 @keyframes ship2 {
   0% {
     transform: translate(0, 0);
@@ -1167,7 +1172,7 @@ canvas {
 .s8 {
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(172,127,127,1) 0%, rgba(89,82,126,1) 47%, rgba(38,51,73,1) 100%);
+  background: linear-gradient(0deg, rgba(172, 127, 127, 1) 0%, rgba(89, 82, 126, 1) 47%, rgba(38, 51, 73, 1) 100%);
 
 }
 
@@ -1180,11 +1185,13 @@ canvas {
   top: 29%;
   left: 0;
 }
+
 .cloud2 {
   position: absolute;
   top: 45%;
   left: 40%;
 }
+
 .cloud3 {
   position: absolute;
   top: 63%;
@@ -1192,27 +1199,32 @@ canvas {
   width: 10%;
   opacity: 0.5;
 }
+
 .cloud4 {
   position: absolute;
   top: 38%;
   right: 0;
 }
+
 .moonShining2 {
   position: absolute;
   bottom: 30%;
   right: 15%;
   width: 20vw;
 }
+
 .mountainBack {
   position: absolute;
   bottom: -4%;
   left: 0%;
 }
+
 .mountainMiddle {
   position: absolute;
   bottom: -4%;
   left: 0%;
 }
+
 .mountainFront {
   position: absolute;
   bottom: -5%;
@@ -1238,15 +1250,13 @@ canvas {
 }
 
 .projectWrap ul li .project {
+  font-family: 'ML';
+  font-size: 23px;
   margin-bottom: 5px;
 }
 
-.projectWrap ul li .project a {
-    font-family: 'ML';
-    font-size: 23px;
-}
-
-.projectWrap ul li .project a:hover {
+.projectWrap ul li .project:hover {
+  cursor: pointer;
   color: #fff;
 }
 
@@ -1260,19 +1270,27 @@ canvas {
   width: 100vw;
   height: 100vh;
   position: relative;
+  z-index: 99;
   display: none;
 }
+
+.modalWrap.view {
+  display: block;
+}
+
 .modalBg {
-  background-color: rgb(0 0 0 / 70%);
+  background-color: rgb(0 0 0 / 80%);
   width: 100vw;
   height: 100vh;
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .frame {
   /* position: relative;
   width: 50%;
@@ -1283,26 +1301,32 @@ canvas {
   margin-bottom: 40px;
   background-color: #000;
 }
+
 .modal iframe {
   position: absolute;
   width: 100%;
   height: 100%;
   margin-bottom: 50px;
 }
+
 .modal .explain {}
+
 .modal .explain ul {
   display: inline-block;
 }
+
 .modal .explain ul li:not(:last-child) {
   margin-bottom: 30px;
 }
+
 .modal .explain ul li .title {
   font-family: 'ML';
   color: #bbb;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0;
 }
+
 .modal .explain ul li .desc {
   font-family: 'ML';
   color: #6b7695;
@@ -1325,7 +1349,7 @@ canvas {
 .s9 {
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(21,34,51,1) 30%, rgba(17,28,43,1) 85%);
+  background: linear-gradient(0deg, rgba(21, 34, 51, 1) 30%, rgba(17, 28, 43, 1) 85%);
 }
 
 .end {
@@ -1333,6 +1357,7 @@ canvas {
   bottom: 0;
 
 }
+
 .moonShining3 {
   position: absolute;
   bottom: 3.5%;
@@ -1357,12 +1382,9 @@ canvas {
   font-weight: 300;
 }
 
-.contact {
-}
+.contact {}
 
-.contact ul {
-
-}
+.contact ul {}
 
 .contact ul li {
   margin-bottom: 25px;

@@ -377,16 +377,16 @@
             >
                 <ul>
                     <li>
-                        <div class="project">
-                            <button>WEB STANDARD SITE</a>
+                        <div class="project" id="standard">
+                            WEB STANDARD SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
                         </div>
                     </li>
                     <li>
-                        <div class="project">
-                            <button>WEB RESPONSIVE SITE</a>
+                        <div class="project" id="responsive">
+                            WEB RESPONSIVE SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
@@ -395,24 +395,24 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="project">
-                            <button>MEGABOX SITE</button>
+                        <div class="project" id="megabox">
+                            MEGABOX SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
                         </div>
                     </li>
                     <li>
-                        <div class="project">
-                            <button>REACT SITE</button>
+                        <div class="project" id="react">
+                            REACT SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY | REACT
                         </div>
                     </li>
                     <li>
-                        <div class="project">
-                            <button>DOTHOME SITE</button>
+                        <div class="project" id="dothome">
+                            DOTHOME SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
@@ -421,24 +421,24 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="project">
-                            <button>GOODNIGHT SITE</button>
+                        <div class="project" id="goodnight">
+                            GOODNIGHT SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY | PHP
                         </div>
                     </li>
                     <li>
-                        <div class="project">
-                            <button>APPLE SITE</button>
+                        <div class="project" id="apple">
+                            APPLE SITE
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
                         </div>
                     </li>
                     <li>
-                        <div class="project">
-                            <button>SCRIPT</button>
+                        <div class="project" id="script">
+                            SCRIPT
                         </div>
                         <div class="lang">
                             HTML5 | CSS3 | JAVASCRIPT & JQUERY
@@ -451,7 +451,7 @@
                 data-31500 = "opacity: 0"
             ></div>
 
-            <div class="modalWrap view">
+            <div class="modalWrap">
                 <div class="modalBg">
                     <div class="modal goodnight">
                         <div class="frame">
@@ -691,14 +691,12 @@
     }
     // 물방울
     
+    const modal = document.querySelector('.modalWrap');
+    const standard = document.getElementById('standard');
 
-
-
-    const modal = document.querySelector("modalWrap")
-    this.addEventListener("click", function(e){
-        modal.style.display = "block"
-    });
-
+    standard.addEventListener('click', function(){
+        modal.classList.add('view');
+    })
 
 </script>
 
