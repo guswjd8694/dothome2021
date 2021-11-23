@@ -451,7 +451,7 @@
                 data-31500 = "opacity: 0"
             ></div>
 
-            <div class="modalWrap">
+            <div class="modalWrap fixed">
                 <div class="modalBg">
                     <div class="modal goodnight">
                         <div class="frame">
@@ -691,11 +691,26 @@
     }
     // 물방울
     
-    const modal = document.querySelector('.modalWrap');
-    const standard = document.getElementById('standard');
+    // const modal = document.querySelector('.modalWrap');
+    // const standard = document.getElementById('standard');
 
-    standard.addEventListener('click', function(){
-        modal.classList.add('view');
+    // standard.addEventListener('click', function(){
+    //     modal.classList.add('view');
+    // })
+
+
+    const modal = document.querySelector(".modalWrap");
+    const btnModal = document.querySelector(".project");
+    
+    btnModal.addEventListener("click", e => {
+        modal.style.display = "block"
+    });
+
+    modal.addEventListener("click", e => {
+        const modalBg = e.target;
+        if(modalBg.classList.contains("modalBg")){
+            modal.style.display = "none"
+        }
     })
 
 </script>
