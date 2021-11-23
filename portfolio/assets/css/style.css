@@ -96,10 +96,50 @@ canvas {
   bottom: 10%;
   left: 5%;
 }
-
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JSongMyung-Regular-KO';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF_HambakSnow';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InkLipquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MapoFlowerIsland';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .name h2 {
-  font-family: 'Noto Serif KR',
-    serif;
+  font-family: 'MapoFlowerIsland';
+  /* font-family: 'InkLipquid'; */
+  /* font-family: 'SF_HambakSnow'; */
+  /* font-family: 'JSongMyung-Regular-KO'; */
+  /* font-family: 'MaruBuri-Regular'; */
+  /* font-family: 'GowunBatang-Regular'; */
+  /* font-family: 'Noto Serif KR', serif; */
   font-weight: 600;
   font-size: 45px;
   color: #3d3d3e;
@@ -117,7 +157,7 @@ canvas {
 
 .name strong {
   font-family: 'ML';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #3d3d3e;
   text-transform: uppercase;
@@ -1015,6 +1055,10 @@ canvas {
 .s6Text img {
   position: absolute;
   width: 100px;
+}
+
+.like {
+  width: 30px;
 }
 
 .s6 {

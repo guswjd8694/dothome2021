@@ -273,6 +273,13 @@
                 data-12899 = "display: block; top: 100%; left: 5%; transform: translate(0%, 0%)"
                 data-12900 = "display: none; top: 100%; left: 5%; transform: translate(0%, 0%)"
             >
+            <img src="./assets/img/text1.svg" alt="text" class="like text1">
+            <img src="./assets/img/text2.svg" alt="text" class="like text2">
+            <img src="./assets/img/text3.svg" alt="text" class="like text3">
+            <img src="./assets/img/text4.svg" alt="text" class="like text4">
+            <img src="./assets/img/text5.svg" alt="text" class="like text5">
+            <img src="./assets/img/textMain.svg" alt="text" class="like textMain">
+
         </div>
         <div class="s6 fixed"
             data-10800 = "top: -150%;"
@@ -451,11 +458,11 @@
                 data-31500 = "opacity: 0"
             ></div>
 
-            <div class="modalWrap fixed">
+            <div id="modal">
+                <!-- <div class="modalWrap fixed">
                 <div class="modalBg">
                     <div class="modal goodnight">
                         <div class="frame">
-                            <!-- <iframe src="http://goodnight2.dothome.co.kr/" frameborder="0"></iframe> -->
                         </div>
                         <div class="explain">
                             <ul>
@@ -479,8 +486,8 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
             </div>
-        
         </div>
     </div>
     <!-- //section08 -->
@@ -699,8 +706,14 @@
     // })
 
 
-    const modal = document.querySelector(".modalWrap");
+    const modal = document.getElementById("modal");
+    const modalWrap = document.querySelector(".modalWrap");
     const btnModal = document.querySelector(".project");
+    const client = document.querySelector(".client");
+    const description = document.querySelector(".description");
+    const role = document.querySelector(".role");
+    const date = document.querySelector(".date");
+    
     
     btnModal.addEventListener("click", e => {
         modal.style.display = "block"
@@ -712,6 +725,107 @@
             modal.style.display = "none"
         }
     })
+
+
+    const modalInfo = [
+        {
+            index : 1,
+            client : "SCHOOL",
+            description : "WEB STANDARD SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },
+        {
+            index : 2,
+            client : "TEAM PROJECT",
+            description : "WEB RESPONSIVE SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },
+        {
+            index : 3,
+            client : "TEAM PROJECT",
+            description : "MEGABOX SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },
+        {
+            index : 4,
+            client : "TEAM PROJECT",
+            description : "REACT SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY, REACT",
+            date : "2021.10"
+        },
+        {
+            index : 5,
+            client : "TEAM PROJECT",
+            description : "DOTHOME SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },   
+        {
+            index : 6,
+            client : "TEAM PROJECT",
+            description : "GOODNIGHT SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY, PHP",
+            date : "2021.10"
+        },        
+        {
+            index : 7,
+            client : "TEAM PROJECT",
+            description : "APPLE SITE",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },        
+        {
+            index : 8,
+            client : "TEAM PROJECT",
+            description : "SCRIPT",
+            role : "HTML, CSS, JAVASCRIPT, JQUERY",
+            date : "2021.10"
+        },
+    ]
+
+
+    function updateModal(){
+        const output = [];
+        modalInfo.forEach(() => {
+            output.push(`
+            <div class="modalWrap fixed">
+                <div class="modalBg">
+                    <div class="modal goodnight">
+                        <div class="frame">
+                        </div>
+                        <div class="explain">
+                            <ul>
+                                <li>
+                                    <div class="title">CLIENT</div>
+                                    <div class="desc client">${modalInfo[0].client}</div>
+                                </li>
+                                <li>
+                                    <div class="title">DESCRIPTION</div>
+                                    <div class="desc description">${modalInfo[0].description}</div>
+                                </li>
+                                <li>
+                                    <div class="title">ROLE</div>
+                                    <div class="desc role">${modalInfo[0].role}</div>
+                                </li>
+                                <li>
+                                    <div class="title">DATE</div>
+                                    <div class="desc date">${modalInfo[0].date}</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `)
+        })
+        modal.innerHTML = output.join(' ');
+    console.log(modalInfo[0].role)
+    }
+    updateModal();
+
 
 </script>
 
