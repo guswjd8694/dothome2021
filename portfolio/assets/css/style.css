@@ -1266,12 +1266,15 @@ canvas {
   color: rgb(255 255 255 / 50%);
 }
 
+#modal {
+  display: none;
+}
+
 .modalWrap {
   width: 100vw;
   height: 100vh;
   position: relative;
   z-index: 99;
-  display: none;
 }
 
 .modalWrap.view {
