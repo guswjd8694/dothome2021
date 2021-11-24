@@ -84,10 +84,26 @@
 .infoList .facts .genres {}
 .infoList .facts .runtime {}
 
-.infoList .miniMenu {}
-.infoList .miniMenu .chart {}
+.infoList .miniMenu {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 68px;
+}
+.infoList .miniMenu .chart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    margin-right: 20px;
+}
 .infoList .miniMenu .chart .percent {}
-.infoList .miniMenu .chart .text {}
+.infoList .miniMenu .chart .text {
+    font-weight: 700;
+    margin-left: 6px;
+}
 
 .infoList .miniMenu .tooltip {}
 .infoList .miniMenu .tooltip a {}
