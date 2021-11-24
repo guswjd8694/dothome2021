@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+#banner {
+    background-image: url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/fzKWwcaam9QSTaMSJlORuSojxio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right -200px top;
+    border-bottom: 1px solid #130f0f;
+}
+.bannerBg {
+    background-image: linear-gradient(to right, rgba(7.45%, 5.88%, 5.88%, 1.00) 150px, rgba(7.45%, 5.88%, 5.88%, 0.84) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container {}
+.padding {
+    padding: 30px 0;
+}
+.bannerWrap {
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.posterWrap {
+    min-width: 300px;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+}
+.posterWrap img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    outline: none;
+}
+
+
+.infoWrap {
+    display: flex;
+}
+.infoList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    padding-left: 40px;
+}
+.infoList .title {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoList .title h2 {
+    width: 100%;
+    margin: 0; padding: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.infoList .title h2 a {
+    font-weight: 700;
+}
+.infoList .title h2 .tagDate {
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.infoList .facts {
+    display: flex;
+}
+.infoList .facts .certification {
+    border: 1px solid rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.6);
+    padding: 4px 6px 1px 6px;
+    border-radius: 2px;
+    margin-right: 7px;
+    font-size: 16px;
+}
+.infoList .facts .release {}
+.infoList .facts .genres {}
+.infoList .facts .runtime {}
+
+.infoList .miniMenu {}
+.infoList .miniMenu .chart {}
+.infoList .miniMenu .chart .percent {}
+.infoList .miniMenu .chart .text {}
+
+.infoList .miniMenu .tooltip {}
+.infoList .miniMenu .tooltip a {}
+.infoList .miniMenu .tooltip #favourite {}
+.infoList .miniMenu .tooltip #watchlist {}
+.infoList .miniMenu .tooltip #star {}
+.infoList .miniMenu .tooltip #boock {}
+.infoList .miniMenu .tooltip #star {}
+.infoList .miniMenu .tooltip .icon {}
+
+.infoList .miniMenu .trailer {}
+.infoList .miniMenu .trailer a.play_trailer {}
+.infoList .miniMenu .trailer span {}
+
+
+
+.explain {}
+.explain h3 {}
+.explain h2 {}
+.explain .overview {}
+.explain .overview p {}
+
+
+
+.people {}
+.people .profile {}
+.people .profile .name {}
+.people .profile .character {}
