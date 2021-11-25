@@ -54,13 +54,14 @@ img {
 
 #contents {
   position: relative;
+  height: 100%;
 }
 
 .bg {
   background: linear-gradient(rgb(214, 141, 141), rgb(238, 194, 179), rgb(249, 223, 215));
   width: 100%;
   height: 3300px;
-  position: absolute;
+  z-index: -1;
 }
 
 #main {
@@ -297,7 +298,7 @@ canvas {
 #section01 {
   position: relative;
   width: 100%;
-  height: 1800px;
+  height: 3000px;
 }
 
 .bubble {
@@ -396,10 +397,9 @@ canvas {
 
 .seal img {
   position: absolute;
-  bottom: 26%;
-  left: 16%;
+  bottom: 0%;
+  left: 0%;
   z-index: 4;
-  width: 13vw;
 }
 
 /* .sealTail img {
@@ -560,39 +560,35 @@ canvas {
 
 .hippocampus {
   position: absolute;
-  left: 30%;
-  bottom: 47%;
+  left: 0%;
+  bottom: 0%;
   z-index: 1;
-  width: 2vw;
   animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .hippocampus2 {
   position: absolute;
-  left: 32.5%;
-  bottom: 47%;
+  left: 0%;
+  bottom: 0%;
   z-index: 1;
-  width: 1.5vw;
   animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
   animation-delay: 0.4s;
 }
 
 .hippocampus3 {
   position: absolute;
-  left: 34.5%;
-  bottom: 47.5%;
+  left: 0%;
+  bottom: 0%;
   z-index: 1;
-  width: 1vw;
   animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
   animation-delay: 0.3s;
 }
 
 .miniFish {
   position: absolute;
-  left: 21%;
-  bottom: 65%;
+  left: 0%;
+  bottom: 0%;
   z-index: 1;
-  width: 7vw;
   animation: fish 1.5s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
@@ -602,28 +598,25 @@ canvas {
 
 .yellFish {
   position: absolute;
-  left: 55%;
-  bottom: 25%;
+  left: 0%;
+  bottom: 0%;
   z-index: 4;
-  width: 5vw;
   animation: dori 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .nimoFish {
   position: absolute;
-  left: 64%;
-  bottom: 24%;
+  left: 0%;
+  bottom: 0%;
   z-index: 4;
-  width: 5vw;
   animation: nimo 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .nimoFish2 {
   position: absolute;
-  left: 68%;
-  bottom: 23%;
+  left: 0%;
+  bottom: 0%;
   z-index: 4;
-  width: 3vw;
   transform: rotate(12deg);
   animation: nimo 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
@@ -832,34 +825,49 @@ canvas {
 
 .cave {
   position: absolute;
-  left: 50%;
+  left: 0%;
   bottom: 0%;
   z-index: 0;
-  width: 50%;
 }
-
+.caveEye {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 1;
+  animation: eye 1s;
+}
+@keyframes eye {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .floorfish {
   position: absolute;
-  left: 47%;
-  bottom: 6%;
+  left: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 7%;
 }
 
 .starFish {
   position: absolute;
-  right: 21%;
-  bottom: 40%;
+  right: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 6%;
+  width: 80%;
 }
 
 .crab {
   position: absolute;
-  right: 5%;
-  bottom: 13%;
+  right: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 7%;
+  width: 80%;
 }
 
 .miniFish2 {}
@@ -931,34 +939,30 @@ canvas {
 
 .shell img {
   position: absolute;
-  right: 5%;
-  bottom: 30%;
+  right: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 15%;
 }
 
 .starfish img {
   position: absolute;
-  right: 35%;
-  bottom: 3%;
+  right: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 6%;
 }
 
 .yellfish img {
   position: absolute;
-  right: 30%;
-  bottom: 50%;
+  right: 0%;
+  bottom: 0%;
   z-index: 5;
-  width: 5%;
 }
 
 .miniFish3 {
   position: absolute;
-  left: 21%;
-  bottom: 65%;
+  right: 0%;
+  bottom: 0%;
   z-index: 1;
-  width: 7vw;
   animation: fish 1.5s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
@@ -969,10 +973,9 @@ canvas {
 
 .tree5_B img {
   position: absolute;
-  right: 17%;
-  bottom: 37%;
+  right: 0%;
+  bottom: 0%;
   z-index: 4;
-  width: 9%;
 }
 
 .leaf_R2 {

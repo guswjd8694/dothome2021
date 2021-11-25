@@ -244,9 +244,15 @@ img {
     position: relative;
     width: 100%;
     height: 5000px;
+    overflow: hidden;
 }
 #section02 .s2 {
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0%;
+    overflow: hidden;
 }
 .me img {
     width: 10vw;
@@ -269,6 +275,7 @@ img {
     text-align: center;
     font-family: 'Noto Serif KR', serif;
     display: block;
+    padding-top: 500px;
 }
 .intImg {
     height: 30vw;
@@ -294,19 +301,17 @@ img {
 /* //section02 */
 
 
-
 #section03 {
     width: 100%;
-    height: 1500px;
     position: relative;
-    overflow: hidden;
 }
 
 .s2 {
     width: 100%;
     height: 100%;
+    position: absolute;
     left: 0;
-    top: 0%;
+    bottom: 0%;
 }
 
 .floor img {
@@ -328,12 +333,10 @@ img {
 
 .sealWrap {}
 
-.seal img {
+.seal {
     position: absolute;
-    bottom: 26%;
-    left: 16%;
-    z-index: 4;
-    width: 13vw;
+    bottom: 0; left: 0;
+    z-index: 6;
 }
 
 /* .sealTail img {
@@ -419,18 +422,16 @@ img {
 
 .tree1 {
     position: absolute;
-    left: 28%;
-    bottom: 29%;
+    left: 0%;
+    bottom: 0%;
     z-index: 5;
-    width: 6vw;
 }
 
 .tree2 {
     position: absolute;
-    left: 30%;
-    bottom: 29%;
+    left: 0%;
+    bottom: 0%;
     z-index: 5;
-    width: 7vw;
 }
 
 /* leaf_Left */
@@ -494,39 +495,35 @@ img {
 
 .hippocampus {
     position: absolute;
-    left: 30%;
-    bottom: 47%;
+    left: 0%;
+    bottom: 0%;
     z-index: 1;
-    width: 2vw;
     animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .hippocampus2 {
     position: absolute;
-    left: 32.5%;
-    bottom: 47%;
+    left: 0%;
+    bottom: 0%;
     z-index: 1;
-    width: 1.5vw;
     animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
     animation-delay: 0.4s;
 }
 
 .hippocampus3 {
     position: absolute;
-    left: 34.5%;
-    bottom: 47.5%;
+    left: 0%;
+    bottom: 0%;
     z-index: 1;
-    width: 1vw;
     animation: hipo 0.7s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
     animation-delay: 0.3s;
 }
 
 .miniFish {
     position: absolute;
-    left: 21%;
-    bottom: 65%;
+    left: 0%;
+    bottom: 0%;
     z-index: 1;
-    width: 7vw;
     animation: fish 1.5s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
@@ -536,28 +533,25 @@ img {
 
 .yellFish {
     position: absolute;
-    left: 55%;
-    bottom: 25%;
+    left: 0%;
+    bottom: 0%;
     z-index: 4;
-    width: 5vw;
     animation: dori 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .nimoFish {
     position: absolute;
-    left: 64%;
-    bottom: 24%;
+    left: 0%;
+    bottom: 0%;
     z-index: 4;
-    width: 5vw;
     animation: nimo 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
 
 .nimoFish2 {
     position: absolute;
-    left: 68%;
-    bottom: 23%;
+    left: 0%;
+    bottom: 0%;
     z-index: 4;
-    width: 3vw;
     transform: rotate(12deg);
     animation: nimo 1s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
 }
@@ -652,769 +646,4 @@ img {
         transform: rotate(4deg);
         transform-origin: 0% 100%;
     }
-}
-
-/* //section02 */
-
-
-
-
-#section03 {
-    width: 100%;
-    height: 1500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s3 {
-    width: 100%;
-    height: 100%;
-    left: 150%;
-}
-
-.octopus {
-    position: absolute;
-    left: 30%;
-    bottom: 0%;
-    z-index: 1;
-    width: 90%;
-}
-
-.skillTitle {
-    display: inline-block;
-    position: absolute;
-    bottom: 25%;
-    left: 5%;
-}
-
-.skillTitle h2 {
-    font-size: 24px;
-    font-weight: 200;
-}
-
-.skill {}
-
-.skill ul {}
-
-.skill ul li {
-    position: absolute;
-}
-
-.skill_one {
-    bottom: 50%;
-    left: 30%;
-}
-
-.skill_two {
-    bottom: 45%;
-    left: 50%;
-}
-
-.skill_three {
-    bottom: 50%;
-    left: 70%;
-}
-
-.skill_four {
-    bottom: 40%;
-    left: 90%;
-}
-
-.skill_five {
-    bottom: 35%;
-    left: 110%;
-}
-
-.skill ul li .skillType {
-    font-family: 'ML';
-    font-size: 12px;
-    font-weight: 300;
-    color: #555;
-}
-
-.skill ul li .skillName {
-    font-family: 'ML';
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.skill ul li .skillNumber {
-    font-family: 'ML';
-    font-size: 40px;
-    font-weight: 300;
-    color: #996f98;
-}
-
-/* section03 */
-
-
-
-
-/* section04 */
-#section05 {
-    width: 100%;
-    height: 1500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s4 {
-    width: 100%;
-    height: 100%;
-    left: 150%;
-}
-
-.cave {
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    z-index: 0;
-    width: 50%;
-}
-
-.floorfish {
-    position: absolute;
-    left: 47%;
-    bottom: 6%;
-    z-index: 5;
-    width: 7%;
-}
-
-.starFish {
-    position: absolute;
-    right: 21%;
-    bottom: 40%;
-    z-index: 5;
-    width: 6%;
-}
-
-.crab {
-    position: absolute;
-    right: 5%;
-    bottom: 13%;
-    z-index: 5;
-    width: 7%;
-}
-
-.miniFish2 {}
-
-.pink_leaf3 {
-    position: absolute;
-    right: 15%;
-    bottom: -0.2%;
-    z-index: 4;
-    width: 16vw;
-    animation: leaf2 2s linear infinite;
-}
-
-.babyPink_leaf3 {
-    position: absolute;
-    right: 24%;
-    bottom: -0.2%;
-    z-index: 3;
-    width: 11vw;
-    animation: leaf 5s linear infinite;
-}
-
-
-.babyPurple_leaf3 {
-    position: absolute;
-    right: 16%;
-    bottom: -0.8%;
-    z-index: 4;
-    width: 20vw;
-    animation: leaf3 4s linear infinite;
-}
-
-.yell_leaf3 {
-    position: absolute;
-    right: 25%;
-    bottom: -0.2%;
-    z-index: 4;
-    width: 14vw;
-    animation: leaf2 2s linear infinite;
-}
-
-.s4_red_left2 {
-    position: absolute;
-    right: 19%;
-    bottom: -0.2%;
-    z-index: 3;
-    width: 15vw;
-    animation: leaf2 2s linear infinite;
-}
-
-/* section04 */
-
-
-
-
-/* section05 */
-#section05 {
-    width: 100%;
-    height: 1500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s5 {
-    width: 100%;
-    height: 100%;
-    left: 150%;
-}
-
-.shell img {
-    position: absolute;
-    right: 5%;
-    bottom: 30%;
-    z-index: 5;
-    width: 15%;
-}
-
-.starfish img {
-    position: absolute;
-    right: 35%;
-    bottom: 3%;
-    z-index: 5;
-    width: 6%;
-}
-
-.yellfish img {
-    position: absolute;
-    right: 30%;
-    bottom: 50%;
-    z-index: 5;
-    width: 5%;
-}
-
-.miniFish3 {
-    position: absolute;
-    left: 21%;
-    bottom: 65%;
-    z-index: 1;
-    width: 7vw;
-    animation: fish 1.5s infinite alternate cubic-bezier(0.3, 0.01, 0.65, 0.99);
-}
-
-.miniFish4 {
-    animation-delay: 0.3s;
-}
-
-
-.tree5_B img {
-    position: absolute;
-    right: 17%;
-    bottom: 37%;
-    z-index: 4;
-    width: 9%;
-}
-
-.leaf_R2 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.yell_leaf4 {
-    position: absolute;
-    right: 11.8%;
-    bottom: -0.3%;
-    z-index: 7;
-    width: 9vw;
-    animation: leaf 3s linear infinite;
-}
-
-.babyPurple_leaf4 {
-    position: absolute;
-    right: 6%;
-    bottom: 0%;
-    z-index: 6;
-    width: 11vw;
-    animation: leaf2 3s linear infinite;
-}
-
-.babyPink_leaf4 {
-    position: absolute;
-    right: 3.6%;
-    bottom: 0%;
-    z-index: 6;
-    width: 7vw;
-    animation: leaf2 3s linear infinite;
-}
-
-.pink_leaf4 {
-    position: absolute;
-    bottom: -1%;
-    right: 0%;
-    z-index: 5;
-    width: 9vw;
-    animation: leaf 3s linear infinite;
-}
-
-.purple_leaf2 {
-    position: absolute;
-    right: 0%;
-    bottom: -3%;
-    z-index: 4;
-    width: 9vw;
-    animation: leaf2 5s linear infinite;
-}
-
-.s5_red_right2 {
-    position: absolute;
-    right: 7%;
-    bottom: -1%;
-    z-index: 4;
-    width: 14vw;
-    animation: leaf 3s linear infinite;
-}
-
-.red_right3 {
-    position: absolute;
-    right: -3%;
-    bottom: 6%;
-    z-index: 3;
-    width: 15vw;
-    animation: leaf2 3s linear infinite;
-}
-
-/* section05 */
-
-
-
-#section06 {
-    position: relative;
-    height: 12000px;
-}
-
-.s6Text {
-    width: 100%;
-    height: 100%;
-    writing-mode: vertical-rl;
-}
-
-.text {
-    position: absolute;
-    width: 100px;
-}
-
-.like {
-    width: 40px;
-}
-
-.text1 {
-    position: absolute;
-
-}
-
-.text2 {
-    position: absolute;
-}
-
-.text3 {
-    position: absolute;
-}
-
-.text4 {
-    position: absolute;
-}
-
-.text5 {
-    position: absolute;
-}
-
-.textMain {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-}
-
-.s6 {
-    width: 100%;
-    height: 100%;
-    top: 150%;
-}
-
-.stingray {
-    position: absolute;
-    bottom: 9%;
-    right: 15%;
-    width: 18%;
-}
-
-.cliff1 {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: 14%;
-}
-
-.turtle {
-    position: absolute;
-    top: 0%;
-    left: 14%;
-    width: 15%;
-}
-
-.blowFish {
-    position: absolute;
-    top: 0%;
-    right: 17%;
-    width: 6%;
-}
-
-.miniOcto {
-    position: absolute;
-    top: 0%;
-    left: 20%;
-    width: 10%;
-}
-
-.cliff2 {
-    position: absolute;
-    top: 0%;
-    left: -1%;
-    width: 14%;
-}
-
-.squid {
-    position: absolute;
-    top: 0%;
-    right: 40%;
-    width: 7%;
-}
-
-.whale {
-    position: absolute;
-    top: 0%;
-    left: -1%;
-    width: 30%;
-}
-
-.next {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.s6_2 {
-    width: 100%;
-    height: 100%;
-    top: 150%;
-}
-
-/* //section06 */
-
-
-
-/* section07 */
-#section07 {
-    width: 100%;
-    height: 8000px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s7 {
-    width: 100%;
-    height: 100vh;
-    top: -100%;
-    background: linear-gradient(45deg, rgba(70, 69, 137, 0.42) 0%, rgba(56, 44, 102, 0.81) 47%, rgba(24, 19, 54, 1) 100%);
-}
-
-.night {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    position: absolute;
-    opacity: .5;
-    z-index: 5;
-}
-
-.moonShining {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 25vw;
-}
-
-.mountainBig {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-}
-
-.seaSand {
-    position: absolute;
-    bottom: -5%;
-    left: 0%;
-}
-
-.shipOnly {
-    position: absolute;
-    bottom: 15%;
-    left: 31%;
-    width: 10vw;
-    animation: ship2 1s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
-}
-
-@keyframes ship2 {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    100% {
-        transform: translate(0, 8px);
-    }
-}
-
-/* //section07 */
-
-
-
-/* section08 */
-#section08 {
-    width: 100%;
-    height: 5000px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s8 {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(172, 127, 127, 1) 0%, rgba(89, 82, 126, 1) 47%, rgba(38, 51, 73, 1) 100%);
-
-}
-
-.cl {
-    width: 17%;
-}
-
-.cloud1 {
-    position: absolute;
-    top: 29%;
-    left: 0;
-}
-
-.cloud2 {
-    position: absolute;
-    top: 45%;
-    left: 40%;
-}
-
-.cloud3 {
-    position: absolute;
-    top: 63%;
-    right: 18%;
-    width: 10%;
-    opacity: 0.5;
-}
-
-.cloud4 {
-    position: absolute;
-    top: 38%;
-    right: 0;
-}
-
-.moonShining2 {
-    position: absolute;
-    bottom: 30%;
-    right: 15%;
-    width: 20vw;
-}
-
-.mountainBack {
-    position: absolute;
-    bottom: -4%;
-    left: 0%;
-}
-
-.mountainMiddle {
-    position: absolute;
-    bottom: -4%;
-    left: 0%;
-}
-
-.mountainFront {
-    position: absolute;
-    bottom: -5%;
-    left: 0%;
-}
-
-.projectWrap {
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    z-index: 10;
-    width: 2000px;
-}
-
-.projectWrap ul {
-    color: rgb(255 255 255 / 70%);
-    float: left;
-    margin-right: 180px;
-}
-
-.projectWrap ul li {
-    margin-bottom: 65px;
-}
-
-.projectWrap ul li .project {
-    font-family: 'ML';
-    font-size: 23px;
-    margin-bottom: 5px;
-}
-
-.projectWrap ul li .project:hover {
-    cursor: pointer;
-    color: #fff;
-}
-
-.projectWrap ul li .lang {
-    font-family: 'ML';
-    font-size: 11px;
-    color: rgb(255 255 255 / 50%);
-}
-
-#modal {
-    display: none;
-}
-
-.modalWrap {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 99;
-}
-
-.modalWrap.view {
-    display: block;
-}
-
-.modalBg {
-    background-color: rgb(0 0 0 / 80%);
-    width: 100vw;
-    height: 100vh;
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.frame {
-    /* position: relative;
-  width: 50%;
-  padding-bottom: 26.25%;
-  display: inline-block; */
-    width: 700px;
-    height: 400px;
-    margin-bottom: 40px;
-    background-color: #000;
-}
-
-.modal iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 50px;
-}
-
-.modal .explain {}
-
-.modal .explain ul {
-    display: inline-block;
-}
-
-.modal .explain ul li:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-.modal .explain ul li .title {
-    font-family: 'ML';
-    color: #bbb;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.modal .explain ul li .desc {
-    font-family: 'ML';
-    color: #6b7695;
-    font-size: 17px;
-}
-
-
-/* //section08 */
-
-
-
-/* section09 */
-#section09 {
-    width: 100%;
-    height: 1800px;
-    position: relative;
-    overflow: hidden;
-}
-
-.s9 {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(21, 34, 51, 1) 30%, rgba(17, 28, 43, 1) 85%);
-}
-
-.end {
-    position: absolute;
-    bottom: 0;
-
-}
-
-.moonShining3 {
-    position: absolute;
-    bottom: 3.5%;
-    left: 52%;
-    transform: translate(-50%);
-    width: 20vw;
-}
-
-.ending {
-    color: #fff;
-    position: absolute;
-    bottom: 25%;
-    left: 5%;
-}
-
-.endTitle {
-    margin-bottom: 120px;
-}
-
-.endTitle h2 {
-    font-size: 32px;
-    font-weight: 300;
-}
-
-.contact {}
-
-.contact ul {}
-
-.contact ul li {
-    margin-bottom: 25px;
-}
-
-.contact ul li a {
-    font-family: 'ML';
-    font-size: 17px;
-    color: #d6fffc;
-    letter-spacing: 1.2px;
-}
-
-.contact ul li img {
-    width: 15px;
-    margin-right: 15px;
 }
