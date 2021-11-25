@@ -22,6 +22,11 @@ body {
   position: relative;
 }
 
+.bgNight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .fixed {
   position: fixed;
@@ -104,42 +109,49 @@ canvas {
   bottom: 10%;
   left: 5%;
 }
+
 @font-face {
   font-family: 'MaruBuri-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'GowunBatang-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'JSongMyung-Regular-KO';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'SF_HambakSnow';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'InkLipquid';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MapoFlowerIsland';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 .name h2 {
   font-family: 'MapoFlowerIsland';
   /* font-family: 'InkLipquid'; */
@@ -825,28 +837,35 @@ canvas {
 
 .cave {
   position: absolute;
-  left: 0%;
+  left: 5%;
   bottom: 0%;
   z-index: 0;
+  width: 100%;
 }
+
 .caveEye {
   position: absolute;
-  left: 0%;
+  left: 5%;
   bottom: 0%;
   z-index: 1;
   animation: eye 1s;
+  width: 100%;
 }
+
 @keyframes eye {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .floorfish {
   position: absolute;
   left: 0%;
@@ -1075,18 +1094,23 @@ canvas {
   position: absolute;
 
 }
+
 .text2 {
   position: absolute;
 }
+
 .text3 {
   position: absolute;
 }
+
 .text4 {
   position: absolute;
 }
+
 .text5 {
   position: absolute;
 }
+
 .textMain {
   position: absolute;
   top: 50%;
@@ -1197,31 +1221,30 @@ canvas {
   z-index: 5;
 }
 
-.moonShining {
+.moon1 {
   position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 25vw;
+  bottom: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
 }
 
 .mountainBig {
   position: absolute;
-  top: 10%;
+  bottom: 0%;
   left: 0%;
 }
 
 .seaSand {
   position: absolute;
-  bottom: -5%;
+  bottom: 0%;
   left: 0%;
 }
 
 .shipOnly {
   position: absolute;
-  bottom: 15%;
-  left: 31%;
-  width: 10vw;
+  bottom: 0%;
+  left: 0%;
+  width: 90%;
   animation: ship2 1s infinite alternate cubic-bezier(0.43, 0.04, 0.53, 0.99)
 }
 
@@ -1242,7 +1265,7 @@ canvas {
 /* section08 */
 #section08 {
   width: 100%;
-  height: 5000px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
