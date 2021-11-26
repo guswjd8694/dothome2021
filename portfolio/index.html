@@ -228,9 +228,11 @@
                 data-10999 = "transform: translate(0%, 100%)%; display: block;"
                 data-11000 = "transform: translate(0%, 100%)%; display: none;"
             ></div>
-            <div class="caveEye"><img src="./assets/img/caveEye.svg" alt="cave"></div>
+            <div class="caveEye"><img src="./assets/img/caveEye.svg" alt="caveEye"></div>
             <div class="floorfish"><img src="./assets/img/floorFish.svg" alt="floorfish"></div>
             <div class="starFish"><img src="./assets/img/starFish.svg" alt="starFish"></div>
+            <div class="tree3"><img src="./assets/img/tree3.svg" alt="tree3"></div>
+            <div class="tree4"><img src="./assets/img/tree4.svg" alt="tree4"></div>
             <div class="crab"><img src="./assets/img/crab.svg" alt="crab"></div>
 
             <div class="leaf_L2">
@@ -250,6 +252,7 @@
             data-8209 = "left: 150%; display:none;"
             data-8210 = "left: 150%; display:block;"
             data-9730 = "left: 50%;"
+            data-11000 = "display: none;"
         >
             <div class="next"
                 data-9830 = "transform: translate(0%, 0%)"
@@ -518,8 +521,8 @@
                 data-31500 = "opacity: 0; display: none;"
             ></div>
 
-            <!-- <div id="modal">
-                <div class="modalWrap fixed">
+            <div id="modal">
+                <!-- <div class="modalWrap fixed">
                     <div class="modalBg">
                         <div class="modal goodnight">
                             <div class="frame">
@@ -547,8 +550,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
         </div>
     </div>
     <!-- //section08 -->
@@ -556,7 +559,11 @@
 
 
     <div id="section09">
-        <div class="s9">
+        <div class="s9 fixed"
+            data-31999 = "display: none"
+            data-32000 = "display: block; top: 150%"
+            data-34100= "top: -150%"
+        >
             <img class="moonShining3" src="./assets/img/moonShining.svg" alt="moonShining.svg">
             <img class="end" src="./assets/img/end.svg" alt="end.svg">
 
@@ -767,7 +774,7 @@
     // })
 
 
-    const modal = document.getElementById("modal");
+    const modal = document.querySelector("#modal");
     const modalWrap = document.querySelector(".modalWrap");
     const btnModal = document.querySelectorAll(".project");
     const projectWrap = document.querySelector(".projectWrap");
@@ -776,34 +783,10 @@
     const role = document.querySelector(".role");
     const date = document.querySelector(".date");
 
-    //프로젝트를 클릭하기 위한 project 반복 
-    btnModal.forEach((btn, index) => {
-        //내가 선택한 프로젝트의 클릭 이벤트 발생
-            //모달창 띄우기
-            //모달안에 값을 출력시키기 위해서 updateModal함수에 index담아서 실행시킴  
-
-        btn.addEventListener("click", e => {
-            modal.style.display = "block";
-            projectWrap.style.display = "none";
-
-            updateModal(index);
-        });
-    });
-
-    modal.addEventListener("click", e => {
-        const modalBg = e.target;
-        if(modalBg.classList.contains("modalBg")){
-            modal.style.display = "none";
-            projectWrap.style.display = "block";
-
-        };
-    });
-
-
     //모달에 출력되어야할 값들의 배열
     const modalInfo = [
         {
-            url : "",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "WEB STANDARD SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
@@ -860,6 +843,30 @@
         },
     ]
 
+    //프로젝트를 클릭하기 위한 project 반복 
+    btnModal.forEach((btn, index) => {
+        //내가 선택한 프로젝트의 클릭 이벤트 발생
+            //모달창 띄우기
+            //모달안에 값을 출력시키기 위해서 updateModal함수에 index담아서 실행시킴  
+        btn.addEventListener("click", e => {
+            modal.style.cssText= "display:block";
+            projectWrap.style.display = "none";
+
+            updateModal(index);
+        });
+    });
+
+    modal.addEventListener("click", e => {
+        const modalBg = e.target;
+        if(modalBg.classList.contains("modalBg")){
+            modal.style.display = "none";
+            projectWrap.style.display = "block";
+
+        };
+    });
+
+
+
     function updateModal(index){
         const input = [];
         input.push(`
@@ -867,7 +874,7 @@
                 <div class="modalBg">
                     <div class="modal goodnight">
                         <div class="frame">
-                            <iframe src="http://goodnight2.dothome.co.kr/" frameborder="0"></iframe>
+                            <iframe frameborder="0" src=${modalInfo[index].url} ></iframe>
                         </div>
                         <div class="explain">
                             <ul>
