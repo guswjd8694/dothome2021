@@ -219,8 +219,9 @@
         <div class="s4 fixed"
             data-6699 = "left: 150%; display:none;"
             data-6700 = "left: 150%; display:block;"
-            data-9000 = "left: -1%;"
-            data-9730 = "left: -50%;"
+            data-9000 = "left: -1%; display:block;"
+            data-9730 = "left: -50%; display:block"
+            data-17730 = "left: -50%; display:none"
         >
             <div class="floor"><img src="./assets/img/floor3.svg" alt="floor3"></div>
             <div class="cave"><img src="./assets/img/cave.svg" alt="cave"
@@ -251,7 +252,7 @@
         <div class="s5 fixed"
             data-8209 = "left: 150%; display:none;"
             data-8210 = "left: 150%; display:block;"
-            data-9730 = "left: 50%;"
+            data-9730 = "left: 50%; display:block;"
             data-11000 = "display: none;"
         >
             <div class="next"
@@ -426,7 +427,7 @@
             data-29099 = "display: none"
             data-29100 = "display: block; top: 50%"
             data-32000 = "display: block; top: 50%"
-            data-33000 = "top: -100%"
+            data-33500 = "top: -100%"
         >
             <img class="cl cloud1" src="./assets/img/cloud1.svg" alt="cloud1.svg">
             <img class="cl cloud2" src="./assets/img/cloud2.svg" alt="cloud2.svg">
@@ -561,8 +562,8 @@
     <div id="section09">
         <div class="s9 fixed"
             data-31999 = "display: none"
-            data-32000 = "display: block; top: 150%"
-            data-34100= "top: -150%"
+            data-32000 = "display: block; top: 195%"
+            data-34000 = "display: block; top: 0%"
         >
             <img class="moonShining3" src="./assets/img/moonShining.svg" alt="moonShining.svg">
             <img class="end" src="./assets/img/end.svg" alt="end.svg">
@@ -739,31 +740,31 @@
 
 
 
-    for (var i = 0; i < 20; i++) {  //물방울 수
-        var bubble = document.createElement('div');
-        bubble.className = 'bubble';
-        var set = Math.random() * 30 + 10 + 'px';   //랜덤 픽셀값
+    // for (var i = 0; i < 20; i++) {  //물방울 수
+    //     var bubble = document.createElement('div');
+    //     bubble.className = 'bubble';
+    //     var set = Math.random() * 30 + 10 + 'px';   //랜덤 픽셀값
 
-        bubble.style.width = set;
-        bubble.style.height = set;
-        bubble.style.bottom = Math.random() * 4000 + 'px';
-        bubble.style.left = Math.random() * document.querySelector("#contents").offsetWidth + 'px';
+    //     bubble.style.width = set;
+    //     bubble.style.height = set;
+    //     bubble.style.bottom = Math.random() * 4000 + 'px';
+    //     bubble.style.left = Math.random() * document.querySelector("#contents").offsetWidth + 'px';
 
-        document.querySelector("#contents").appendChild(bubble);
+    //     document.querySelector("#contents").appendChild(bubble);
 
-        Animate(bubble)
-    }
+    //     Animate(bubble)
+    // }
 
-    // 물방울 애니메이션
-    function Animate(set) {
-        $(set).animate({
-            bottom: document.querySelector("#contents").offsetHeight + 'px',
-            left: '+=' + ((Math.random() * 100) - 50) + 'px'
-        }, Math.random() * 12000 + 5000, 'linear', function() {
-            set.style.bottom = '0px';
-            Animate(set)
-        });
-    }
+    // // 물방울 애니메이션
+    // function Animate(set) {
+    //     $(set).animate({
+    //         bottom: document.querySelector("#contents").offsetHeight + 'px',
+    //         left: '+=' + ((Math.random() * 100) - 50) + 'px'
+    //     }, Math.random() * 12000 + 5000, 'linear', function() {
+    //         set.style.bottom = '0px';
+    //         Animate(set)
+    //     });
+    // }
     // 물방울
     
     // const modal = document.querySelector('.modalWrap');
