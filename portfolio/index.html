@@ -17,6 +17,18 @@
 
 
 <div class="paraScroll">scrollTop() : <span>0</span>px</div>
+<div class="info left">
+    <ul>
+        <li>clientX : <span class="clientX">0</span>px</li>
+        <li>clientY : <span class="clientY">0</span>px</li>
+        <li>offsetX : <span class="offsetX">0</span>px</li>
+        <li>offsetY : <span class="offsetY">0</span>px</li>
+        <li>pageX : <span class="pageX">0</span>px</li>
+        <li>pageY : <span class="pageY">0</span>px</li>
+        <li>screenX : <span class="screenX">0</span>px</li>
+        <li>screenY : <span class="screenY">0</span>px</li>
+    </ul>
+</div>
 
 <!-- main -->
 <main id="main">
@@ -51,8 +63,19 @@
 
 <div id="contents">
     <div class="bg"
-        data-4000="position: fixed; left: 0%; top: 0%; transform: translate(0%, 0%);"
+        data-3999 = "opacity: 1;"
+        data-4000 = "opacity: 0;"
     ></div>
+    <div class="bg2"
+        data-3999 = "display: none;"
+        data-4000 = "display: block; position: fixed; left: 0%; top: 0%; transform: translate(0%, 0%);"
+        data-9830 = "transform: translate(0%, 0%)"
+        data-10999 = "transform: translate(0%, 100%)%; display: block;"
+        data-11000 = "transform: translate(0%, 100%)%; display: none;"
+
+    ></div>
+    <!-- <img src="./assets/img/testtt.svg" alt="test" class="testtt"> -->
+
     <!-- <div class="bg"
         data-2000 = "transform: translate(0%, 0%);"
         data-4409 = "transform: translate(0%, 0%);"
@@ -63,8 +86,8 @@
         <div class="introduce fixed"
             data-2250 = "opacity: 0;"
             data-2950 = "opacity: 1;"
-            data-3150 = "opacity: 1; display: block;"
-            data-3350 = "opacity: 0; display: none;"
+            data-3150 = "opacity: 1;"
+            data-3350 = "opacity: 0;"
         >
             <div class="intImg">
                 <svg id="svg" viewBox="0 0 1000 1000">
@@ -114,56 +137,65 @@
         <div class="stoneLeft"><img src="./assets/img/stoneLeft.svg" alt="stoneLeft"></div>
         <div class="floor"><img src="./assets/img/floor1.svg" alt="floor1"></div>
         <div class="sealWrap">
+            <div class="hi"><img src="./assets/img/hi3.svg" alt="hi"
+                data-4200 = "opacity: 0"    
+                data-4300 = "opacity: 1"    
+            ></div>
             <div class="seal"><img src="./assets/img/seal2.svg" alt="seal"></div>
             <!-- <div class="seal"><img src="./assets/img/dogBody.svg" alt="seal"></div> -->
             <!-- <div class="sealTail"><img src="./assets/img/dogTail.svg" alt="seal"></div> -->
         </div>
         <div class="leaf_L">
-            <img class="pink_leaf" src="./assets/img/pink_leaf.svg" alt="pink_leaf.svg">
-            <img class="babyPink_leaf" src="./assets/img/babyPink_leaf.svg" alt="babyPink_leaf.svg">
-            <img class="purple_leaf" src="./assets/img/purple_leaf.svg" alt="purple_leaf.svg">
-            <img class="red_left" src="./assets/img/red_left.svg" alt="red_left.svg">
-            <img class="red_left2" src="./assets/img/red_left.svg" alt="red_left2.svg">
-            <img class="babyPurple_leaf" src="./assets/img/babyPurple_leaf.svg" alt="babyPurple_leaf.svg">
-            <img class="yell_leaf" src="./assets/img/yell_leaf.svg" alt="yell_leaf.svg">
-            <img class="tree1" src="./assets/img/tree1.svg" alt="tree1.svg">
-            <img class="tree2" src="./assets/img/tree2.svg" alt="tree2.svg">
+            <div class="pink_leaf"><img src="./assets/img/pink_leaf.svg" alt="pink_leaf.svg"></div>
+            <div class="babyPink_leaf"><img src="./assets/img/babyPink_leaf.svg" alt="babyPink_leaf.svg"></div>
+            <div class="purple_leaf"><img src="./assets/img/purple_leaf.svg" alt="purple_leaf.svg"></div>
+            <div class="red_left"><img src="./assets/img/red_left.svg" alt="red_left.svg"></div>
+            <div class="red_left2"><img src="./assets/img/red_left.svg" alt="red_left2.svg"></div>
+            <div class="babyPurple_leaf"><img src="./assets/img/babyPurple_leaf.svg" alt="babyPurple_leaf.svg"></div>
+            <div class="yell_leaf"><img src="./assets/img/yell_leaf.svg" alt="yell_leaf.svg"></div>
+            <div class="tree1"><img src="./assets/img/tree1.svg" alt="tree1.svg"></div>
+            <div class="tree2"><img src="./assets/img/tree2.svg" alt="tree2.svg"></div>
         </div>
         <div class="leaf_R">
-            <img class="pink_leaf2" src="./assets/img/pink_leaf2.svg" alt="pink_leaf2.svg">
-            <img class="babyPink_leaf2" src="./assets/img/babyPink_leaf2.svg" alt="babyPink_leaf2.svg">
-            <img class="red_right" src="./assets/img/red_right.svg" alt="red_right.svg">
-            <img class="red_right2" src="./assets/img/red_right.svg" alt="red_right2.svg">
-            <img class="babyPurple_leaf2" src="./assets/img/babyPurple_leaf2.svg" alt="babyPurple_leaf.svg">
-            <img class="yell_leaf2" src="./assets/img/yell_leaf2.svg" alt="yell_leaf2.svg">
+            <div class="pink_leaf2"><img src="./assets/img/pink_leaf2.svg" alt="pink_leaf2.svg"></div>
+            <div class="babyPink_leaf2"><img src="./assets/img/babyPink_leaf2.svg" alt="babyPink_leaf2.svg"></div>
+            <div class="red_right"><img src="./assets/img/red_right.svg" alt="red_right.svg"></div>
+            <div class="red_right2"><img src="./assets/img/red_right.svg" alt="red_right2.svg"></div>
+            <div class="babyPurple_leaf2"><img src="./assets/img/babyPurple_leaf2.svg" alt="babyPurple_leaf.svg"></div>
+            <div class="yell_leaf2"><img src="./assets/img/yell_leaf2.svg" alt="yell_leaf2.svg"></div>
         </div>
 
-        <img class="hippocampus" src="./assets/img/hippocampus.svg" alt="hippocampus.svg"
+        
+        <div class="hippocampus"><img src="./assets/img/hippocampus.svg" alt="hippocampus.svg"
             data-3900 = "left: 10%;"
             data-6000 = "left: -15%;"
             >
-        <img class="hippocampus2" src="./assets/img/hippocampus2.svg" alt="hippocampus2.svg"
+        </div>
+        <div class="hippocampus2"><img src="./assets/img/hippocampus2.svg" alt="hippocampus2.svg"
             data-3900 = "left: 10%;"
             data-6000 = "left: -15%;"
             >
-        <img class="hippocampus3" src="./assets/img/hippocampus3.svg" alt="hippocampus3.svg"
+        </div>
+        <div class="hippocampus3"><img src="./assets/img/hippocampus3.svg" alt="hippocampus3.svg"
             data-3900 = "left: 10%;"
             data-6000 = "left: -15%;"
             >
-        <img class="miniFish" src="./assets/img/miniFish1.svg" alt="miniFish.svg"
+        </div>
+        <div class="miniFish"><img src="./assets/img/miniFish1.svg" alt="miniFish.svg"
             data-3700 = "left: 10%;"
             data-10000 = "left: -30%;"
             >
-        <img class="miniFish miniFish2" src="./assets/img/miniFish2.svg" alt="miniFish.svg"
+        </div>
+        <div class="miniFish miniFish2"><img src="./assets/img/miniFish2.svg" alt="miniFish.svg"
             data-3700 = "left: 10%;"
             data-10000 = "left: -30%;"
             >
-        <img class="yellFish" src="./assets/img/yellFish.svg" alt="yellFish.svg">
-        <img class="nimoFish" src="./assets/img/nimoFish.svg" alt="nimoFish.svg">
-        <img class="nimoFish2" src="./assets/img/nimoFish2.svg" alt="nimoFish2.svg">
+        </div>
+        <div class="yellFish"><img src="./assets/img/yellFish.svg" alt="yellFish.svg">
+        <div class="nimoFish"><img src="./assets/img/nimoFish.svg" alt="nimoFish.svg">
+        <div class="nimoFish2"><img src="./assets/img/nimoFish2.svg" alt="nimoFish2.svg">
         </div>
     </section>
-    <!-- //section02 -->
 
 
 
@@ -181,27 +213,42 @@
             </div>
             <div class="skill">
                 <ul>
-                    <li class="skill_one">
+                    <li class="skill_one"
+                        data-6000 = "opacity: 0; bottom: 45%"
+                        data-6400 = "opacity: 1; bottom: 50%"
+                    >
                         <div class="skillType">Desgin</div>
                         <div class="skillName">PhotoShop</div>
                         <div class="skillNumber">100%</div>
                     </li>
-                    <li class="skill_two">
+                    <li class="skill_two"
+                        data-6400 = "opacity: 0; bottom: 40%"
+                        data-6700 = "opacity: 1; bottom: 45%"
+                    >
                         <div class="skillType">Desgin</div>
                         <div class="skillName">illustration</div>
                         <div class="skillNumber">100%</div>
                     </li>
-                    <li class="skill_three">
+                    <li class="skill_three"
+                        data-6700 = "opacity: 0; bottom: 45%"
+                        data-7000 = "opacity: 1; bottom: 50%"
+                    >
                         <div class="skillType">Development</div>
                         <div class="skillName">HTML5, CSS3(SCSS)</div>
                         <div class="skillNumber">100%</div>
                     </li>
-                    <li class="skill_four">
+                    <li class="skill_four"
+                        data-7000 = "opacity: 0; bottom: 35%"
+                        data-7300 = "opacity: 1; bottom: 40%"
+                    >
                         <div class="skillType">Development</div>
                         <div class="skillName">Javascript</div>
                         <div class="skillNumber">100%</div>
                     </li>
-                    <li class="skill_five">
+                    <li class="skill_five"
+                        data-7300 = "opacity: 0; bottom: 30%"
+                        data-7600 = "opacity: 1; bottom: 35%"
+                    >
                         <div class="skillType">Development</div>
                         <div class="skillName">jQuery</div>
                         <div class="skillNumber">100%</div>
@@ -237,11 +284,11 @@
             <div class="crab"><img src="./assets/img/crab.svg" alt="crab"></div>
 
             <div class="leaf_L2">
-                <img class="pink_leaf3" src="./assets/img/pink_leaf3.svg" alt="pink_leaf3.svg">
-                <img class="babyPink_leaf3" src="./assets/img/babyPink_leaf3.svg" alt="babyPink_leaf3.svg">
-                <img class="s4_red_left2" src="./assets/img/red_left2.svg" alt="red_left2.svg">
-                <img class="babyPurple_leaf3" src="./assets/img/babyPurple_leaf3.svg" alt="babyPurple_leaf3.svg">
-                <img class="yell_leaf3" src="./assets/img/yell_leaf3.svg" alt="yell_leaf3.svg">
+                <div class="pink_leaf3"><img src="./assets/img/pink_leaf3.svg" alt="pink_leaf3.svg"></div>
+                <div class="babyPink_leaf3"><img src="./assets/img/babyPink_leaf3.svg" alt="babyPink_leaf3.svg"></div>
+                <div class="s4_red_left2"><img src="./assets/img/red_left2.svg" alt="red_left2.svg"></div>
+                <div class="babyPurple_leaf3"><img src="./assets/img/babyPurple_leaf3.svg" alt="babyPurple_leaf3.svg"></div>
+                <div class="yell_leaf3"><img src="./assets/img/yell_leaf3.svg" alt="yell_leaf3.svg"></div>
             </div>
         </div>
         
@@ -269,25 +316,25 @@
                 <div class="tree5_B"><img src="./assets/img/tree5.svg" alt="tree5_B"></div>
 
                 <div class="leaf_R2">
-                    <img class="yell_leaf4" src="./assets/img/yell_leaf4.svg" alt="yell_leaf4.svg">
-                    <img class="babyPurple_leaf4" src="./assets/img/babyPurple_leaf4.svg" alt="babyPurple_leaf4.svg">
-                    <img class="babyPink_leaf4" src="./assets/img/babyPink_leaf4.svg" alt="babyPink_leaf4.svg">
-                    <img class="pink_leaf4" src="./assets/img/pink_leaf4.svg" alt="pink_leaf4.svg">
-                    <img class="purple_leaf2" src="./assets/img/purple_leaf2.svg" alt="purple_leaf2.svg">
-                    <img class="s5_red_right2" src="./assets/img/red_right2.svg" alt="red_right2.svg">
-                    <img class="red_right3" src="./assets/img/red_right3.svg" alt="red_right3.svg">
+                    <div class="yell_leaf4"><img src="./assets/img/yell_leaf4.svg" alt="yell_leaf4.svg"></div>
+                    <div class="babyPurple_leaf4"><img src="./assets/img/babyPurple_leaf4.svg" alt="babyPurple_leaf4.svg"></div>
+                    <div class="babyPink_leaf4"><img src="./assets/img/babyPink_leaf4.svg" alt="babyPink_leaf4.svg"></div>
+                    <div class="pink_leaf4"><img src="./assets/img/pink_leaf4.svg" alt="pink_leaf4.svg"></div>
+                    <div class="purple_leaf2"><img src="./assets/img/purple_leaf2.svg" alt="purple_leaf2.svg"></div>
+                    <div class="s5_red_right2"><img src="./assets/img/red_right2.svg" alt="red_right2.svg"></div>
+                    <div class="red_right3"><img src="./assets/img/red_right3.svg" alt="red_right3.svg"></div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- //section05 -->
 
 
 
-    <section id="section06"
-    >
+    <section id="section06">
         <div class="s6Text fixed"
+            data-9499 = "display: none"
+            data-9500 = "display: block"
             data-23999 = "display: block"
             data-24000 = "display: none"
         >
@@ -414,7 +461,8 @@
             <div class="night"
                 data-25500 = "opacity: 0"
                 data-28500 = "opacity: 1"
-                data-29100 = "opacity: 1"
+                data-29099 = "opacity: 1; display: block"
+                data-29100 = "display: none"
             ></div>
         </div>
     </section>
@@ -422,13 +470,21 @@
 
 
 
-    <div id="section08">
+    <section id="section08">
+
         <div class="s8 fixed"
             data-29099 = "display: none"
             data-29100 = "display: block; top: 50%"
             data-32000 = "display: block; top: 50%"
             data-33500 = "top: -100%"
-        >
+        >   
+            <div class="night"
+                data-29099 = "display: none;"
+                data-29100 = "opacity: 1; display: block;"
+                data-31500 = "opacity: 0; display: block"
+                data-31501 = "opacity: 0; display: none;"
+            ></div>
+
             <img class="cl cloud1" src="./assets/img/cloud1.svg" alt="cloud1.svg">
             <img class="cl cloud2" src="./assets/img/cloud2.svg" alt="cloud2.svg">
             <img class="cl cloud3" src="./assets/img/cloud3.svg" alt="cloud3.svg">
@@ -442,85 +498,83 @@
             <img class="mountainFront" src="./assets/img/mountainFront.svg" alt="mountainFront.svg">
 
 
-            <div class="projectWrap fixed"
-                data-29100 = "opacity: 0"
-                data-31500 = "opacity: 1"
-            >
-                <ul>
-                    <li>
-                        <div class="project" id="standard">
-                            WEB STANDARD SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project" id="responsive">
-                            WEB RESPONSIVE SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <div class="project" id="megabox">
-                            MEGABOX SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project" id="react">
-                            REACT SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY | REACT
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project" id="dothome">
-                            DOTHOME SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <div class="project" id="goodnight">
-                            GOODNIGHT SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY | PHP
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project" id="apple">
-                            APPLE SITE
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project" id="script">
-                            SCRIPT
-                        </div>
-                        <div class="lang">
-                            HTML5 | CSS3 | JAVASCRIPT & JQUERY
-                        </div>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="projectWrap"
+                    data-29100 = "opacity: 0"
+                    data-31500 = "opacity: 1"
+                >
+                    <ul>
+                        <li>
+                            <div class="project" id="standard">
+                                WEB STANDARD SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project" id="responsive">
+                                WEB RESPONSIVE SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="project" id="megabox">
+                                MEGABOX SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project" id="react">
+                                REACT SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY | REACT
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project" id="dothome">
+                                DOTHOME SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="project" id="goodnight">
+                                GOODNIGHT SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY | PHP
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project" id="apple">
+                                APPLE SITE
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project" id="script">
+                                SCRIPT
+                            </div>
+                            <div class="lang">
+                                HTML5 | CSS3 | JAVASCRIPT & JQUERY
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="night"
-                data-29100 = "opacity: 1; display: block;"
-                data-31500 = "opacity: 0; display: none;"
-            ></div>
 
             <div id="modal">
                 <!-- <div class="modalWrap fixed">
@@ -554,12 +608,12 @@
                 </div> -->
             </div>
         </div>
-    </div>
+    </section>
     <!-- //section08 -->
 
 
 
-    <div id="section09">
+    <section id="section09">
         <div class="s9 fixed"
             data-31999 = "display: none"
             data-32000 = "display: block; top: 195%"
@@ -585,17 +639,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- //section09 -->
 
 </div>
 <!-- //contents -->
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 <!-- <script type="module" src="./assets/js/app.js"></script> -->
 <script>
@@ -787,56 +840,56 @@
     //모달에 출력되어야할 값들의 배열
     const modalInfo = [
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "WEB STANDARD SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
             date : "2021.10"
         },
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "WEB RESPONSIVE SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
             date : "2021.10"
         },
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "MEGABOX SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
             date : "2021.10"
         },
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "REACT SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY, REACT",
             date : "2021.10"
         },
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "DOTHOME SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
             date : "2021.10"
         },   
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "TEAM PROJECT",
             description : "GOODNIGHT SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY, PHP",
             date : "2021.10"
         },        
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "TEAM PROJECT",
             description : "APPLE SITE",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
             date : "2021.10"
         },        
         {
-            url : "https://naver.com/",
+            url : "https://guswjd8694.github.io/dothome2021/portfolio/",
             client : "STUDY",
             description : "SCRIPT",
             role : "HTML, CSS, JAVASCRIPT, JQUERY",
@@ -861,7 +914,7 @@
         const modalBg = e.target;
         if(modalBg.classList.contains("modalBg")){
             modal.style.display = "none";
-            projectWrap.style.display = "block";
+            projectWrap.style.display = "flex";
 
         };
     });
@@ -873,9 +926,13 @@
         input.push(`
             <div class="modalWrap fixed">
                 <div class="modalBg">
+                    <div class="close_btn">
+                        <div class="blackbar eq0"></div>    
+                        <div class="blackbar eq1"></div>    
+                    </div>
+
                     <div class="modal goodnight">
                         <div class="frame">
-                            <iframe frameborder="0" src=${modalInfo[index].url} ></iframe>
                         </div>
                         <div class="explain">
                             <ul>
@@ -902,9 +959,27 @@
             </div>
         `)
         modal.innerHTML = input.join(' ');
-    }
+    };
     updateModal();
 
+
+    //출력용
+    window.addEventListener("mousemove", function(event){
+        document.querySelector(".clientX").innerText = event.clientX;
+        document.querySelector(".clientY").innerText = event.clientY;
+        document.querySelector(".offsetX").innerText = event.offsetX;
+        document.querySelector(".offsetY").innerText = event.offsetY;
+        document.querySelector(".pageX").innerText = event.pageX;
+        document.querySelector(".pageY").innerText = event.pageY;
+        document.querySelector(".screenX").innerText = event.screenX;
+        document.querySelector(".screenY").innerText = event.screenY;
+    });
+
+    window.addEventListener("mousemove", function(e){
+        document.querySelector(".close_btn").style.left = e.clientX + "px";
+        document.querySelector(".close_btn").style.top = e.clientY + "px";
+    });
+    
 
 </script>
 
