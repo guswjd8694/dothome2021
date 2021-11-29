@@ -214,8 +214,9 @@
 
 #contents_tit {
 	background-color: #fff;
-	text-align: center;
+	text-align: center; 
 	height: 90px;
+	
 }
 
 #contents_tit p {
@@ -223,11 +224,7 @@
 	font-family: 'Gaegu', sans-serif; font-size: 40px;
 }
 #contents_tit p a {
-	color:#8b8b8b;
-	font-size: 35px;
-}
-#contents_tit span {
-    font-size: 30px;
+	color:#8b8b8b; 
 }
 
 
@@ -338,7 +335,6 @@
 	overflow: hidden;
 	cursor: pointer;
 	height: 100%;
-	background: #fff0f0;
 }
 
 .image-wrap img {
@@ -389,14 +385,14 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #fdaddd;
+	background: #f2a1d1;
 	color: #FFFFFF;
 	font-size: 25px;
 	font-weight: 300;
 	line-height: 32px;
 	text-transform: uppercase;
 	text-align: center;
-	padding-top:130px;
+	padding-top:130px; 
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
