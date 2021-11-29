@@ -257,8 +257,8 @@ var s = skrollr.init();
     });
 
     modal.addEventListener("click", e => {
-        const modalBg = e.target;
-        if(modalBg.classList.contains("modalBg")){
+        const closeBtn = e.target;
+        if(closeBtn.classList.contains("close_btn")){
             modal.style.display = "none";
             projectWrap.style.display = "flex";
 
