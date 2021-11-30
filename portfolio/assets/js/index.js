@@ -267,7 +267,6 @@ modal.addEventListener("click", e => {
     if (closeBtn.classList.contains("close_btn")) {
         modal.style.display = "none";
         projectWrap.style.display = "flex";
-
     };
 });
 

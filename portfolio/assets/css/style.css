@@ -35,8 +35,8 @@ body {
 
 .paraScroll {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 5%;
+  top: 5%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: rgba(0, 0, 0, .4);
@@ -301,13 +301,11 @@ canvas {
   width: 300px;
 }
 
-.land img {
-  width: 100vw;
-  height: 100vh;
+.land {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
+  bottom: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
   z-index: 0;
 }
 
@@ -325,7 +323,7 @@ canvas {
   background: linear-gradient(120deg, rgba(252, 172, 149), rgba(243, 118, 102));
 }
 
-.ship img {
+.ship {
   width: 200px;
   position: absolute;
   top: 60%;
@@ -433,7 +431,7 @@ canvas {
   display: inline-block;
 }
 
-.meLeft img {
+.meLeft {
   width: 10vw;
   position: absolute;
   top: 0%;
@@ -491,7 +489,7 @@ canvas {
   top: 0%;
 }
 
-.floor img {
+.floor {
   position: absolute;
   bottom: 0%;
   left: 0;
@@ -499,7 +497,7 @@ canvas {
   width: 100%;
 }
 
-.stoneLeft img {
+.stoneLeft {
   position: absolute;
   bottom: 0%;
   left: 0;
@@ -510,14 +508,14 @@ canvas {
 
 .sealWrap {}
 
-.hi img {
+.hi {
   position: absolute;
   bottom: 0%;
   left: 0%;
   z-index: 4;
 }
 
-.seal img {
+.seal {
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -716,7 +714,7 @@ canvas {
   animation-delay: 0.3s;
 }
 
-.yellFish {
+.yellFish1 {
   position: absolute;
   left: 0%;
   bottom: 0%;
@@ -1077,21 +1075,21 @@ canvas {
   left: 150%;
 }
 
-.shell img {
+.shell {
   position: absolute;
   right: 0%;
   bottom: 0%;
   z-index: 5;
 }
 
-.starfish img {
+.starFish2 {
   position: absolute;
   right: 0%;
   bottom: 0%;
   z-index: 5;
 }
 
-.yellfish img {
+.yellFish2 {
   position: absolute;
   right: 0%;
   bottom: 0%;
@@ -1112,7 +1110,7 @@ canvas {
 }
 
 
-.tree5_B img {
+.tree5_B {
   position: absolute;
   right: 0%;
   bottom: 0%;
@@ -1249,8 +1247,8 @@ canvas {
 
 .stingray {
   position: absolute;
-  bottom: 9%;
-  right: 15%;
+  top: 0%;
+  right: 40%;
   width: 18%;
 }
 
@@ -1270,9 +1268,20 @@ canvas {
 
 .blowFish {
   position: absolute;
-  top: 0%;
-  right: 17%;
+  bottom: 9%;
+  right: 15%;
   width: 6%;
+  animation: blowFish 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes blowFish {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 15px);
+  }
 }
 
 .miniOcto {
@@ -1292,7 +1301,7 @@ canvas {
 .squid {
   position: absolute;
   top: 0%;
-  right: 40%;
+  right: 17%;
   width: 7%;
 }
 
@@ -1504,7 +1513,7 @@ canvas {
 }
 
 .modalBg {
-  background-color: rgb(0 0 0 / 80%);
+  background-color: rgb(0 0 0 / 70%);
   width: 100vw;
   height: 100vh;
 }
