@@ -147,7 +147,7 @@ img {
 
 
 .bg {
-  background: linear-gradient(rgb(214, 141, 141), rgb(238, 194, 179), rgb(249, 223, 215));
+  background: linear-gradient(rgb(214, 141, 141), rgb(246 213 210), rgb(248 221 214));
   width: 100%;
   height: 3500px;
   z-index: -3;
@@ -155,7 +155,7 @@ img {
 }
 
 .bg2 {
-  background: linear-gradient(rgb(238, 194, 179), rgb(240, 202, 190), rgb(249, 223, 215));
+  background: linear-gradient(rgb(246 213 209), rgb(247 217 212), rgb(249 222 214));
   width: 100%;
   height: 100vh;
   z-index: -2;
@@ -413,7 +413,6 @@ canvas {
   width: 100%;
   height: 3000px;
   top: 0;
-  background-attachment: scroll
 }
 
 
@@ -483,7 +482,6 @@ canvas {
   height: 1500px;
   position: relative;
   overflow: hidden;
-  background: #222;
 }
 
 .s2 {
@@ -845,7 +843,6 @@ canvas {
   height: 1500px;
   position: relative;
   overflow: hidden;
-  background: #444;
 }
 
 .s3 {
@@ -938,7 +935,6 @@ canvas {
   height: 1500px;
   position: relative;
   overflow: hidden;
-  background: #666;
 }
 
 .s4 {
@@ -1073,7 +1069,6 @@ canvas {
   height: 1500px;
   position: relative;
   overflow: hidden;
-  background: #888;
 }
 
 .s5 {
@@ -1199,8 +1194,6 @@ canvas {
 
 #section06 {
   position: relative;
-  height: 12000px;
-  background: #999;
 }
 
 .s6Text {
@@ -1329,10 +1322,8 @@ canvas {
 /* section07 */
 #section07 {
   width: 100%;
-  height: 8000px;
   position: relative;
   overflow: hidden;
-  background: #aaa;
 }
 
 .s7 {
