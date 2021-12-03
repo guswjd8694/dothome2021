@@ -347,3 +347,10 @@ $(document).ready(function () {
         $('.mountainBack').css("background-position", newvalueX + "px     " + newvalueY + "px");
     });
 });
+
+
+document.querySelector(".bgm").addEventListener("click", function(){
+    var bgm = new Audio("/assets/bgm/wave.mp3");
+    bgm.volume = 0.3;
+    bgm.play();
+});
