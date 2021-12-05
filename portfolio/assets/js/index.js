@@ -262,6 +262,7 @@ btnModal.forEach((btn, index) => {
     });
 });
 
+
 modal.addEventListener("click", e => {
     const closeBtn = e.target;
     if (closeBtn.classList.contains("close_btn")) {
@@ -348,9 +349,40 @@ $(document).ready(function () {
     });
 });
 
+const menu = document.querySelector(".menu");
+const menuList = document.querySelector(".menuList");
+const list = document.querySelectorAll(".menuList li");
+const nav = document.querySelectorAll(".nav");
+const activeCont = "";
+
+console.log(list)
 
 document.querySelector(".bgm").addEventListener("click", function(){
     var bgm = new Audio("/assets/bgm/wave.mp3");
     bgm.volume = 0.3;
     bgm.play();
 });
+
+menu.addEventListener("click", function(){
+    menuList.classList.toggle("show");
+});
+
+for(var i = 0; i < list.length; i++){
+    list[i].querySelector('.nav').addEventListener('click', function(e){
+        e.preventDefault();
+
+        for(var j = 0; j < list.length; j++){
+        // 나머지 버튼 클래스 제거
+        list[j].classList.remove('active');
+        }
+
+        // 버튼 관련 이벤트
+        this.parentNode.classList.add('active');
+
+        // 버튼 클릭시 컨텐츠 전환
+        activeCont = this.getAttribute('href');
+        document.querySelector(activeCont).style.display = 'block';
+    });
+}
+
+console.log(activeCont);
