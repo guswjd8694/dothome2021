@@ -192,7 +192,7 @@ const date = document.querySelector(".date");
 
 //모달에 출력되어야할 값들의 배열
 const modalInfo = [{
-        url: "https://guswjd8694.github.io/dothome2021/portfolio/",
+        url: "http://guswjd8694.dothome.co.kr/php/pages/main.php",
         client: "STUDY",
         description: "WEB STANDARD SITE",
         role: "HTML, CSS, JAVASCRIPT, JQUERY",
@@ -284,8 +284,7 @@ function updateModal(index) {
                     </div>
 
                     <div class="modal goodnight">
-                        <div class="frame">
-                        </div>
+                        <div class="frame"><a href="${modalInfo[index].url}"></a></div>
                         <div class="explain">
                             <ul>
                                 <li>
