@@ -26,18 +26,18 @@ let main = gsap.timeline({
 // }); 
 
 
-//스크롤 탑 값
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY; //스크롤 크로스 브라우징
-    // let value = window.scrollY;
-    // let hippocampus = document.querySelector('.hippocampus');
+// //스크롤 탑 값
+// window.addEventListener("scroll", function () {
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY; //스크롤 크로스 브라우징
+//     // let value = window.scrollY;
+//     // let hippocampus = document.querySelector('.hippocampus');
 
-    document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
+//     document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
 
 
-    // hippocampus.style.left = value * 8 + 'px';
+//     // hippocampus.style.left = value * 8 + 'px';
 
-});
+// });
 
 
 //아메바 정의
