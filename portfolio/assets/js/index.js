@@ -27,17 +27,17 @@ let main = gsap.timeline({
 
 
 //스크롤 탑 값
-// window.addEventListener("scroll", function () {
-    // let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY; //스크롤 크로스 브라우징
+window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY; //스크롤 크로스 브라우징
     // let value = window.scrollY;
     // let hippocampus = document.querySelector('.hippocampus');
 
-    // document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
+    document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
 
 
     // hippocampus.style.left = value * 8 + 'px';
 
-// });
+});
 
 
 //아메바 정의
@@ -352,7 +352,7 @@ const menu = document.querySelector(".menu");
 const menuList = document.querySelector(".menuList");
 const list = document.querySelectorAll(".menuList li");
 const nav = document.querySelectorAll(".nav");
-const activeCont = "";
+const activeCont = [0, 5700, 10900, 31500, 34000];
 
 console.log(list)
 
@@ -366,11 +366,11 @@ menu.addEventListener("click", function(){
     menuList.classList.toggle("show");
 });
 
-for(var i = 0; i < list.length; i++){
+for(let i = 0; i < list.length; i++){
     list[i].querySelector('.nav').addEventListener('click', function(e){
         e.preventDefault();
 
-        for(var j = 0; j < list.length; j++){
+        for(let j = 0; j < list.length; j++){
         // 나머지 버튼 클래스 제거
         list[j].classList.remove('active');
         }
@@ -379,8 +379,8 @@ for(var i = 0; i < list.length; i++){
         this.parentNode.classList.add('active');
 
         // 버튼 클릭시 컨텐츠 전환
-        activeCont = this.getAttribute('href');
-        document.querySelector(activeCont).style.display = 'block';
+        window.scrollTo(0, activeCont[i]);
+        // document.querySelector(activeCont).style.display = 'block';
     });
 }
 
