@@ -353,13 +353,24 @@ const menuList = document.querySelector(".menuList");
 const list = document.querySelectorAll(".menuList li");
 const nav = document.querySelectorAll(".nav");
 const activeCont = [0, 5700, 10900, 31500, 34000];
-
+let flag = true;
 console.log(list)
-
-document.querySelector(".bgm").addEventListener("click", function(){
-    var bgm = new Audio("/assets/bgm/wave.mp3");
+var bgm = new Audio("/assets/bgm/wave.mp3");
     bgm.volume = 0.3;
-    bgm.play();
+    bgm.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    
+document.querySelector(".bgm").addEventListener("click", function(){
+    if(flag){
+        bgm.play();
+        flag = false;
+    } else {
+        bgm.pause();
+        flag = true;
+    }
+    
 });
 
 menu.addEventListener("click", function(){
