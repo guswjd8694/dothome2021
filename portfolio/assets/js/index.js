@@ -364,7 +364,14 @@ var bgm = new Audio("./assets/bgm/wish.mp3");
     
 document.querySelector(".bgm").addEventListener("click", function(){
     if(flag){
-        bgm.play();
+        const promise = bgm.play();
+        promise.then(()=>{
+            console.log("음악 실행");
+        })
+        .catch((error)=>{
+            console.error("음악 재생실패 : ", error);
+        });
+        
         flag = false;
     } else {
         bgm.pause();
