@@ -352,7 +352,7 @@ const menu = document.querySelector(".menu");
 const menuList = document.querySelector(".menuList");
 const list = document.querySelectorAll(".menuList li");
 const nav = document.querySelectorAll(".nav");
-const activeCont = [0, 5700, 10900, 31500, 34000];
+const activeCont = [0, 5700, 10900, 31550, 34000];
 let flag = true;
 console.log(list)
 var bgm = new Audio("./assets/bgm/wish.mp3");
